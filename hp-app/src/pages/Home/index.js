@@ -5,9 +5,10 @@ const Home = () => {
   return (
     <header className="App-body">
     <div className="container">
-    <p>
-       Batatinha muita batatinha 
-    </p>
+      <p>
+        Bem-Vindo
+      </p>
+       
     </div>
 
     </header>

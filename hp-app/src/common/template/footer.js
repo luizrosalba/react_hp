@@ -5,7 +5,7 @@ const Footer = () => {
     <header className="App-body">
     <div className="container">
       <p>
-        Batatinha muita batatinha 
+        Footer
       </p>
     </div>
 

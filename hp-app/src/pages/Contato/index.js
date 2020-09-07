@@ -5,7 +5,7 @@ const Contato = () => {
     <header className="App-body">
       <div className="container">
         <p>
-          Batatinha muita batatinha 
+          Contato
         </p>
       </div>
 

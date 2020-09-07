@@ -104,3 +104,5 @@ If you already have a project and would like to add TypeScript, see our Adding T
 When you create a new app, the CLI will use Yarn to install dependencies (when available). If you have Yarn installed, but would prefer to use npm, you can append --use-npm to the creation command. For example:
 
 npx create-react-app my-app --use-npm
+
+npm install --save react-router-dom

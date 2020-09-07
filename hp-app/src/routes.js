@@ -4,6 +4,8 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 import Header from './common/template/header'
 import Footer from './common/template/footer'
 
+import { NavBar } from './components/NavBar';
+
 import Home from './pages/Home'
 import Sobre from './pages/Sobre'
 import Contato from './pages/Contato'
@@ -11,7 +13,29 @@ import Contato from './pages/Contato'
 function Routes() {
   return (
     <BrowserRouter>
+    <Header />
+    <div>
+      <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/Sobre" component={Sobre} />
+          <Route path="/Contacto" component={Contato} />
+          <Redirect from='*' to='/' />
+      </Switch>
+    </div>
+    <Footer />
+  </BrowserRouter>
+ 
+  )
+}
+
+
+export default Routes
+
+
+/*
+<BrowserRouter>
       <Header />
+       <NavBar />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/Sobre" component={Sobre} />
@@ -20,7 +44,6 @@ function Routes() {
       </Switch>
       <Footer />
     </BrowserRouter>
-  )
-}
 
-export default Routes
+
+*/
