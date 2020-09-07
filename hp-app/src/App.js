@@ -1,9 +1,23 @@
 import React from 'react';
+import Routes from './routes'
 
 import './App.css';
 
 function App() {
   return (
+    <div overflow="hidden">
+      <Routes />
+    </div>
+  )
+}
+
+
+export default App;
+
+
+ {/*
+  
+  
     <div className="App">
       <header className="App-header">
             <div className="container">
@@ -14,26 +28,10 @@ function App() {
                 </nav>
             </div>
         </header>
-      
-      <body className="App-body">
-            <div className="container">
-            <p>
-               Batatinha muita batatinha  sdfsd dsaf dsf dsa fs dsf sfa22222  
-               asda sdfsdda sd
-               sad asdadsasadsad sadsadsa  dsadsa sad 
-            </p>
-            </div>
-       
-      </body>
-      
     </div>
-  );
-}
-
-export default App;
 
 
- {/*     
+
   import logo from './logo.svg';
           <img src={logo} className="App-logo" alt="logo" />
        <p>
