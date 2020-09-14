@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
     <header >
-    <div className="container">
+    <div className="container_menu">
                 <nav className="Menu">
-                    <Link to="/">Home   </Link>
-                    <Link to="/Sobre">Sobre   </Link>
+                    <Link to="/">Sobre</Link>
+                    <Link to="/Fisica">Física</Link>
                     <Link to="/Programacao">Programacao</Link>
                 </nav>
     </div>
@@ -17,7 +17,7 @@ const Header = () => {
 }
 
 /* 
-
+import React, { useState, useEffect } from 'react'
 */
 
 

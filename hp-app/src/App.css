@@ -1,6 +1,3 @@
-.App-header {
-
-}
 
 
 .Menu a{
@@ -8,22 +5,24 @@
   color: white;
   text-transform: uppercase;
   font-weight: bold;
-  
-
 }
 
 .Menu {
   color: white;
 }
 
+.title_page{
+  font-size: calc(10px + 3vmin);
+  text-align: center;
+  padding-bottom: 2%;
+}
 
-.container{
-  display:flex;
+.container_menu nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
   background-color: #282c34;
-  flex-direction: column;
-  align-items: center;
-  text-align: justify;
   color: white;
   border: 4px solid white;
   margin: 3%;
@@ -31,9 +30,50 @@
   border-radius: 10px;
 }
 
+.container{
+  display:flex;
+  font-size: calc(10px + 2vmin);
+  background-color: #282c34;
+  flex-direction: column;
+  text-align: justify;
+  color: white;
+  border: 4px solid white;
+  margin: 3%;
+  padding: 3%; 
+  border-radius: 10px;
+  
+}
 
-.App-body {
+.container a{
+  text-decoration: none;
+  color: white;
 
+}
+
+.listagem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.links{
+  display:flex;
+  flex-direction: column;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.post_text{
+  font-size: calc(10px + 2vmin);
+  margin-bottom : 15px; 
+  font-family: Verdana,Arial;
+
+}
+
+ul{
+  margin-left:0px;
 }
 
 

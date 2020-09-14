@@ -5,10 +5,8 @@ import Header from './common/template/header'
 import Footer from './common/template/footer'
 
 
-import { NavBar } from './components/NavBar';
-
-import Home from './pages/Home'
 import Sobre from './pages/Sobre'
+import Fisica from './pages/Fisica'
 import Programacao from './pages/Programacao'
 
 /* 
@@ -25,8 +23,8 @@ function Routes() {
     <Header />
     <div>
       <Switch>
-          <Route path="/" exact={true} component={Home} />
-          <Route path="/Sobre" component={Sobre} />
+          <Route path="/" exact={true} component={Sobre} />
+          <Route path="/Fisica" component={Fisica} />
           <Route path="/Programacao" component={Programacao} />
           
           <Redirect from='*' to='/' />
@@ -43,6 +41,10 @@ export default Routes
 
 
 /*
+
+import { NavBar } from './components/NavBar';
+
+
 <BrowserRouter>
       <Header />
        <NavBar />
