@@ -2,11 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <header className="App-body">
+    <header  className="App-footer">
     <div className="container">
-      <p>
-        Desenvolvido por Luiz Rosalba 
-      </p>
+       Desenvolvido por Luiz Rosalba 
     </div>
 
   </header>

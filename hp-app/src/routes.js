@@ -9,7 +9,7 @@ import { NavBar } from './components/NavBar';
 
 import Home from './pages/Home'
 import Sobre from './pages/Sobre'
-import Contato from './pages/Contato'
+import Programacao from './pages/Programacao'
 
 /* 
 Vale ressaltar que o path="/" pode ser combinado 
@@ -27,7 +27,7 @@ function Routes() {
       <Switch>
           <Route path="/" exact={true} component={Home} />
           <Route path="/Sobre" component={Sobre} />
-          <Route path="/Contato" component={Contato} />
+          <Route path="/Programacao" component={Programacao} />
           
           <Redirect from='*' to='/' />
       </Switch>

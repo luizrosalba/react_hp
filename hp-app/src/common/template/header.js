@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <header className="App-body">
+    <header >
     <div className="container">
                 <nav className="Menu">
-                    <Link to="/">Home</Link>
-                    <Link to="/Sobre">Sobre</Link>
-                    <Link to="/Contato">Conteúdo</Link>
+                    <Link to="/">Home   </Link>
+                    <Link to="/Sobre">Sobre   </Link>
+                    <Link to="/Programacao">Programacao</Link>
                 </nav>
     </div>
 

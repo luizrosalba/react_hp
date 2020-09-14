@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Contato = () => {
+const Programacao = () => {
   return (
     <header className="App-body">
       <div className="container">
@@ -21,4 +21,4 @@ const Container = styled.div`
 `
 */
 
-export default Contato
+export default Programacao

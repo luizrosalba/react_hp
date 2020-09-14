@@ -5,7 +5,7 @@ const Sobre = () => {
   return (
     <header className="App-body">
       <div className="container">
-          <h3 id="title" className="cabecalho">Luiz Fernando Rosalba</h3>
+          <h3 id="title" >Luiz Fernando Rosalba</h3>
             Licenciado em física, com mestrado e doutorado na área de Modelagem Computacional,
             atuei nas áreas de Visão computacional (Pattern Recognition) e Radiação Ionizante (EDXRF). 
             Atualmente sou Docente nas Universidades Estácio de Sá, Candido Mendes e estou cursando Ciências da Computação. 
