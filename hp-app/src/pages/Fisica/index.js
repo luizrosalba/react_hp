@@ -1,12 +1,22 @@
 import React from 'react'
-
+import logo from '../../img/canal.jpg';
 
 const Fisica = () => {
   return (
     <header className="App-body">
-      <div className="container">
-      <div className="title_page"> Materiais de Física</div>
-          Meu canal no YouTube criado para ajudar estudantes a resolver exercícios de física.
+      <div className="container-corpo">
+      
+      <div className="container-foto">
+          <a href = "https://www.youtube.com/user/luizorosalba" target= "_blank" rel="noopener noreferrer" >
+          <img  src={logo}  alt='logo' className = "photo" /> 
+          </a>
+      </div>
+      
+      
+      <div className="texto_secao">
+        <h2>Materiais de Física </h2>
+          <a href = "https://www.youtube.com/user/luizorosalba" target= "_blank" rel="noopener noreferrer" > Conheça meu canal no YouTube criado para ajudar estudantes a resolver exercícios de física.   </a>      
+        </div>
           <div className="title_page">  Física 1</div>
             <p className="links">
               <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD9qIUW8kas5BD2xYrjSRcYP" target= "_blank" rel="noopener noreferrer" > Movimento Retilíneo Uniforme (MRU)  </a>      

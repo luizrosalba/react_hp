@@ -26,7 +26,6 @@ function Routes() {
           <Route path="/" exact={true} component={Sobre} />
           <Route path="/Fisica" component={Fisica} />
           <Route path="/Programacao" component={Programacao} />
-          
           <Redirect from='*' to='/' />
       </Switch>
     </div>

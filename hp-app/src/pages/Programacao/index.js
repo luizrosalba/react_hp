@@ -1,11 +1,26 @@
 import React from 'react'
+import git from '../../img/github.jpeg';
 
 const Programacao = () => {
   return (
     <header className="App-body">
-      <div className="container">
-      <div className="title_page"> Conheça Meu GitHub </div>
-        Diversos repositórios que desenvolvi durante minha formação. 
+      <div className="container-corpo">
+
+
+       <div className="container-foto">
+          <a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" >
+          <img  src={git}  heigth= "140px" width = "140px" alt='logo' className = "photo" /> 
+          </a>
+
+      </div>
+      <div className="texto_secao">
+        <h2> Repositórios </h2>
+        <a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" > 
+        Conheça meus repositórios no GitHub </a>                
+        
+      </div>
+
+
       <div className="title_page">  Projetos Interessantes</div>
             <p className="links">
               <a href = "https://github.com/luizrosalba/DadosApiCriptomoedas"                               target= "_blank"  rel="noopener noreferrer" > Requisitando dados de uma API de criptomoedas    </a>  
@@ -22,8 +37,6 @@ const Programacao = () => {
      
 
       <div className="title_page"> Meus Estudos </div>
-        Repositórios que utilizo para armazenar meus estudos.
-
           <p className="links">  
             <a href = "https://github.com/luizrosalba/aprendendo_git"                                                       target= "_blank"  rel="noopener noreferrer" > Aprendendo Git   </a>  
                     <a href = "https://github.com/luizrosalba/js_free_code_camp"                                            target= "_blank"  rel="noopener noreferrer" > Estudos em Javascript   </a>  
@@ -43,7 +56,16 @@ const Programacao = () => {
                     <a href = "https://github.com/luizrosalba/EntendendoPromisesdeumavezportodas "                          target= "_blank"  rel="noopener noreferrer" > Ententendo Promisses </a>                        
                    
            </p>
+        
+
+           <div className="title_page"> Jogos Desenvolvidos no meu tempo livre :D  </div>
+            <p className="links">  
+              <a href = "https://cobrinha97818.netlify.app/"           target= "_blank"  rel="noopener noreferrer" > Jogo Da cobrinha em JS   </a>  
+              <a href = "https://github.com/luizrosalba/jogo_velha_react" target= "_blank"  rel="noopener noreferrer" > Jogo Da velha usando React   </a>  
+            </p>
            </div>
+
+
     </header>
   )
 }
