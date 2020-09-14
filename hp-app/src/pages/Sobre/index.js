@@ -5,7 +5,6 @@ const Sobre = () => {
   return (
     <header className="App-body">
       <div className="container">
-          <img align="left" src="img/Capturar.PNG" alt= "Foto de Luiz Fernando Rosalba" class = "photo" height="10%" width="10%" > </img>
           <h3 id="title" className="cabecalho">Luiz Fernando Rosalba</h3>
             Licenciado em física, com mestrado e doutorado na área de Modelagem Computacional,
             atuei nas áreas de Visão computacional (Pattern Recognition) e Radiação Ionizante (EDXRF). 
@@ -21,6 +20,10 @@ const Container = styled.div`
   flex-direction: column;
 
 `
+
+<img align="left" src="img/Capturar.PNG" alt= "Foto de Luiz Fernando Rosalba" class = "photo" height="10%" width="10%" > </img>
+
+
 */
 
 export default Sobre

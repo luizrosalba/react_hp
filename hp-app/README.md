@@ -1,3 +1,14 @@
+## Olhar : 
+- repositório : 
+- Awesome-react 
+- Sites estáticos : Gatsby 
+- server side rendering - Next.js 
+- Animações : react-spring 
+- forms : formik 
+- gerenciamento de estados : redux, mobs , flux , recoil , xstate 
+- mobile : react native 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -6,7 +6,7 @@ const Home = () => {
     <header className="App-body">
     <div className="container">
       <p>
-        Bem-Vindo
+        Bem-Vindo dada asdas dasd as asd 
       </p>
        
     </div>

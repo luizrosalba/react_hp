@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react'
-
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
     <header className="App-body">
     <div className="container">
-                <nav>
-                    <a href="#sobre" >   Sobre    </a>
-                    <a href="#fisica">   Física   </a>
-                    <a href="#Prog">   Programação </a>
+                <nav className="Menu">
+                    <Link to="/">Home</Link>
+                    <Link to="/Sobre">Sobre</Link>
+                    <Link to="/Contato">Conteúdo</Link>
                 </nav>
     </div>
 
@@ -16,6 +16,9 @@ const Header = () => {
   )
 }
 
+/* 
+
+*/
 
 
 export default Header

@@ -5,7 +5,7 @@ const Contato = () => {
     <header className="App-body">
       <div className="container">
         <p>
-          Contato
+          Contato adas ada sda 
         </p>
       </div>
 

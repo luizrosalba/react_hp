@@ -5,7 +5,7 @@ const Footer = () => {
     <header className="App-body">
     <div className="container">
       <p>
-        Footer
+        Desenvolvido por Luiz Rosalba 
       </p>
     </div>
 

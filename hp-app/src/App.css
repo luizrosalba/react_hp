@@ -46,6 +46,15 @@
   border-radius: 10px;
 }
 
+
+  .Menu a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 12px;
+  }
+
+
 .App-link {
   color: #61dafb;
 }
