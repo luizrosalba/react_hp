@@ -128,12 +128,24 @@ p a{
   display: flex;
   flex-direction: row;
   justify-content: left;
+
+}
+
+.texto_secao{
+  font-size: 24px;  
 }
 .texto_secao h2{
   margin-top: 0;
+
 }
 .texto_secao a{
   text-decoration: none;
+  font-size: 30px;  
+}
+.Contato{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .links{

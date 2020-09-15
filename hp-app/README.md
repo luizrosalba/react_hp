@@ -38,6 +38,12 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+- npm install netlify-cli -g
+- netlify deploy
+- build 
+- netlify deploy --prod
+- build 
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
@@ -96,7 +102,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 Selecting a template
 You can now optionally start a new app from a template by appending --template [template-name] to the creation command.
 
-If you don't select a template, we'll create your project with our base template.
+npIf you don't select a template, we'll create your project with our base template.
 
 Templates are always named in the format cra-template-[template-name], however you only need to provide the [template-name] to the creation command.
 
