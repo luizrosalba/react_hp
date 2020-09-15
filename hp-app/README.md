@@ -38,8 +38,11 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-npm install netlify-cli -g
-netlify deploy
+- npm install netlify-cli -g
+- netlify deploy
+- build 
+- netlify deploy --prod
+- build 
 
 ### `npm run eject`
 
