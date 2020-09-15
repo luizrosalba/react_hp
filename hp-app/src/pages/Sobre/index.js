@@ -11,9 +11,15 @@ const Home = () => {
         <div className="texto_secao">
         <h2>Luiz Fernando Rosalba </h2>
           Licenciado em física, com mestrado e doutorado na área de Modelagem Computacional,
-          atuou na áreas de Visão computacional (Pattern Recognition) e Radiação Ionizante (EDXRF). 
-          Atualmente é Docente nas Universidades Estácio de Sá, Candido Mendes e cursando Ciências da Computação. 
+          atuou na áreas de Visão Computacional (Pattern Recognition) e Radiação Ionizante (EDXRF). 
+          Atualmente é Docente nas Universidades Estácio de Sá, Candido Mendes cursa Ciências da Computação. 
+          <div className="Contato">
+            <a href="mailto:luizrosalba@gmail.com"                       target= "_blank" rel="noopener noreferrer"> E-mail </a>  
+            <a href="https://www.linkedin.com/in/luiz-rosalba-92469817/" target= "_blank" rel="noopener noreferrer">  LinkedIn </a>
+            <a href="http://lattes.cnpq.br/6417401108821012"              target= "_blank" rel="noopener noreferrer">  Currículo  Lattes </a>
+          </div>
         </div>
+
         
       </div>
     </header>
