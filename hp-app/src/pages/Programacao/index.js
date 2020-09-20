@@ -53,15 +53,18 @@ const Programacao = () => {
                     <a href = "https://github.com/luizrosalba/SCRUM"                                                        target= "_blank"  rel="noopener noreferrer" > O Processo SCRUM  </a>  
                     <a href = "https://github.com/luizrosalba/Arquitetura-de-Sistemas-Avan-ado"                             target= "_blank"  rel="noopener noreferrer" > Arquitetura de Sistemas Avançados </a>   
                     <a href = "https://github.com/luizrosalba/asyncawait"                                                   target= "_blank"  rel="noopener noreferrer" > Como funcionam os métodos Async e Await  </a>                        
-                    <a href = "https://github.com/luizrosalba/EntendendoPromisesdeumavezportodas "                          target= "_blank"  rel="noopener noreferrer" > Ententendo Promisses </a>                        
+                    <a href = "https://github.com/luizrosalba/EntendendoPromisesdeumavezportodas "                          target= "_blank"  rel="noopener noreferrer" > Ententendo Promisses </a>                    
+                    <a href = "https://github.com/luizrosalba/aplicacoes_internet_reactjs"                                  target= "_blank"  rel="noopener noreferrer" > React Intermediário   </a>                          
+                    <a href = "https://github.com/luizrosalba/advanced-reactjs-dio"                                         target= "_blank"  rel="noopener noreferrer" > React Avançado   </a>      
                    
            </p>
         
 
-           <div className="title_page"> Jogos Desenvolvidos no meu tempo livre :D  </div>
+           <div className="title_page"> Jogos Desenvolvidos em cursos </div>
             <p className="links">  
               <a href = "https://cobrinha97818.netlify.app/"           target= "_blank"  rel="noopener noreferrer" > Jogo Da cobrinha em JS   </a>  
               <a href = "https://github.com/luizrosalba/jogo_velha_react" target= "_blank"  rel="noopener noreferrer" > Jogo Da velha usando React   </a>  
+              <a href = "https://github.com/luizrosalba/jogo-da-memoria-dio-master" target= "_blank"  rel="noopener noreferrer" > Jogo Da memória usando React   </a>  
             </p>
            </div>
 

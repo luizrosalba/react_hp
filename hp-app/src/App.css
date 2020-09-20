@@ -148,6 +148,9 @@ p a{
   text-align: center;
 }
 
+
+
+
 .links{
   display:flex;
   flex-direction: column;
@@ -183,6 +186,8 @@ ul{
 
 
 
+
+
 @media (max-width: 800px) {
   .container-corpo {
     grid-template-columns: 1fr;
@@ -211,6 +216,15 @@ ul{
     text-decoration: none;
     font-size: 30px;  
   }
+  .Contato a{
+    padding: 10px;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  .Menu a{
+    font-size: 20px;
+  }
+
 
 }
 

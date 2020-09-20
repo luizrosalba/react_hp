@@ -1,3 +1,20 @@
+## TODO : 
+Adicionar o fazedor de gráficos e estastistica  https://www.npmjs.com/package/react-charts
+npm i @react-hook/window-size
+npm i react-charts
+npm i react-resizable
+npm i react-native
+npm i request --save-dev mocha
+para rodar todos os testes com o padrao *_test.js dentro da pasta src
+"test": "mocha --recursive './src/**/*_test.js' ",
+npm test
+
+
+Colocar um carroussel em CSS com todos os certificados na área de programação 
+Adicionar as informações do canal no youtube usando a api do youtube 
+Animar o site 
+colocar o desempenho do DIO e as horas de estudo 
+
 ## Olhar : 
 - repositório : 
 - Awesome-react 
