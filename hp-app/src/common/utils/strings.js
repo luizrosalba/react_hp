@@ -21,6 +21,11 @@ export default class Palavras {
         let temp = this._palavra.replace(/\n/g," ");
         return (temp);
     }
+
+    trocaMultiplosEspacosPorUmSo() {
+        let temp = this._palavra.replace(/\s\s+/g, ' ');
+        return (temp);
+    }
     
 
     formataTexto(){

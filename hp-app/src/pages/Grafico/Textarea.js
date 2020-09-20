@@ -16,53 +16,44 @@ class TextoeGrafico extends Component {
       ],
       textAreaValue: "",
     };
-
     this.handleChange = this.handleChange.bind(this);
-
   }
 
 
-  // preencheDados = (palavras) => {
-  //   let dadosTemp= [];
-  //   let i=0;
-  //   for(i=0;i<palavras.length; i=i+2)
-  //   {
-  //     let prim = (palavras[i]);
-  //     let secon= (palavras[i+1]);
-  //     let strucDados = { primary:prim, secondary:secon, }
-  //     dadosTemp.push(strucDados);
-  //   }
-  //   console.log(dadosTemp);
-    
-  //   this.setState({
-  //     label: 'Series 1',
-  //     data: dadosTemp,
-  //   });
-
-  // }
-
-
   alteraTexto(texto){
-    
+    let dadosTemp= [];
+    let retorno={valido:false,dadosTemp};
     if (texto.length>0)
     {
       let palavra; 
       let textSemFormatacao=texto;
       const objeto = new Palavras(textSemFormatacao);
-      objeto.definePalavra = objeto.trocaLinhaPorEspaco();
+      objeto.definePalavra = objeto.trocaMultiplosEspacosPorUmSo();
       objeto.definePalavra = objeto.converteEspacoEmVetor();
       console.log(objeto.pegaPalavra);
       palavra= objeto.pegaPalavra;
        /// se nao termina com espaco e tem um numero par de dados 
-    if ( (palavra[texto.length] !=="") && (texto.length%2==0) )
-    return (true);
+       /// tem outras verificações a fazer ! 
+      if ( (palavra[texto.length] !=="") && (texto.length%2===0) )
+      {
+          
+          let i=0;
+          for(i=0;i<palavra.length; i=i+2)
+          {
+            let prim = (palavra[i]);
+            let secon= (palavra[i+1]);
+            let strucDados = { primary:prim, secondary:secon, }
+            dadosTemp.push(strucDados);
+          }
+          retorno = {valido:true,dadosTemp}
+      }
     }
-    return (false); 
+      return (retorno); 
   }
 
-
+  
   /// se a mudanca produzir um data valido , atualizar o data e acabou :D
-  handleChange(event,entrada) {
+  handleChange(event) {
     // verificar se dados sao validos 
     let dadosValidos=this.alteraTexto(this.state.textAreaValue);
     
@@ -72,15 +63,12 @@ class TextoeGrafico extends Component {
     })
 
     // aplica mudancas no gráfico se dados sao validos 
-    if (dadosValidos)
+    if (dadosValidos.valido)
     {
+
       this.setState({
         label: 'Series 1',
-        data: [
-          { primary: "a", secondary: 1000 },
-          { primary: "b", secondary: 2000 },
-          { primary: "c", secondary: 3000 },
-        ],
+        data: [...dadosValidos.dadosTemp],
       })
     }
 
