@@ -6,8 +6,14 @@ npm i react-resizable
 npm i react-native
 npm i request --save-dev mocha
 para rodar todos os testes com o padrao *_test.js dentro da pasta src
-"test": "mocha --recursive './src/**/*_test.js' ",
-npm test
+
+module.exports = Palavras;
+
+
+{
+ "presets": [ "@babel/preset-env" ]
+}
+
 
 
 Colocar um carroussel em CSS com todos os certificados na área de programação 

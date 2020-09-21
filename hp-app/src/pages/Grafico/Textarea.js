@@ -17,87 +17,75 @@ class TextoeGrafico extends Component {
       textAreaValue: "",
     };
     this.handleChange = this.handleChange.bind(this);
+    this.atualizaGrafico = this.atualizaGrafico.bind(this);
   }
 
   ValidaEntrada (ent){
-    /// deve ser uma pa
-    if ( (ent[ent.length] !=="") && (ent.length%2===0) )
+    if ((ent.length%2===0) )
+    {
       return true; 
+    }
     else 
       return false; 
+  }
+
+ 
+  atualizaGrafico(dadosValidos){
+   /*  this.setState({
+      label: 'Series 1',
+      data: dadosValidos,
+    })
+*/
+    console.log(dadosValidos);
   }
 
   /// recebe o texto de entrada 
   // valida e retorna para o 
   /// o gráfico 
-  alteraTexto(texto){
-    let dadosTemp= [];
-    let retorno={valido:false,dadosTemp};
-
+  formataEValidaTexto(texto){
     if (texto.length>0)
     {
       /// formata entrada
-      let palavra; 
-      let textSemFormatacao=texto;
-      const objeto = new Palavras(textSemFormatacao);
-      objeto.definePalavra = objeto.trocaMultiplosEspacosPorUmSo();
-      objeto.definePalavra = objeto.converteEspacoEmVetor();
-      palavra= objeto.pegaPalavra;
-
-      
-      console.log(palavra);
-      
-
-       /// se nao termina com espaco e tem um numero par de dados 
-       /// tem outras verificações a fazer ! 
-
-        if (this.ValidaEntrada(palavra))
-        {
-            console.log(objeto.pegaPalavra);
-
-            retorno = {valido:true,dadosTemp}
-        }
+      let palavra = new Palavras(texto);
+      let formatada= palavra.stringToFormatedData();       
+      //console.log(formatada);                              
+      if (this.ValidaEntrada(formatada))
+      {
+        this.atualizaGrafico(formatada);
+        return (true);
+      }
     }
-      return (retorno); 
+    return false; 
   }
 
   
   /// se a mudanca produzir um data valido , atualizar o data e acabou :D
   handleChange(event) {
-    // verificar se dados sao validos 
-    let dadosValidos=this.alteraTexto(this.state.textAreaValue);
-    
     /// aplicar mudancas no textarea
     this.setState({
-      textAreaValue: event.target.value ,
+      textAreaValue: event.target.value,
     })
-
-    // aplica mudancas no gráfico se dados sao validos 
-    if (dadosValidos.valido)
-    {
-      
-      this.setState({
-        label: 'Series 1',
-        data: [...dadosValidos.dadosTemp],
-      })
-    }
-
-
   }
-  
+
+  /// atualiza o grafico se os dados são validos 
+  // senao atualizasomente o textarea 
   render() {
+    let grafico = "Dados inválidos entre com os dados na forma correta";
+    if (this.formataEValidaTexto(this.state.textAreaValue))
+          grafico = 
+            <MyChart data={this.state.data} changeText={this.changeDados} /> ;
     return (
         <>
             <label>Um par de dados por linha: </label>
-
             <textarea
                   id="areatextoid"
                   name="areatexto"
                   value={this.state.textAreaValue}
                   onChange={this.handleChange}
             />
-            <MyChart data={this.state.data} changeText={this.changeDados}>
-            </MyChart>
+          <div>
+              {grafico}            
+          </div>
          </>
     );
   }

@@ -1,47 +1,61 @@
-export default class Palavras {
-    constructor(entrada) {
-        this._palavra = entrada;
-    }
- // get e set são bons para validar 
-    get pegaPalavra() {
-        return this._palavra;
+class Palavras {
+    constructor(palavra) {
+        this._palavra = palavra;
     }
     
-    set definePalavra(novaPalavra) { /// validacao
+    set palavra(novaPalavra) { /// validacao
        this._palavra = novaPalavra;
     }
 
-    converteEspacoEmVetor() {
-        let temp = this._palavra.split(" ");
-        //console.log(temp);
-        return (temp);
+    // get e set são bons para validar 
+    get palavra() {
+        return (this._palavra);
     }
     
+    converteVetorEmFormatado(vetorEntrada) {
+        let structuredData ;
+        let vecStructuredData =[];
+        let tam = vetorEntrada.length; 
+        if (tam%2===0)
+        {
+            for (let i=0 ; i < tam ;i=i+2)
+            {
+                structuredData = {x: vetorEntrada[i]  , y: vetorEntrada[i+1]}
+                vecStructuredData.push(structuredData); 
+            }
+            return (vecStructuredData);
+        }else 
+        {
+            for (let i=0 ; i < (tam-1);i=i+2)
+            {
+                structuredData = {x: vetorEntrada[i]  , y: vetorEntrada[i+1]}
+                vecStructuredData.push(structuredData); 
+            }
+            return (vecStructuredData);
+        }
+    }
+    
+
     trocaLinhaPorEspaco() {
-        let temp = this._palavra.replace(/\n/g," ");
-        return (temp);
+        return(this._palavra.replace(/\n/g, " "));
     }
 
     trocaMultiplosEspacosPorUmSo() {
-        let temp = this._palavra.replace(/\s\s+/g, " ");
-        return (temp);
+        return (this._palavra.replace(/\s\s+/g, " "));
     }
-    
 
-    formataTexto(){
-        
+    trocaEspacoEmVetor() {
+        return (this._palavra.split(" "));
+    }
+
+    stringToFormatedData(){
+         /// formata entrada
+        this.trocaMultiplosEspacosPorUmSo();
+        let temp = this.trocaEspacoEmVetor();
+        return(this.converteVetorEmFormatado(temp));
     }
     
 }
 
+module.exports = Palavras;
 
-
-
-/*
-
-if (entrada.length < 4) {
-          alert("Name is too short.");
-          return;
-        }
-
-*/
