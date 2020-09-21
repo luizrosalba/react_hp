@@ -12,9 +12,9 @@ Ele ativa, no entanto, verificações e avisos adicionais
 para os seus descendentes.*/
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  
+    <App />,
+    
   document.getElementById('root')
 );
 
@@ -22,3 +22,12 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+
+/*
+tirei o strict mode para evitar o warning 
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+
+*/

@@ -10,43 +10,53 @@ class TextoeGrafico extends Component {
     this.state =  {
       label: 'Series 1',
       data: [
-        { primary: 20, secondary: 100 },
-        { primary: 30, secondary: 200 },
-        { primary: 40, secondary: 300 },
+        { x: 20, y: 100 },
+        { x: 30, y: 200 },
+        { x: 40, y: 300 },
       ],
       textAreaValue: "",
     };
     this.handleChange = this.handleChange.bind(this);
   }
 
+  ValidaEntrada (ent){
+    /// deve ser uma pa
+    if ( (ent[ent.length] !=="") && (ent.length%2===0) )
+      return true; 
+    else 
+      return false; 
+  }
 
+  /// recebe o texto de entrada 
+  // valida e retorna para o 
+  /// o gráfico 
   alteraTexto(texto){
     let dadosTemp= [];
     let retorno={valido:false,dadosTemp};
+
     if (texto.length>0)
     {
+      /// formata entrada
       let palavra; 
       let textSemFormatacao=texto;
       const objeto = new Palavras(textSemFormatacao);
       objeto.definePalavra = objeto.trocaMultiplosEspacosPorUmSo();
       objeto.definePalavra = objeto.converteEspacoEmVetor();
-      console.log(objeto.pegaPalavra);
       palavra= objeto.pegaPalavra;
+
+      
+      console.log(palavra);
+      
+
        /// se nao termina com espaco e tem um numero par de dados 
        /// tem outras verificações a fazer ! 
-      if ( (palavra[texto.length] !=="") && (texto.length%2===0) )
-      {
-          
-          let i=0;
-          for(i=0;i<palavra.length; i=i+2)
-          {
-            let prim = (palavra[i]);
-            let secon= (palavra[i+1]);
-            let strucDados = { primary:prim, secondary:secon, }
-            dadosTemp.push(strucDados);
-          }
-          retorno = {valido:true,dadosTemp}
-      }
+
+        if (this.ValidaEntrada(palavra))
+        {
+            console.log(objeto.pegaPalavra);
+
+            retorno = {valido:true,dadosTemp}
+        }
     }
       return (retorno); 
   }
@@ -65,7 +75,7 @@ class TextoeGrafico extends Component {
     // aplica mudancas no gráfico se dados sao validos 
     if (dadosValidos.valido)
     {
-
+      
       this.setState({
         label: 'Series 1',
         data: [...dadosValidos.dadosTemp],
@@ -86,11 +96,8 @@ class TextoeGrafico extends Component {
                   value={this.state.textAreaValue}
                   onChange={this.handleChange}
             />
-
-            
-            <MyChart data={this.state} >
+            <MyChart data={this.state.data} changeText={this.changeDados}>
             </MyChart>
-
          </>
     );
   }
@@ -103,6 +110,15 @@ export default TextoeGrafico;
 
 
 /*
+
+ //      for(i=0;i<palavra.length; i=i+2)
+      //      {
+      //        let prim = (palavra[i]);
+      //        let secon= (palavra[i+1]);
+      //        let strucDados = { primary:prim, secondary:secon, }
+      //        dadosTemp.push(strucDados);
+      //      }
+
 
   /// prenche os dados com os dados formatados
     preencheDados = () => {

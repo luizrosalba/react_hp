@@ -23,7 +23,7 @@ export default class Palavras {
     }
 
     trocaMultiplosEspacosPorUmSo() {
-        let temp = this._palavra.replace(/\s\s+/g, ' ');
+        let temp = this._palavra.replace(/\s\s+/g, " ");
         return (temp);
     }
     

@@ -27,8 +27,10 @@ const Grafico = () => {
         </div>
        <div className="title_page"> Digite seus dados   </div>
             <div className="links">
-              <TextoeGrafico >
-              </TextoeGrafico>
+              
+                <TextoeGrafico >
+                </TextoeGrafico>
+              
             </div>
        <div className="title_page"> Gráfico dos seus dados: </div>
             <p className="links">
