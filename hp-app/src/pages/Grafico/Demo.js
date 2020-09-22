@@ -47,7 +47,7 @@ export default function useChartConfig({
   useR,
   show = [],
   count = 1,
-  resizable = false,
+  resizable = true,
   canRandomize = true,
   dataType = "time",
   elementType = "line",
@@ -161,7 +161,7 @@ function makeSeries(i, dataType, useR, datums) {
         x = `Ordinal Group ${x}`;
       }
       if (dataType === "time") {
-        x = new Date(startDate.getTime() + 60 * 1000 * 60 * 24 * i);
+        x = new Date(startDate.getTime() + 60 * 1000 * 30 * i);
       }
       if (dataType === "linear") {
         x =

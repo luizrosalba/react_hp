@@ -1,6 +1,7 @@
 import React from 'react'
 import git from '../../img/github.jpeg';
-import  TextoeGrafico  from './Textarea'
+import  Texto  from './Text'
+import  MyChart  from './grafico'
 
 
 
@@ -28,9 +29,11 @@ const Grafico = () => {
        <div className="title_page"> Digite seus dados   </div>
             <div className="links">
               
-                <TextoeGrafico >
-                </TextoeGrafico>
-              
+                <Texto value={this.state.textAreaValue} >
+                </Texto>
+                <div>
+                  <MyChart handleChange={this.handleClick.bind(this)} value={this.state.textAreaValue}/>    
+                </div>
             </div>
        <div className="title_page"> Gráfico dos seus dados: </div>
             <p className="links">
@@ -48,6 +51,8 @@ const Grafico = () => {
 
 
 /*
+
+                  <MyChart data={this.data}  />    
 
   <button onClick={alteraTexto}>
                 valor 

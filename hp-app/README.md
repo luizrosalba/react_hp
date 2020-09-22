@@ -2,10 +2,19 @@
 Adicionar o fazedor de gráficos e estastistica  https://www.npmjs.com/package/react-charts
 npm i @react-hook/window-size
 npm i react-charts
-npm i react-resizable
+npm i react-resizable (deprecated)
+usando o reresizable instead 
+npm install --save re-resizable 
+
 npm i react-native
 npm i request --save-dev mocha
 para rodar todos os testes com o padrao *_test.js dentro da pasta src
+
+dentro do terminal do vscode
+https://chocolatey.org/courses/installation/installing?method=installing-chocolatey?quiz=true#powershell
+
+https://chocolatey.org/packages/yarn#virus
+
 
 module.exports = Palavras;
 
