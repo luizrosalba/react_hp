@@ -7,6 +7,10 @@ class TextoeGrafico extends Component {
   constructor() {
 
     super();
+
+    this.handleChange = this.handleChange.bind(this);
+    this.atualizaGrafico = this.atualizaGrafico.bind(this);
+
     this.state =  {
       label: 'Series 1',
       data: [
@@ -16,13 +20,13 @@ class TextoeGrafico extends Component {
       ],
       textAreaValue: "",
     };
-    this.handleChange = this.handleChange.bind(this);
-    this.atualizaGrafico = this.atualizaGrafico.bind(this);
+    
   }
 
   ValidaEntrada (ent){
-    if ((ent.length%2===0) )
+    if ( ent.length>1)
     {
+      console.log(ent);
       return true; 
     }
     else 
@@ -31,11 +35,12 @@ class TextoeGrafico extends Component {
 
  
   atualizaGrafico(dadosValidos){
-   /*  this.setState({
+     
+     this.setState({
       label: 'Series 1',
       data: dadosValidos,
     })
-*/
+    
     console.log(dadosValidos);
   }
 
@@ -46,11 +51,11 @@ class TextoeGrafico extends Component {
     if (texto.length>0)
     {
       /// formata entrada
-      let palavra = new Palavras(texto);
-      let formatada= palavra.stringToFormatedData();       
-      //console.log(formatada);                              
+      let pal = new Palavras(texto);
+      let formatada= pal.stringToFormatedData();       
       if (this.ValidaEntrada(formatada))
       {
+        //console.log(pal.imprimeVetorPalavra(formatada)); 
         this.atualizaGrafico(formatada);
         return (true);
       }
@@ -65,15 +70,14 @@ class TextoeGrafico extends Component {
     this.setState({
       textAreaValue: event.target.value,
     })
+    this.formataEValidaTexto(this.state.textAreaValue);
   }
 
+  
+  //let grafico = "Dados inválidos entre com os dados na forma correta";
   /// atualiza o grafico se os dados são validos 
   // senao atualizasomente o textarea 
   render() {
-    let grafico = "Dados inválidos entre com os dados na forma correta";
-    if (this.formataEValidaTexto(this.state.textAreaValue))
-          grafico = 
-            <MyChart data={this.state.data} changeText={this.changeDados} /> ;
     return (
         <>
             <label>Um par de dados por linha: </label>
@@ -84,7 +88,7 @@ class TextoeGrafico extends Component {
                   onChange={this.handleChange}
             />
           <div>
-              {grafico}            
+               <MyChart data={this.state.data}  />      
           </div>
          </>
     );

@@ -1,60 +1,69 @@
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes
 class Palavras {
     constructor(palavra) {
-        this._palavra = palavra;
-    }
-    
-    set palavra(novaPalavra) { /// validacao
-       this._palavra = novaPalavra;
+        this.palavra = palavra;
     }
 
-    // get e set são bons para validar 
-    get palavra() {
-        return (this._palavra);
+    imprimeVetorPalavra(vetor){
+        //console.log("tam " + vetor.length)
+        for (let i=0 ; i<vetor.length;i++)
+            console.log("x=" + vetor[i].x + " y= " +  vetor[i].y);
     }
     
     converteVetorEmFormatado(vetorEntrada) {
-        let structuredData ;
+        let structuredData ={};
         let vecStructuredData =[];
-        let tam = vetorEntrada.length; 
+        let tam = vetorEntrada.length;
         if (tam%2===0)
         {
             for (let i=0 ; i < tam ;i=i+2)
             {
-                structuredData = {x: vetorEntrada[i]  , y: vetorEntrada[i+1]}
+                structuredData = {x: vetorEntrada[i]  , y: vetorEntrada[i+1] }
                 vecStructuredData.push(structuredData); 
             }
-            return (vecStructuredData);
         }else 
         {
-            for (let i=0 ; i < (tam-1);i=i+2)
+            for (let i=0 ; i < (tam-1) ;i=i+2)
             {
-                structuredData = {x: vetorEntrada[i]  , y: vetorEntrada[i+1]}
+                structuredData = {x: vetorEntrada[i]  , y: vetorEntrada[i+1] }
                 vecStructuredData.push(structuredData); 
             }
-            return (vecStructuredData);
         }
+        return (vecStructuredData);
     }
     
+    removeEspacoBrancoInicioeFinal() {
+        this.palavra = this.palavra.replace(/^\s+|\s+$/gm,'');        
+    }
 
     trocaLinhaPorEspaco() {
-        return(this._palavra.replace(/\n/g, " "));
+        this.palavra = this.palavra.replace(/\n/g, " ");        
     }
 
     trocaMultiplosEspacosPorUmSo() {
-        return (this._palavra.replace(/\s\s+/g, " "));
+        this.palavra = this.palavra.replace(/\s\s+/g, " ");        
     }
 
     trocaEspacoEmVetor() {
-        return (this._palavra.split(" "));
+        /// remove whitespaces
+        this.removeEspacoBrancoInicioeFinal();
+        return (this.palavra.split(" "));
     }
+
+
 
     stringToFormatedData(){
          /// formata entrada
         this.trocaMultiplosEspacosPorUmSo();
-        let temp = this.trocaEspacoEmVetor();
-        return(this.converteVetorEmFormatado(temp));
+        let temp2 = this.trocaEspacoEmVetor();
+        //console.log(temp2);
+        return(this.converteVetorEmFormatado(temp2));
     }
     
+    
+      
+    
+
 }
 
 module.exports = Palavras;
