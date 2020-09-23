@@ -1,6 +1,8 @@
 import React from "react";
 import Chart from "react-google-charts";
+import {Resizable} from "re-resizable"
 
+//import Mudar from "./MudarGrafico"
  
 
 // const data = [
@@ -13,23 +15,47 @@ import Chart from "react-google-charts";
 const options = {
   title: "Seu título",
   curveType: "function",
-  legend: { position: "bottom" }
+  legend: { position: "bottom" },
+  chartArea: {
+    width: '50%',
+    height: '50%',
+  },
+  colors: ['#8e0152', '#276419'],
+  pointSize: 5,
+  
 };
 class Grafico extends React.Component {
   render() {
     return (
-      <div className="App">
-        <Chart
+      
+          <Resizable
+            defaultSize={{
+              width:320,
+              height:200,
+            }}
+          >
+          <Chart
           chartType="LineChart"
           width="100%"
-          height="400px"
+          height="100%"
           data={this.props.data}
           options={options}
         />
-      </div>
+          </Resizable>
+
+        
+        
+       
+      
     );
   }
 }
 
 
 export default Grafico;
+
+/*
+     width="100%"
+          height="100%"
+     
+*/

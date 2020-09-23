@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import  Grafico  from './grafico'
 import  Palavras  from '../../common/utils/strings.js'
 
+
 class Texto extends Component {
   constructor() {
     super();
@@ -64,18 +65,46 @@ class Texto extends Component {
   /// atualiza o grafico se os dados são validos 
   // senao atualizasomente o textarea 
   render() {
+    const formStyle = {
+      textArea: {
+        border: 20,
+        boxShadow: 'none',
+        margin: 10,
+        overflow: 'scroll',
+        resize: 'true',
+        ariaHidden: 'true',
+        rows:"6",
+      }
+    }
     return (
         <>
             <label>Um par de dados por linha: </label>
             <textarea
                   id="areatextoid"
                   name="areatexto"
+                  placeholder='Insira aqui seus dados '
+                  style={formStyle.textArea}
                   value={this.state.textAreaValue}
                   onChange={this.handleChange}
             />
+             
+            
+            
 
-            <Grafico data={this.state.data}>
-            </Grafico>
+          
+
+            <div className="title_page"> Gráfico dos seus dados: 
+              <div className="exibegrafico">
+                Seu grafico
+                
+                <Grafico data={this.state.data}>
+                </Grafico>
+              
+              </div>
+             </div>
+
+
+
          </>
     );
   }
@@ -85,7 +114,12 @@ export default Texto;
 
 
 /*
-   
+
+style="margin:0px; width:439px; height:41px;"
+
+   <Grafico data={this.state.data}>
+                </Grafico>
+
   // componentDidUpdate(){
   //  console.log("did Updata");
   // }

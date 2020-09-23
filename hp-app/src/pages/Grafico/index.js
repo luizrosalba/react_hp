@@ -25,15 +25,11 @@ const TextoEGrafico = () => {
             Uma Ferramenta online para Estatística e Gráficos </a>                
         </div>
        <div className="title_page"> Digite seus dados   </div>
-            <div className="links">
+            <div className="entradaDados">
                 <Texto >
                 </Texto>
+
             </div>
-        <div className="title_page"> Gráfico dos seus dados: </div>
-            <p className="links">
-               
-            </p>
-            
        </div>
 
 
@@ -47,9 +43,7 @@ export default TextoEGrafico
 
 
 /*
-  <Grafico>
-
-                </Grafico>
+  
 
 I would suggest you use a state manager like Redux (personal favorite), MobX reflux, etc to manage your state.
 
@@ -135,7 +129,7 @@ const Container = styled.div`
   //   console.log("will unmount") ; 
   //  }
 
-  
+
 
 */
 

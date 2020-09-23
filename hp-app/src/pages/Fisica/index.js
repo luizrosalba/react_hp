@@ -56,7 +56,9 @@ const Fisica = () => {
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD8Lk02dLuaG89kdAqAIP7Bo" target= "_blank" rel="noopener noreferrer" > Campo Elétrico   </a>      
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD8rj0PdW9_YPIiXraP-w1dA" target= "_blank" rel="noopener noreferrer" > Lei de Gauss   </a>      
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD8aos9nnh2cEnMm16AIOT0Q" target= "_blank" rel="noopener noreferrer" > Potencial Elétrico   </a>      
+            <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD-UqD1zQhY9_C7hVoIL_rrS" target= "_blank" rel="noopener noreferrer" > Capacitores  </a>      
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD9v18kmXz9fZQXPPho3YpZt" target= "_blank" rel="noopener noreferrer" > Corrente Elétrica   </a>      
+
 
             </p>
             <div className="title_page">  Simulações em Física</div>

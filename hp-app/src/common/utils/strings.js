@@ -76,5 +76,5 @@ class Palavras {
 
 }
 
-module.exports = Palavras;
+export default Palavras
 

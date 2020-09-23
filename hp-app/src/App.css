@@ -1,3 +1,4 @@
+  
 /*
 body {
   --fontColor: red;
@@ -233,27 +234,20 @@ ul{
 
 
 /*
-
 p a:visited {
   color: red;
 }
-
 p a:active {
   color: purple;
 }
-
-
-
 a{
   text-decoration: none;
   color: white;
   padding: 50px;
   text-transform: uppercase;
 }
-
 padding-left: 10%; 
 padding-right: 10%; 
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 1s linear;
