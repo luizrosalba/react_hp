@@ -1,24 +1,65 @@
 import React, { Component } from "react";
-
+import  Grafico  from './grafico'
+import  Palavras  from '../../common/utils/strings.js'
 
 class Texto extends Component {
   constructor() {
     super();
     this.state =  {
       textAreaValue: "",
+      data : [
+        ["Variável x", "Variável y"],
+        ["1", 1],
+        ["2", 2],
+        ["3", 3],
+        ["4", 4]
+      ],
     };
     this.handleChange = this.handleChange.bind(this);
   }
   
-    handleChange(event) {
-    this.setState({
-      textAreaValue: event.target.value,
-    })
+  ValidaEntrada (ent){
+    if ( ent.length>1)
+    {
+      //console.log(ent);
+      return true; 
+    }
+    else 
+      return false; 
   }
-  // componentDidUpdate(){
-  //  console.log("did Updata");
-  // }
-  
+
+  formataValidaTexto(texto){
+    if (texto.length>0)
+    {
+      /// formata entrada
+      let pal = new Palavras(texto);
+      let formatada= pal.stringToFormatedData();       
+      if (this.ValidaEntrada(formatada))
+      {
+        //console.log(pal.imprimeVetorPalavra(formatada)); 
+        //console.log(formatada);
+        return {valida:(true), dados:formatada};
+      }
+    }
+    return {valida:(false)};
+  }
+
+
+    handleChange(event) {
+    
+    let saida = (this.formataValidaTexto(this.state.textAreaValue))
+    if (saida.valida===true)  /// se valido atualiza os dados 
+    {
+      this.setState({
+        data: saida.dados,
+       })
+       //console.log(saida.dados);
+    } /// sempre atualiza o texto 
+          this.setState({
+        textAreaValue: event.target.value,
+      })
+    }
+
   //let grafico = "Dados inválidos entre com os dados na forma correta";
   /// atualiza o grafico se os dados são validos 
   // senao atualizasomente o textarea 
@@ -32,6 +73,9 @@ class Texto extends Component {
                   value={this.state.textAreaValue}
                   onChange={this.handleChange}
             />
+
+            <Grafico data={this.state.data}>
+            </Grafico>
          </>
     );
   }
@@ -42,6 +86,10 @@ export default Texto;
 
 /*
    
+  // componentDidUpdate(){
+  //  console.log("did Updata");
+  // }
+
 
     /// aplicar mudancas no textarea
     let saida = (this.formataValidaTexto(this.state.textAreaValue))

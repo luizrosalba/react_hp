@@ -1,7 +1,6 @@
 import React from 'react'
 import git from '../../img/github.jpeg';
 import  Texto  from './Text'
-import  MyChart  from './grafico'
 
 
 
@@ -11,8 +10,7 @@ import  MyChart  from './grafico'
 
 /// cara... o gráfico tem que ser filho do textarea
 
-const Grafico = () => {
-  
+const TextoEGrafico = () => {
   return (
     <header className="App-body">
       <div className="container-corpo">
@@ -28,14 +26,10 @@ const Grafico = () => {
         </div>
        <div className="title_page"> Digite seus dados   </div>
             <div className="links">
-              
-                <Texto value={this.state.textAreaValue} >
+                <Texto >
                 </Texto>
-                <div>
-                  <MyChart handleChange={this.handleClick.bind(this)} value={this.state.textAreaValue}/>    
-                </div>
             </div>
-       <div className="title_page"> Gráfico dos seus dados: </div>
+        <div className="title_page"> Gráfico dos seus dados: </div>
             <p className="links">
                
             </p>
@@ -47,12 +41,29 @@ const Grafico = () => {
   )
 }
 
+export default TextoEGrafico
+
 
 
 
 /*
+  <Grafico>
 
-                  <MyChart data={this.data}  />    
+                </Grafico>
+
+I would suggest you use a state manager like Redux (personal favorite), MobX reflux, etc to manage your state.
+
+How these works is they allow you to contain all shared state in one state storage (called a store), and whatever component needs access to a part of that shared state, it will just get it from the store.
+
+It looked very hard to get started with but once you get over the small challenges, get 2 or 3 "wtf's" out of the way. It gets easier.
+
+Take a look here: http://redux.js.org/
+
+EDIT: Redux is good but the boilerplate code is really a turn off... for those of you looking for a simpler, more magical (this can be good and bad) solution use mobx : https://mobx.js.org/
+
+
+<MyChart handleChange={this.handleClick.bind(this)} value={this.state.textAreaValue}/>    
+                  
 
   <button onClick={alteraTexto}>
                 valor 
@@ -69,6 +80,63 @@ const Container = styled.div`
   flex-direction: column;
 
 `
+
+
+  <MyChart/>    
+
+
+  
+<Resizable>
+      
+    </Resizable>
+  
+    const data = React.useMemo(
+    () => [
+      {
+        label: 'Series 1',
+        data: props.data,
+      }
+    ],
+    [props.data]
+  )
+  ValidaEntrada (ent){
+    if ( ent.length>1)
+    {
+      //console.log(ent);
+      return true; 
+    }
+    else 
+      return false; 
+  }
+  /// recebe o texto de entrada 
+  // valida e retorna para o 
+  /// o gráfico 
+  formataValidaTexto(texto){
+    if (texto.length>0)
+    {
+      /// formata entrada
+      let pal = new Palavras(texto);
+      let formatada= pal.stringToFormatedData();       
+      if (this.ValidaEntrada(formatada))
+      {
+        //console.log(pal.imprimeVetorPalavra(formatada)); 
+        //console.log(formatada);
+        return {valida:(true), dados:formatada};
+      }
+    }
+    return {valida:(false)};
+  }
+  
+  // componentDidMount(){
+  //  console.log("did mount") ; 
+  // }
+  
+  // componentWillUnmount(){
+  //   console.log("will unmount") ; 
+  //  }
+
+  
+
 */
 
-export default Grafico
+

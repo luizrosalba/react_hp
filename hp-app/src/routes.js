@@ -8,7 +8,7 @@ import Footer from './common/template/footer'
 import Sobre from './pages/Sobre'
 import Fisica from './pages/Fisica'
 import Programacao from './pages/Programacao'
-import Grafico from './pages/Grafico'
+import TextoEGrafico from './pages/Grafico'
 
 /* 
 Vale ressaltar que o path="/" pode ser combinado 
@@ -27,7 +27,7 @@ function Routes() {
           <Route path="/" exact={true} component={Sobre} />
           <Route path="/Fisica" component={Fisica} />
           <Route path="/Programacao" component={Programacao} />
-          <Route path="/Grafico" component={Grafico} />
+          <Route path="/Grafico" component={TextoEGrafico} />
           <Redirect from='*' to='/' />
       </Switch>
     </div>

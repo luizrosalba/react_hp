@@ -1,10 +1,7 @@
 ## TODO : 
-Adicionar o fazedor de gráficos e estastistica  https://www.npmjs.com/package/react-charts
-npm i @react-hook/window-size
-npm i react-charts
-npm i react-resizable (deprecated)
-usando o reresizable instead 
-npm install --save re-resizable 
+Adicionar o fazedor de gráficos e estastistica  https://www.npmjs.com/package/
+
+npm i react-google-charts
 
 npm i react-native
 npm i request --save-dev mocha

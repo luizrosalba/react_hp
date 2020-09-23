@@ -18,14 +18,24 @@ class Palavras {
         {
             for (let i=0 ; i < tam ;i=i+2)
             {
-                structuredData = {x: vetorEntrada[i]  , y: vetorEntrada[i+1] }
+                if (i===0) 
+                {
+                    structuredData = ["Variavel x"  , "Variavel y"]  
+                    vecStructuredData.push(structuredData); 
+                }
+                structuredData = [vetorEntrada[i]  , parseInt(vetorEntrada[i+1])]  
                 vecStructuredData.push(structuredData); 
             }
         }else 
         {
             for (let i=0 ; i < (tam-1) ;i=i+2)
             {
-                structuredData = {x: vetorEntrada[i]  , y: vetorEntrada[i+1] }
+                if (i===0) 
+                {
+                    structuredData = ["Variavel x"  , "Variavel y"]  
+                    vecStructuredData.push(structuredData); 
+                }
+                structuredData = [vetorEntrada[i]  , parseInt(vetorEntrada[i+1])]  
                 vecStructuredData.push(structuredData); 
             }
         }
