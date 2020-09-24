@@ -72,7 +72,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - netlify deploy
 - npm run build 
 - netlify deploy --prod
-
+- npm run build 
 
 ### `npm run eject`
 
