@@ -14,9 +14,17 @@ const Home = () => {
           atuou na áreas de Visão Computacional (Pattern Recognition) e Radiação Ionizante (EDXRF). 
           Atualmente é Docente nas Universidades Estácio de Sá, Candido Mendes cursa Ciências da Computação. 
           <div className="Contato">
+            <br></br>
+            
             <a href="mailto:luizrosalba@gmail.com"                       target= "_blank" rel="noopener noreferrer"> E-mail </a>  
+            <br></br>
+            
             <a href="https://www.linkedin.com/in/luiz-rosalba-92469817/" target= "_blank" rel="noopener noreferrer">  LinkedIn </a>
+            <br></br>
+            
             <a href="http://lattes.cnpq.br/6417401108821012"              target= "_blank" rel="noopener noreferrer">  Currículo  Lattes </a>
+            <br></br>
+            <br></br>
           </div>
         </div>
 

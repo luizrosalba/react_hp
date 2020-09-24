@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  
+  div.PedidoDados{
+    font-size: 1.5em;
+  }
+
+  div.Insiratexto{
+      text-align: center;
+  }
+  
+  div.exibegrafico{
+      align-items: center;
+  }

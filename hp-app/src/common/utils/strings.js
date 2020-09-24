@@ -23,7 +23,7 @@ class Palavras {
                     structuredData = ["Variavel x"  , "Variavel y"]  
                     vecStructuredData.push(structuredData); 
                 }
-                structuredData = [vetorEntrada[i]  , parseInt(vetorEntrada[i+1])]  
+                structuredData = [vetorEntrada[i]  , parseFloat(vetorEntrada[i+1])]  
                 vecStructuredData.push(structuredData); 
             }
         }else 
@@ -35,7 +35,7 @@ class Palavras {
                     structuredData = ["Variavel x"  , "Variavel y"]  
                     vecStructuredData.push(structuredData); 
                 }
-                structuredData = [vetorEntrada[i]  , parseInt(vetorEntrada[i+1])]  
+                structuredData = [vetorEntrada[i]  , parseFloat(vetorEntrada[i+1])]  
                 vecStructuredData.push(structuredData); 
             }
         }

@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import  Grafico  from './grafico'
 import  Palavras  from '../../common/utils/strings.js'
+import {
+  mean,std
+} from 'mathjs'
 
+
+import "./styles.css"
 
 class Texto extends Component {
   constructor() {
@@ -15,10 +20,13 @@ class Texto extends Component {
         ["3", 3],
         ["4", 4]
       ],
+      estatistica:{
+        medx:"0",
+        medy:"0"}
+
     };
     this.handleChange = this.handleChange.bind(this);
   }
-  
   ValidaEntrada (ent){
     if ( ent.length>1)
     {
@@ -28,7 +36,6 @@ class Texto extends Component {
     else 
       return false; 
   }
-
   formataValidaTexto(texto){
     if (texto.length>0)
     {
@@ -45,19 +52,31 @@ class Texto extends Component {
     return {valida:(false)};
   }
 
+  funcEstatistica(entrada){
+    let saida = { };
+    let x = [];
+    let y = [];
+    //console.log(entrada[1][0]);
 
-    handleChange(event) {
+    
+    saida.medx = "10";
+    saida.medy = "20";
+    return saida ; 
+  }
+
+  handleChange(event) {
     
     let saida = (this.formataValidaTexto(this.state.textAreaValue))
     if (saida.valida===true)  /// se valido atualiza os dados 
     {
       this.setState({
         data: saida.dados,
+        estatistica: this.funcEstatistica(saida.dados),  
        })
-       //console.log(saida.dados);
+           
     } /// sempre atualiza o texto 
           this.setState({
-        textAreaValue: event.target.value,
+          textAreaValue: event.target.value,
       })
     }
 
@@ -67,18 +86,25 @@ class Texto extends Component {
   render() {
     const formStyle = {
       textArea: {
-        border: 20,
-        boxShadow: 'none',
-        margin: 10,
-        overflow: 'scroll',
+        boxSizing:"border-box",
+        border: "2px solid red",
+        margin: "10px 0",
+        overflow: 'hidden',
         resize: 'true',
-        ariaHidden: 'true',
         rows:"6",
+        width:"60vw",
+        height:"10vw",
+        textAlign:"center",
       }
     }
     return (
         <>
-            <label>Um par de dados por linha: </label>
+            <div className="PedidoDados">
+                  <label>Um par de dados por linha: </label>
+            </div>
+            <div>
+            </div>
+            <div className="Insiratexto">
             <textarea
                   id="areatextoid"
                   name="areatexto"
@@ -87,24 +113,30 @@ class Texto extends Component {
                   value={this.state.textAreaValue}
                   onChange={this.handleChange}
             />
-             
-            
-            
-
-          
-
-            <div className="title_page"> Gráfico dos seus dados: 
-              <div className="exibegrafico">
-                Seu grafico
-                
-                <Grafico data={this.state.data}>
-                </Grafico>
-              
-              </div>
              </div>
-
-
-
+            <div className="title_page"> Gráfico dos seus dados: 
+                  <div className="exibegrafico">
+                      <div>
+                      Seu gráfico
+                      </div>
+                  </div>
+            </div>
+              <div >
+                 <Grafico data={this.state.data}>
+                        </Grafico>
+              </div>
+              <div className="title_page"> Gráfico dos seus dados:  Estatística 
+              </div>
+              <div> 
+              <div className="PedidoDados">
+                  <label> 
+                      Médiax : {this.state.estatistica.medx}
+                      <br></br>
+                      Médiay : {this.state.estatistica.medy}
+                      <br></br>
+                 </label>
+               </div>  
+              </div>
          </>
     );
   }

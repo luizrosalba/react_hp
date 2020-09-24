@@ -1,8 +1,8 @@
 import React from 'react'
-import git from '../../img/github.jpeg';
+import estatistica from '../../img/estatistica.jpg';
 import  Texto  from './Text'
 
-
+import './styles.css';
 
 /// dados está sendo passado via props para o grafico. 
 /// o clique do botao faz a mudanca do estado inicial para o props
@@ -16,20 +16,20 @@ const TextoEGrafico = () => {
       <div className="container-corpo">
         <div className="container-foto">
             <a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" >
-            <img  src={git}  heigth= "140px" width = "140px" alt='logo' className = "photo" /> 
+            <img  src={estatistica}  heigth= "120px" width = "120px" alt='logo' className = "photo" /> 
             </a>
         </div>
        <div className="texto_secao">
-           <h2>Ferramenta Estatística e Gráficos </h2>
-            <a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" > 
-            Uma Ferramenta online para Estatística e Gráficos </a>                
+           <h2> Gráficos e Estatística </h2>
+           
         </div>
-       <div className="title_page"> Digite seus dados   </div>
-            <div className="entradaDados">
-                <Texto >
-                </Texto>
 
-            </div>
+       <div className="title_page"> Digite seus dados   </div>
+               
+                  <Texto >
+                  </Texto>
+              
+                
        </div>
 
 
