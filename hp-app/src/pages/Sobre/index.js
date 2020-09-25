@@ -10,9 +10,16 @@ const Home = () => {
         <img  src={minha} className="foto" alt='luiz rosalba' /> 
         <div className="texto_secao">
         <h2>Luiz Fernando Rosalba </h2>
-          Licenciado em física, com mestrado e doutorado na área de Modelagem Computacional,
-          atuou na áreas de Visão Computacional (Pattern Recognition) e Radiação Ionizante (EDXRF). 
-          Atualmente é Docente nas Universidades Estácio de Sá, Candido Mendes cursa Ciências da Computação. 
+          
+          Olá ! Meu nome é Luiz Fernando, mas todo mundo me chama de Rosalba ! :D 
+          Sou licenciado em física, tenho mestrado e doutorado na área de Modelagem Computacional.
+          Durante estas formações, atuei nas áreas de Visão Computacional (Pattern Recognition) e Radiação Ionizante (EDXRF). 
+          Sou docente de física há mais de 7 anos nas Universidades Estácio de Sá e Candido Mendes e já desenvolvi alguns projetos interessantes na área de ensino (lá no
+          meu curriculo Lattes tem tudo que já fiz :D ! ). Atualmente estou cursando Ciências da Computação e estou devorando livros, tutoriais e cursos  
+          sobre desenvolvimento web (front e back end). Estou especialmente interessando em Javascript com ES6, HTML5, CSS, React, DB's relacionais e não relacionais. 
+          Amo programação e tenho mais de 15 anos de experiência e durante este tempo programei com: C, C++, programação em paralelo utilizando CUDA C#, Android, Arduino, CMS's comerciais e educativos
+          (Prestashop, moodle, drupal ... ) dentre muitos outros trabalhos! Sinta-se a vontade para me contatar nas minhas redes sociais e e-mail:    
+
           <div className="Contato">
             <br></br>
             
