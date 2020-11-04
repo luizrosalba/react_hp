@@ -6,12 +6,10 @@ const Header = () => {
     <header >
     <div className="container_menu">
                 <nav className="Menu">
-                  
                     <Link to="/">Sobre</Link>
                     <Link to="/Fisica">Física</Link>
                     <Link to="/Programacao">Programação</Link>
                     <Link to="/Grafico">Gráficos</Link>
-                  
                 </nav>
     </div>
 
@@ -25,3 +23,4 @@ import React, { useState, useEffect } from 'react'
 
 
 export default Header
+

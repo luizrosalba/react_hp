@@ -1,47 +1,138 @@
 import React from 'react'
-import minha from '../../img/Capturar.PNG';
+import minha from '../../img/Capturar2.png';
 
 
 const Home = () => {
   return (
-    
-    <header className="App-body">
-      <div className="container-corpo">
-        <img  src={minha} className="foto" alt='luiz rosalba' /> 
-        <div className="texto_secao">
-        <h2>Luiz Fernando Rosalba </h2>
-          
-          Olá ! Meu nome é Luiz Fernando, mas todo mundo me chama de Rosalba ! :D 
-          Sou licenciado em física, tenho mestrado e doutorado na área de Modelagem Computacional.
-          Durante estas formações, atuei nas áreas de Visão Computacional (Pattern Recognition) e Radiação Ionizante (EDXRF). 
-          Sou docente de física há mais de 7 anos nas Universidades Estácio de Sá e Candido Mendes e já desenvolvi alguns projetos interessantes na área de ensino (lá no
-          meu curriculo Lattes tem tudo que já fiz :D ! ). Atualmente estou cursando Ciências da Computação e estou devorando livros, tutoriais e cursos  
-          sobre desenvolvimento web (front e back end). Estou especialmente interessando em Javascript com ES6, HTML5, CSS, React, DB's relacionais e não relacionais. 
-          Amo programação e tenho mais de 15 anos de experiência e durante este tempo programei com: C, C++, programação em paralelo utilizando CUDA C#, Android, Arduino, CMS's comerciais e educativos
-          (Prestashop, moodle, drupal ... ) dentre muitos outros trabalhos! Sinta-se a vontade para me contatar nas minhas redes sociais e e-mail:    
 
-          <div className="Contato">
-            <br></br>
+      <header className="App-body">
+        <div className="container-corpo">
+          <div className="container-foto-eu">
             
-            <a href="mailto:luizrosalba@gmail.com"                       target= "_blank" rel="noopener noreferrer"> E-mail </a>  
-            <br></br>
-            
-            <a href="https://www.linkedin.com/in/luiz-rosalba-92469817/" target= "_blank" rel="noopener noreferrer">  LinkedIn </a>
-            <br></br>
-            
-            <a href="http://lattes.cnpq.br/6417401108821012"              target= "_blank" rel="noopener noreferrer">  Currículo  Lattes </a>
-            <br></br>
-            <br></br>
           </div>
-        </div>
+            <div className="texto_secao">
+                <div className="container-foto-git">
+                  <img src={minha} className="photo" heigth="140px" width="140px" alt='luiz rosalba' />
+                  <h1>Luiz Fernando Rosalba </h1>
+                </div>
+                
+            </div>
+          <div>
+            
+            
+          </div>
+  
+          <div className="texto-sobre">
+            <h2>
+              <div className="colunas-fisica">
+                <div className="Contato">
+                    <br></br>
+                    <a href="mailto:luizrosalba@gmail.com" target="_blank" rel="noopener noreferrer"> E-mail </a>
+                    <br></br>
+                </div>
 
-        
-      </div>
-    </header>
+                <div className="Contato">
+                    <br></br>
+                    <a href="http://lattes.cnpq.br/6417401108821012"             target= "_blank" rel="noopener noreferrer">  Currículo  Lattes </a>
+                    
+                    <br></br>
+                  </div>
+                  <div className="Contato">
+                    <br></br>
+                    <a href="https://www.linkedin.com/in/luiz-fernando-rosalba-92469817/" target="_blank" rel="noopener noreferrer">  LinkedIn </a>
+                    <br></br>
+                  </div>
+
+                <div className="cell">
+                  <p>
+                   Olá ! Meu nome é Luiz Fernando, mas todo mundo me chama de Rosalba !
+                  <br></br>
+                  <br></br>
+                  Sou :
+                  <ul>
+                    <li>Licenciado em física &#127756;, 
+                    </li>
+                    <li>
+                      Mestre e Doutor na área de Modelagem Computacional.  
+                    </li>
+                    <li>
+                      Estudante de Ciências da Computação estudando bastante sobre desenvolvimento Web
+                    </li>
+                    <li>
+                      Apaixonado por programação &#128187; ciência e tecnologia. 
+                    </li>
+                  </ul>
+                  </p>
+               
+                </div>
+                <div>
+                  <p>
+                  Sou docente de física há mais de 7 anos nas Universidades Estácio de Sá e Candido Mendes.
+                  </p>
+                  <p>
+                    Já desenvolvi alguns projetos na área de ensino (lá no
+                    meu curriculo Lattes tem tudo que já fiz na área de educação vem dar uma olhada! &#128521; ).
+                  </p>
+                  <br></br>
+                  <br></br>
+                 
+                </div>
+                <div>
+                  
+                  Estou especialmente interessando em: 
+                  <ul>
+                    <li>
+                      Javascript com ES6, HTML5, CSS.
+                    </li>
+                    <li>
+                      React, React Native, DB's relacionais e não relacionais. 
+                    </li>
+                    <li>
+                      TDD, BDD e Padrões de desenvolvimento.
+                    </li>
+                    <li>
+                      Javascript com ES6, HTML5, CSS, 
+                    </li>
+                 
+                    <li>
+                      Javascript com ES6, HTML5, CSS, 
+                    </li>
+                  </ul>
+                    Tenho experiência em : 
+
+                    <ul>
+                    <li>
+                    C, C++, C# e programação em paralelo utilizando CUDA.
+                    </li>
+                    <li>
+                    Arduino, Raspberry Pi e Prototipagem
+                    </li>
+                    <li>
+                    Programação Android e Unity
+                    </li>
+                    <li>
+                    CMS's comerciais e educativos. 
+                    </li>
+                  </ul>
+                  Venha conhecer meu Currículo no LinkedIn!! 
+            </div>
+          </div>
+            </h2>
+          </div>
+
+
+
+        </div>
+      </header>
+
   )
 }
 
 /*
+
+
+                  
+
 
    
         
