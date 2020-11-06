@@ -9,7 +9,7 @@ import Sobre from './pages/Sobre'
 import Fisica from './pages/Fisica'
 import Programacao from './pages/Programacao'
 import TextoEGrafico from './pages/Grafico'
-import Portfolio from './pages/Portfolio'
+// import Portfolio from './pages/Portfolio'
 
 /* 
 Vale ressaltar que o path="/" pode ser combinado 
@@ -28,8 +28,8 @@ function Routes() {
           <Route path="/" exact={true} component={Sobre} />
           <Route path="/Fisica" component={Fisica} />
           <Route path="/Programacao" component={Programacao} />
-          <Route path="/Portfolio" component={Portfolio} />
-          <Route path="/Grafico" component={TextoEGrafico} />
+          {/* <Route path="/Portfolio" component={Portfolio} /> */}
+          {/* <Route path="/Grafico" component={TextoEGrafico} /> */}
           <Redirect from='*' to='/' />
       </Switch>
     </div>
