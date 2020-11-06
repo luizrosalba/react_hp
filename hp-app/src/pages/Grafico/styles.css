@@ -2,15 +2,27 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
   }
 
+  .graph{
+    display: grid;
+    height: fit-content;
+    width:  inherit;
+    align-items: center;
+    border: 1px solid black ;
+  }
   
   div.PedidoDados{
     font-size: 1.5em;
+    display: flex;
   }
 
   div.Insiratexto{
-      text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;    
+    border: 2px solid  red;
   }
   
   div.exibegrafico{

@@ -3,7 +3,8 @@ import logo from '../../img/canal.jpg';
 
 const Fisica = () => {
   return (
-    <header className="App-body">
+    <div className="w3-container w3-center w3-animate-opacity">
+      <header className="App-body">
       <div className="container-corpo">
       
       <div className="container-foto">
@@ -14,11 +15,19 @@ const Fisica = () => {
       
       
       <div className="texto_secao">
-        <h2>Materiais de Física </h2>
-          <a href = "https://www.youtube.com/user/luizorosalba" target= "_blank" rel="noopener noreferrer" > Conheça meu canal no YouTube criado para ajudar estudantes a resolver exercícios de física.   </a>      
+        <h1>Materiais de Física </h1>
+
         </div>
           <div className="title_page">  Física 1</div>
-            <p className="links">
+          
+            <p className="links ">
+              <hr></hr>
+              <h2><center><a href = "https://www.youtube.com/user/luizorosalba" target= "_blank" rel="noopener noreferrer" > Conheça meu canal no YouTube criado para ajudar estudantes a resolver exercícios de física.   </a>  </center>  </h2>  
+              <hr></hr>
+              <br></br>
+              <div className="colunas-fisica">
+              
+              <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD8FZ82h-Q1S6RzkknzHu6Xk" target= "_blank" rel="noopener noreferrer" > Bases da Física   </a>      
               <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD9qIUW8kas5BD2xYrjSRcYP" target= "_blank" rel="noopener noreferrer" > Movimento Retilíneo Uniforme (MRU)  </a>      
               <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD-2FLRFk2ysr2id4JP-ndhY" target= "_blank" rel="noopener noreferrer" > Movimento Retilíneo Uniformemente Acelerado  (MRUV)  </a>      
               <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD_iKyIm7rFB-6dfx3cwCmVn" target= "_blank" rel="noopener noreferrer" > Vetores  </a>      
@@ -31,9 +40,12 @@ const Fisica = () => {
               <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD81ZzKFy1I4yu4cJT_f8I6l" target= "_blank" rel="noopener noreferrer" > Trabalho, Energia e Potência </a>      
               <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD9utLaI_O6yjZCezhZNKhWL" target= "_blank" rel="noopener noreferrer" > Quantidade de movimento </a>      
               <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD-uEaTKCyfLW1Pjj4Y4rQwU" target= "_blank" rel="noopener noreferrer" > Estática de sólidos  </a>      
+
+              </div>
             </p>
             <div className="title_page">  Física 2</div>
           <p className="links">
+          <div className="colunas-fisica">
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD9xApdxjKpOc9msl8rpLPoI" target= "_blank" rel="noopener noreferrer" >Hidrostática   </a>      
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD9FcKGLZWInPm_LKkngISKu" target= "_blank" rel="noopener noreferrer" >Hidrodinâmica   </a>      
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD_FaFr-WDy6N2uB77hvLgMw" target= "_blank" rel="noopener noreferrer" >Movimento Harmônico Simples (MHS)   </a>      
@@ -48,9 +60,11 @@ const Fisica = () => {
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD9NO15RPRPISdkUzIIKmgH8" target= "_blank" rel="noopener noreferrer" >Reflexão   </a>      
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD_4rG6lHNDfez4lykAjT8v7" target= "_blank" rel="noopener noreferrer" >Óptica Geométrica    </a>      
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD9NO15RPRPISdkUzIIKmgH8" target= "_blank" rel="noopener noreferrer" >Reflexão   </a>      
+            </div>
           </p>
           <div className="title_page">  Física 3</div>
           <p className="links">
+          <div className="colunas-fisica">
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD_2cLv5iw4AeisO0xAmchG9" target= "_blank" rel="noopener noreferrer" > Eletrização   </a>      
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD9-rEiUsAzw9isuTv64jvB3" target= "_blank" rel="noopener noreferrer" > Força Elétrica   </a>      
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD8Lk02dLuaG89kdAqAIP7Bo" target= "_blank" rel="noopener noreferrer" > Campo Elétrico   </a>      
@@ -58,7 +72,7 @@ const Fisica = () => {
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD8aos9nnh2cEnMm16AIOT0Q" target= "_blank" rel="noopener noreferrer" > Potencial Elétrico   </a>      
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD-UqD1zQhY9_C7hVoIL_rrS" target= "_blank" rel="noopener noreferrer" > Capacitores  </a>      
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD9v18kmXz9fZQXPPho3YpZt" target= "_blank" rel="noopener noreferrer" > Corrente Elétrica   </a>      
-
+          </div>
 
             </p>
             <div className="title_page">  Simulações em Física</div>
@@ -69,6 +83,9 @@ const Fisica = () => {
 
       </div>
     </header>
+    </div>
+    
+    
   )
 }
 

@@ -4,7 +4,6 @@ import minha from '../../img/Capturar2.png';
 
 const Home = () => {
   return (
-
       <header className="App-body">
         <div className="container-corpo">
           <div className="container-foto-eu">
@@ -16,9 +15,18 @@ const Home = () => {
                   <h1>Luiz Fernando Rosalba </h1>
                 </div>
                 
+                 
+                
             </div>
           <div>
             
+          </div>
+            <div>
+              <hr></hr>
+                <h1><center> Seja Muito Bem-Vindo(a) ! </center>  </h1>
+                <hr></hr>
+            </div>
+          <div>
             
           </div>
   
@@ -44,7 +52,7 @@ const Home = () => {
                   </div>
 
                 <div className="cell">
-                  <p>
+
                    Olá ! Meu nome é Luiz Fernando, mas todo mundo me chama de Rosalba !
                   <br></br>
                   <br></br>
@@ -62,7 +70,6 @@ const Home = () => {
                       Apaixonado por programação &#128187; ciência e tecnologia. 
                     </li>
                   </ul>
-                  </p>
                
                 </div>
                 <div>

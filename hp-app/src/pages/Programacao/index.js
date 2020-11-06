@@ -1,28 +1,31 @@
 import React from 'react'
-import git from '../../img/github.jpeg';
+import git from '../../img/github.PNG';
+
 
 const Programacao = () => {
+  
   return (
-    <header className="App-body">
+    <div className="w3-container w3-center w3-animate-opacity">
+        <header className="App-body">
       <div className="container-corpo">
-
-
        <div className="container-foto">
           <a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" >
-          <img  src={git}  heigth= "140px" width = "140px" alt='logo' className = "photo" /> 
+          <img  src={git}  heigth= "140px" width = "140px" alt='logo' className = "photo-git" /> 
           </a>
-
       </div>
       <div className="texto_secao">
-        <h2> Repositórios </h2>
-        <a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" > 
-        Conheça meus repositórios no GitHub </a>                
+        <h1> Repositórios </h1>
         
       </div>
 
-
+      
       <div className="title_page">  Projetos Interessantes</div>
+
             <p className="links">
+              <hr></hr>
+              <h2><center><a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" >           Conheça meus repositórios no GitHub </a>  </center></h2>
+              <hr></hr>
+              <a href = "../Grafico"                                                                    rel="noopener noreferrer" > Google Charts and React - Ferramenta gráfica para meus alunos     </a>  
               <a href = "https://github.com/luizrosalba/DadosApiCriptomoedas"                               target= "_blank"  rel="noopener noreferrer" > Requisitando dados de uma API de criptomoedas    </a>  
               <a href = "https://github.com/luizrosalba/ChatbotFitTelegramJavaScript-NodeJS"                target= "_blank"  rel="noopener noreferrer" > ChatbotFit no Telegram com JavaScript e Node.js    </a>  
               <a href = "https://github.com/luizrosalba/FilasNoNodejs"                                      target= "_blank" rel="noopener noreferrer" > Tratamento de Filas no Node.js   </a>  
@@ -38,7 +41,7 @@ const Programacao = () => {
 
       <div className="title_page"> Meus Estudos </div>
           <p className="links">  
-            <a href = "https://github.com/luizrosalba/aprendendo_git"                                                       target= "_blank"  rel="noopener noreferrer" > Aprendendo Git   </a>  
+                    <a href = "https://github.com/luizrosalba/aprendendo_git"                                               target= "_blank"  rel="noopener noreferrer" > Aprendendo Git   </a>  
                     <a href = "https://github.com/luizrosalba/js_free_code_camp"                                            target= "_blank"  rel="noopener noreferrer" > Estudos em Javascript   </a>  
                     <a href = "https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas"                           target= "_blank"  rel="noopener noreferrer" > Fundamentos de Arquitetura de Sistemas   </a>  
                     <a href = "https://github.com/luizrosalba/Introducao_ao_ES6"                                            target= "_blank"  rel="noopener noreferrer" > Introdução ao ES6   </a>  
@@ -66,10 +69,19 @@ const Programacao = () => {
               <a href = "https://github.com/luizrosalba/jogo_velha_react" target= "_blank"  rel="noopener noreferrer" > Jogo Da velha usando React   </a>  
               <a href = "https://github.com/luizrosalba/jogo-da-memoria-dio-master" target= "_blank"  rel="noopener noreferrer" > Jogo Da memória usando React   </a>  
             </p>
+
+
+       
+
+            
+
            </div>
+
+           
 
 
     </header>
+    </div>
   )
 }
 

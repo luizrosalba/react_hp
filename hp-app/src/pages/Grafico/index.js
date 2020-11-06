@@ -12,7 +12,8 @@ import './styles.css';
 
 const TextoEGrafico = () => {
   return (
-    <header className="App-body">
+    <div className="w3-container w3-center w3-animate-opacity">
+      <header className="App-body">
       <div className="container-corpo">
         <div className="container-foto">
             <a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" >
@@ -20,20 +21,18 @@ const TextoEGrafico = () => {
             </a>
         </div>
        <div className="texto_secao">
-           <h2> Gráficos e Estatística </h2>
+           <h1> Gráficos e Estatística </h1>
            
         </div>
 
        <div className="title_page"> Digite seus dados   </div>
-               
                   <Texto >
                   </Texto>
-              
-                
        </div>
 
 
     </header>
+    </div>
   )
 }
 
