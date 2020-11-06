@@ -10,60 +10,58 @@ const Home = () => {
           <div className="texto-sobre ">
               <div className="colunas-fisica">
                 <div className="Botao-Contato">
-                    <br></br>
-                    <a href="mailto:luizrosalba@gmail.com" target="_blank" rel="noopener noreferrer"> E-mail </a>
-                    <br></br>
+                      <a href="mailto:luizrosalba@gmail.com" target="_blank" rel="noopener noreferrer"> E-mail </a>
+                <br></br>
                 </div>
 
                 <div className="Botao-Contato">
-                    <br></br>
                     <a href="http://lattes.cnpq.br/6417401108821012"             target= "_blank" rel="noopener noreferrer">  Currículo  Lattes </a>
-                    
-                    <br></br>
                   </div>
                   <div className="Botao-Contato">
-                    <br></br>
                     <a href="https://www.linkedin.com/in/luiz-fernando-rosalba-92469817/" target="_blank" rel="noopener noreferrer">  LinkedIn </a>
-                    <br></br>
                   </div>
 
                 <div className="cell">
-
                    Olá ! Meu nome é Luiz Fernando, mas todo mundo me chama de Rosalba !
                   <br></br>
                   <br></br>
                   Sou :
                   <ul>
-                    <li>Licenciado em física <span role="img" aria-labelledby="universo">&#127756;</span>, 
+                    <li>Licenciado em física <span role="img" aria-labelledby="universo">🌏🌌</span>
                     </li>
                     <li>
-                      Mestre e Doutor na área de Modelagem Computacional.  
+                      Mestre e Doutor na área de Modelagem Computacional. <span role="img" aria-labelledby="prog">&#128187;</span>   
                     </li>
                     <li>
-                      Estudante de Ciências da Computação estudando bastante sobre desenvolvimento Web
+                      Estudante de Ciências da Computação estudando bastante sobre desenvolvimento Web <span role="img" aria-labelledby="prog">👨‍💻</span>
                     </li>
                     <li>
-                      Apaixonado por programação  <span role="img" aria-labelledby="prog">&#128187;</span> ciência e tecnologia. 
+                      Apaixonado por programação <span role="img" aria-labelledby="prog">💻</span> ciência<span role="img" aria-labelledby="prog">🧪</span>  e tecnologia.<span role="img" aria-labelledby="prog">📡</span> 
                     </li>
                   </ul>
                
                 </div>
-                <div>
-                  <p>
+                <div className="cell">
+                  <div>
                   Sou docente de física há mais de 7 anos nas Universidades Estácio de Sá e Candido Mendes.
-                  </p>
-                  <p>
-                    Já desenvolvi alguns projetos na área de ensino (lá no
-                    meu curriculo Lattes tem tudo que já fiz na área de educação vem dar uma olhada! <span role="img" aria-labelledby="piscada">&#128521;</span> ).
-                  </p>
+                  </div>
+                  <div>
+                    <br></br>
+                    <br></br>
+                  Já desenvolvi diversos projetos na área de ensino. 
                   <br></br>
                   <br></br>
+                  Conheça meu curriculo Lattes. <span role="img" aria-labelledby="piscada">👨‍🏫</span>
+                  </div>
+                  
                  
                 </div>
-                <div>
-                  
+                <div className="cell">
                   Estou especialmente interessando em: 
                   <ul>
+                    <li>
+                      Desenvolvimento Web Front e Back End
+                    </li>
                     <li>
                       Javascript com ES6, HTML5, CSS.
                     </li>
@@ -73,31 +71,13 @@ const Home = () => {
                     <li>
                       TDD, BDD e Padrões de desenvolvimento.
                     </li>
-                    <li>
-                      Javascript com ES6, HTML5, CSS, 
-                    </li>
-                 
-                    <li>
-                      Javascript com ES6, HTML5, CSS, 
-                    </li>
                   </ul>
-                    Tenho experiência em : 
-
-                    <ul>
-                    <li>
-                    C, C++, C# e programação em paralelo utilizando CUDA.
-                    </li>
-                    <li>
-                    Arduino, Raspberry Pi e Prototipagem
-                    </li>
-                    <li>
-                    Programação Android e Unity
-                    </li>
-                    <li>
-                    CMS's comerciais e educativos. 
-                    </li>
-                  </ul>
-                  Venha conhecer meu Currículo no LinkedIn!! 
+                    Trabalho há mais de 10 anos com programação
+                    <br></br>
+                    <br></br>
+                    Venha conhecer meu LinkedIn  <span role="img" aria-labelledby="piscada">&#128188;</span>
+        
+                  
             </div>
           </div>
           </div>
