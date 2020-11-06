@@ -9,19 +9,19 @@ const Home = () => {
         <div className="container-corpo ">
           <div className="texto-sobre ">
               <div className="colunas-fisica">
-                <div className="Contato">
+                <div className="Botao-Contato">
                     <br></br>
                     <a href="mailto:luizrosalba@gmail.com" target="_blank" rel="noopener noreferrer"> E-mail </a>
                     <br></br>
                 </div>
 
-                <div className="Contato">
+                <div className="Botao-Contato">
                     <br></br>
                     <a href="http://lattes.cnpq.br/6417401108821012"             target= "_blank" rel="noopener noreferrer">  Currículo  Lattes </a>
                     
                     <br></br>
                   </div>
-                  <div className="Contato">
+                  <div className="Botao-Contato">
                     <br></br>
                     <a href="https://www.linkedin.com/in/luiz-fernando-rosalba-92469817/" target="_blank" rel="noopener noreferrer">  LinkedIn </a>
                     <br></br>

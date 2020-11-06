@@ -11,7 +11,7 @@ import useWindowDimensions from "./window"
 
 
 const Portfolio = () => {
-  
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -32,62 +32,62 @@ const Portfolio = () => {
     }
   };
   const { height, width } = useWindowDimensions();
-  const getW = ()=>{
+  const getW = () => {
     return (parseInt(width));
   }
-  const getH = ()=>{
+  const getH = () => {
     return (parseInt(height));
   }
-  let mult=0.25;
-  let W = mult*getW();
-  let H = mult*getH();
+  let mult = 0.25;
+  let W = mult * getW();
+  let H = mult * getH();
 
   return (
-    <div className="w3-container w3-center w3-animate-opacity">
-        <header className="App-body">
+
+    <div className="App-body">
       <div className="container-corpo">
-       <div className="container-foto">
-          <a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" >
-          <img  src={codepen}  heigth= "140px" width = "140px" alt='logo' className = "photo-git" /> 
+        <div className="container-foto">
+          <a href="https://github.com/luizrosalba?tab=repositories" target="_blank" rel="noopener noreferrer" >
+            <img src={codepen} heigth="140px" width="140px" alt='logo' className="photo-git" />
           </a>
+        </div>
+        <div className="texto_secao">
+          Portfólio
       </div>
-      <div className="texto_secao">
-      Portfólio
-      </div> 
-            <div></div>
-            <div>
+        <div></div>
+        <div>
 
-              <a href = "https://codepen.io/luizrosalba/full/jOrbzpe" target= "_blank" rel="noopener noreferrer" >      Conheça meus Portfólio no CodePen </a>
+          <a href="https://codepen.io/luizrosalba/full/jOrbzpe" target="_blank" rel="noopener noreferrer" >      Conheça meus Portfólio no CodePen </a>
 
-              <br></br>
-            </div>          
-            <div className="title_page"> Meus Certificados  </div>
-              
-            <Carousel 
-            responsive={responsive}
-            showDots={true}
-            infinite={true}
-            autoPlay={responsive !== "mobile" ? true : false}
-            autoPlaySpeed={5000}
-            removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
-            >
-              
-            <div><img  src={cert1}  heigth= {H} width = {W} alt='logo' /> </div>
-            <div><img  src={cert2}  heigth= {H} width = {W} alt='logo'  /> </div>
-            <div><img  src={cert3}  heigth= {H} width = {W} alt='logo'  /> </div>
-            <div><img  src={cert4}  heigth= {H} width = {W} alt='logo' /> </div>
-            
-           </Carousel>
+          <br></br>
+        </div>
+        <div className="title_page"> Meus Certificados  </div>
+
+        <Carousel
+          responsive={responsive}
+          showDots={true}
+          infinite={true}
+          autoPlay={responsive !== "mobile" ? true : false}
+          autoPlaySpeed={5000}
+          removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+        >
+
+          <div><img src={cert1} heigth={H} width={W} alt='logo' /> </div>
+          <div><img src={cert2} heigth={H} width={W} alt='logo' /> </div>
+          <div><img src={cert3} heigth={H} width={W} alt='logo' /> </div>
+          <div><img src={cert4} heigth={H} width={W} alt='logo' /> </div>
+
+        </Carousel>
 
 
 
-           </div>
-
-           
+      </div>
 
 
-    </header>
+
+
     </div>
+
   )
 }
 
