@@ -26,14 +26,14 @@ function Routes() {
     <BrowserRouter>
     <Header />
           
-         <Section
+          <Section
                 title=""
                 subtitle={""}
                 dark={true}
                 id="sobre"
           />
           <Link to="/" exact={true} component={Sobre} />
-          
+
           <Section
             title="Section 1"
             subtitle={"nada"}
@@ -59,7 +59,7 @@ function Routes() {
           />
           <Link to="/Portfolio" component={Portfolio} />
             
-          <Link to="/Grafico" component={TextoEGrafico} />
+          {/* <Link to="/Grafico" component={TextoEGrafico} /> */}
           <Redirect from='*' to='/' />
     
     <Footer />

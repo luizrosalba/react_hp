@@ -8,7 +8,6 @@ const Home = () => {
       <header className="App-body">
         <div className="container-corpo">
           <div className="texto-sobre">
-              
               <div className="colunas-fisica">
                 <div className="Contato">
                     <br></br>
@@ -102,9 +101,6 @@ const Home = () => {
             </div>
           </div>
           </div>
-
-
-
         </div>
       </header>
 

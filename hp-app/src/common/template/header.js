@@ -30,7 +30,7 @@ export default class Header extends Component {
               to="fisica"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={500}
             >
               Física 
@@ -41,7 +41,7 @@ export default class Header extends Component {
               to="programacao"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={500}
             >
               Programação
@@ -52,7 +52,7 @@ export default class Header extends Component {
               to="portfolio"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={500}
             >
               Portfolio
