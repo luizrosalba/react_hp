@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route, Redirect,Link  } from 'react-router-dom'
+import { BrowserRouter,  Redirect,Link  } from 'react-router-dom'
 
 import Header from './common/template/header'
 import Footer from './common/template/footer'
@@ -25,25 +25,37 @@ function Routes() {
   return (
     <BrowserRouter>
     <Header />
-
-
+          
+         <Section
+                title=""
+                subtitle={""}
+                dark={true}
+                id="sobre"
+          />
           <Link to="/" exact={true} component={Sobre} />
-         
+          
+          <Section
+            title="Section 1"
+            subtitle={"nada"}
+            dark={true}
+            id="fisica"
+          />
           
           <Link to="/Fisica" component={Fisica} />
           <Section
             title="Section 1"
             subtitle={"nada"}
             dark={true}
-            id="section1"
+            id="programacao"
           />
            
           <Link to="/Programacao" component={Programacao} />
+
           <Section
             title="Section 2"
             subtitle={"nada"}
             dark={false}
-            id="section2"
+            id="portfolio"
           />
           <Link to="/Portfolio" component={Portfolio} />
             

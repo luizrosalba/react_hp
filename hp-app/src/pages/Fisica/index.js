@@ -5,7 +5,6 @@ const Fisica = () => {
   return (
     <div className="w3-container w3-center w3-animate-opacity">
       <header className="App-body">
-      <div id="section1"></div>
       <div className="container-corpo">
       
       <div className="container-foto">
@@ -21,10 +20,10 @@ const Fisica = () => {
         </div>
           <div className="title_page">  Física 1</div>
           
-            <p className="links ">
-              <hr></hr>
+            <div className="links ">
+
               <a href = "https://www.youtube.com/user/luizorosalba" target= "_blank" rel="noopener noreferrer" > Conheça meu canal no YouTube criado para ajudar estudantes a resolver exercícios de física.   </a>  
-              <hr></hr>
+
               <br></br>
               <div className="colunas-fisica">
               
@@ -43,9 +42,9 @@ const Fisica = () => {
               <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD-uEaTKCyfLW1Pjj4Y4rQwU" target= "_blank" rel="noopener noreferrer" > Estática de sólidos  </a>      
 
               </div>
-            </p>
+            </div>
             <div className="title_page">  Física 2</div>
-          <p className="links">
+          <div className="links">
           <div className="colunas-fisica">
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD9xApdxjKpOc9msl8rpLPoI" target= "_blank" rel="noopener noreferrer" >Hidrostática   </a>      
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD9FcKGLZWInPm_LKkngISKu" target= "_blank" rel="noopener noreferrer" >Hidrodinâmica   </a>      
@@ -62,9 +61,9 @@ const Fisica = () => {
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD_4rG6lHNDfez4lykAjT8v7" target= "_blank" rel="noopener noreferrer" >Óptica Geométrica    </a>      
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD9NO15RPRPISdkUzIIKmgH8" target= "_blank" rel="noopener noreferrer" >Reflexão   </a>      
             </div>
-          </p>
+          </div>
           <div className="title_page">  Física 3</div>
-          <p className="links">
+          <div className="links">
           <div className="colunas-fisica">
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD_2cLv5iw4AeisO0xAmchG9" target= "_blank" rel="noopener noreferrer" > Eletrização   </a>      
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD9-rEiUsAzw9isuTv64jvB3" target= "_blank" rel="noopener noreferrer" > Força Elétrica   </a>      
@@ -75,12 +74,12 @@ const Fisica = () => {
             <a href = "https://www.youtube.com/playlist?list=PLa9GqOuhTSD9v18kmXz9fZQXPPho3YpZt" target= "_blank" rel="noopener noreferrer" > Corrente Elétrica   </a>      
           </div>
 
-            </p>
+            </div>
             <div className="title_page">  Simulações em Física</div>
-          <p className="links">
+          <div className="links">
             <a href = "https://www.vascak.cz/physicsanimations.php?l=pt" target= "_blank" rel="noopener noreferrer">  Vascak Html5    </a>  
             <a href = "http://physics.bu.edu/~duffy/HTML5/"              target= "_blank" rel="noopener noreferrer">  Duffy HTML5    </a>   
-          </p>                    
+          </div>                    
 
       </div>
     </header>

@@ -101,13 +101,13 @@ class Texto extends Component {
             </div>
 
             <div className="graph">
-                <p> Escolha o título do seu gráfico : 
+                <div> Escolha o título do seu gráfico : 
                   <input 
                   defaultValue="Titulo"
                   type="text" 
                   value={this.state.value}
                   onChange={this.tituloHandler} /> 
-                </p>
+                </div>
             
                  <Grafico data={this.state.data} options={options}/>
               </div>

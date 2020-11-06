@@ -35,7 +35,7 @@ const Home = () => {
                   <br></br>
                   Sou :
                   <ul>
-                    <li>Licenciado em física &#127756;, 
+                    <li>Licenciado em física <span role="img" aria-labelledby="universo">&#127756;</span>, 
                     </li>
                     <li>
                       Mestre e Doutor na área de Modelagem Computacional.  
@@ -44,7 +44,7 @@ const Home = () => {
                       Estudante de Ciências da Computação estudando bastante sobre desenvolvimento Web
                     </li>
                     <li>
-                      Apaixonado por programação &#128187; ciência e tecnologia. 
+                      Apaixonado por programação  <span role="img" aria-labelledby="prog">&#128187;</span> ciência e tecnologia. 
                     </li>
                   </ul>
                
@@ -55,7 +55,7 @@ const Home = () => {
                   </p>
                   <p>
                     Já desenvolvi alguns projetos na área de ensino (lá no
-                    meu curriculo Lattes tem tudo que já fiz na área de educação vem dar uma olhada! &#128521; ).
+                    meu curriculo Lattes tem tudo que já fiz na área de educação vem dar uma olhada! <span role="img" aria-labelledby="piscada">&#128521;</span> ).
                   </p>
                   <br></br>
                   <br></br>

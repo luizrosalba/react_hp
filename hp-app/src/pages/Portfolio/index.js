@@ -56,9 +56,9 @@ const Portfolio = () => {
       </div> 
             <div></div>
             <div>
-              <hr></hr>
+
               <a href = "https://codepen.io/luizrosalba/full/jOrbzpe" target= "_blank" rel="noopener noreferrer" >      Conheça meus Portfólio no CodePen </a>
-              <hr></hr>
+
               <br></br>
             </div>          
             <div className="title_page"> Meus Certificados  </div>

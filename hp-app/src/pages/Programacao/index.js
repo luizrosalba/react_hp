@@ -22,9 +22,9 @@ const Programacao = () => {
       <div className="title_page">  Projetos Interessantes</div>
 
             <p className="links">
-              <hr></hr>
+
               <a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" >           Conheça meus repositórios no GitHub </a> 
-              <hr></hr>
+
               <a href = "../Grafico"                                                                    rel="noopener noreferrer" > Google Charts and React - Ferramenta gráfica para meus alunos     </a>  
               <a href = "https://github.com/luizrosalba/DadosApiCriptomoedas"                               target= "_blank"  rel="noopener noreferrer" > Requisitando dados de uma API de criptomoedas    </a>  
               <a href = "https://github.com/luizrosalba/ChatbotFitTelegramJavaScript-NodeJS"                target= "_blank"  rel="noopener noreferrer" > ChatbotFit no Telegram com JavaScript e Node.js    </a>  
