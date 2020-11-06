@@ -11,6 +11,7 @@ import useWindowDimensions from "./window"
 
 
 const Portfolio = () => {
+  
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -32,11 +33,15 @@ const Portfolio = () => {
   };
   const { height, width } = useWindowDimensions();
   const getW = ()=>{
-    return (parseInt(0.4*width));
+    return (parseInt(width));
   }
   const getH = ()=>{
-    return (parseInt(0.4*height));
+    return (parseInt(height));
   }
+  let mult=0.25;
+  let W = mult*getW();
+  let H = mult*getH();
+
   return (
     <div className="w3-container w3-center w3-animate-opacity">
         <header className="App-body">
@@ -57,6 +62,7 @@ const Portfolio = () => {
               <br></br>
             </div>          
             <div className="title_page"> Meus Certificados  </div>
+              
             <Carousel 
             responsive={responsive}
             showDots={true}
@@ -66,10 +72,10 @@ const Portfolio = () => {
             removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
             >
               
-            <div><img  src={cert1}  heigth= {200} width = {200} alt='logo' /> </div>
-            <div><img  src={cert2}  heigth= {getH()} width = {getW()} alt='logo'  /> </div>
-            <div><img  src={cert3}  heigth= {getH()} width = {getW()} alt='logo'  /> </div>
-            <div><img  src={cert4}  heigth= {getH()} width = {getW()} alt='logo' /> </div>
+            <div><img  src={cert1}  heigth= {H} width = {W} alt='logo' /> </div>
+            <div><img  src={cert2}  heigth= {H} width = {W} alt='logo'  /> </div>
+            <div><img  src={cert3}  heigth= {H} width = {W} alt='logo'  /> </div>
+            <div><img  src={cert4}  heigth= {H} width = {W} alt='logo' /> </div>
             
            </Carousel>
 

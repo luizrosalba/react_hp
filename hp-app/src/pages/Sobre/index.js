@@ -1,5 +1,5 @@
 import React from 'react'
-import minha from '../../img/Capturar2.png';
+// import minha from '../../img/Capturar2.png';
 
 
 const Home = () => {

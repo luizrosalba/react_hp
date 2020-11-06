@@ -7,6 +7,10 @@ npm i react-native
 npm i request --save-dev mocha
 para rodar todos os testes com o padrao *_test.js dentro da pasta src
 
+npm install react-scroll
+npm i react-multi-caroussel
+
+
 dentro do terminal do vscode
 https://chocolatey.org/courses/installation/installing?method=installing-chocolatey?quiz=true#powershell
 
