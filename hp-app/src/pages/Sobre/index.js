@@ -6,32 +6,8 @@ const Home = () => {
   return (
       <header className="App-body">
         <div className="container-corpo">
-          <div className="container-foto-eu">
-            
-          </div>
-            <div className="texto_secao">
-                <div className="container-foto-git">
-                  <img src={minha} className="photo" heigth="140px" width="140px" alt='luiz rosalba' />
-                  <h1>Luiz Fernando Rosalba </h1>
-                </div>
-                
-                 
-                
-            </div>
-          <div>
-            
-          </div>
-            <div>
-              <hr></hr>
-                <h1><center> Seja Muito Bem-Vindo(a) ! </center>  </h1>
-                <hr></hr>
-            </div>
-          <div>
-            
-          </div>
-  
           <div className="texto-sobre">
-            <h2>
+
               <div className="colunas-fisica">
                 <div className="Contato">
                     <br></br>
@@ -124,7 +100,6 @@ const Home = () => {
                   Venha conhecer meu Currículo no LinkedIn!! 
             </div>
           </div>
-            </h2>
           </div>
 
 

@@ -14,15 +14,15 @@ const Fisica = () => {
       </div>
       
       
-      <div className="texto_secao">
-        <h1>Materiais de Física </h1>
+      <div className="texto_secao"> Materiais de Física
+        
 
         </div>
           <div className="title_page">  Física 1</div>
           
             <p className="links ">
               <hr></hr>
-              <h2><center><a href = "https://www.youtube.com/user/luizorosalba" target= "_blank" rel="noopener noreferrer" > Conheça meu canal no YouTube criado para ajudar estudantes a resolver exercícios de física.   </a>  </center>  </h2>  
+              <a href = "https://www.youtube.com/user/luizorosalba" target= "_blank" rel="noopener noreferrer" > Conheça meu canal no YouTube criado para ajudar estudantes a resolver exercícios de física.   </a>  
               <hr></hr>
               <br></br>
               <div className="colunas-fisica">

@@ -47,12 +47,12 @@ const Portfolio = () => {
           </a>
       </div>
       <div className="texto_secao">
-        <h1> Portfólio </h1>
+      Portfólio
       </div> 
             <div></div>
             <div>
               <hr></hr>
-              <h2><center><a href = "https://codepen.io/luizrosalba/full/jOrbzpe" target= "_blank" rel="noopener noreferrer" >      Conheça meus Portfólio no CodePen </a>           </center>  </h2>  
+              <a href = "https://codepen.io/luizrosalba/full/jOrbzpe" target= "_blank" rel="noopener noreferrer" >      Conheça meus Portfólio no CodePen </a>
               <hr></hr>
               <br></br>
             </div>          
@@ -66,7 +66,7 @@ const Portfolio = () => {
             removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
             >
               
-            <div><img  src={cert1}  heigth= {getH()} width = {getW()} alt='logo' /> </div>
+            <div><img  src={cert1}  heigth= {200} width = {200} alt='logo' /> </div>
             <div><img  src={cert2}  heigth= {getH()} width = {getW()} alt='logo'  /> </div>
             <div><img  src={cert3}  heigth= {getH()} width = {getW()} alt='logo'  /> </div>
             <div><img  src={cert4}  heigth= {getH()} width = {getW()} alt='logo' /> </div>

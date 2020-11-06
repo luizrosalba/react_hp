@@ -21,7 +21,7 @@ const TextoEGrafico = () => {
             </a>
         </div>
        <div className="texto_secao">
-           <h1> Gráficos e Estatística </h1>
+       Gráficos e Estatística
            
         </div>
 

@@ -14,7 +14,7 @@ const Programacao = () => {
           </a>
       </div>
       <div className="texto_secao">
-        <h1> Repositórios </h1>
+      Repositórios
         
       </div>
 
@@ -23,7 +23,7 @@ const Programacao = () => {
 
             <p className="links">
               <hr></hr>
-              <h2><center><a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" >           Conheça meus repositórios no GitHub </a>  </center></h2>
+              <a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" >           Conheça meus repositórios no GitHub </a> 
               <hr></hr>
               <a href = "../Grafico"                                                                    rel="noopener noreferrer" > Google Charts and React - Ferramenta gráfica para meus alunos     </a>  
               <a href = "https://github.com/luizrosalba/DadosApiCriptomoedas"                               target= "_blank"  rel="noopener noreferrer" > Requisitando dados de uma API de criptomoedas    </a>  
