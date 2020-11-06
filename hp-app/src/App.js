@@ -20,36 +20,3 @@ function App() {
 export default App;
 
 
- /*{
-  
-  
-    <div className="App">
-      <header className="App-header">
-            <div className="container">
-                <nav>
-                    <a href="#sobre" >   Sobre   </a>
-                    <a href="#fisica" >   Física   </a>
-                    <a href="#Prog" >   Programação   </a>
-                </nav>
-            </div>
-        </header>
-    </div>
-
-
-
-  import logo from './logo.svg';
-          <img src={logo} className="App-logo" alt="logo" />
-       <p>
-           <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      
-       
-        }*/
