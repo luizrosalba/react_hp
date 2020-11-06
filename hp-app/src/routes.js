@@ -25,39 +25,31 @@ function Routes() {
   return (
     <BrowserRouter>
     <Header />
-    <div>
 
-          <Link path="/" exact={true} component={Sobre} />
-            <Section
+
+          <Link to="/" exact={true} component={Sobre} />
+         
+          
+          <Link to="/Fisica" component={Fisica} />
+          <Section
             title="Section 1"
             subtitle={"nada"}
             dark={true}
             id="section1"
           />
-          <Link path="/Fisica" component={Fisica} />
-            <Section
+           
+          <Link to="/Programacao" component={Programacao} />
+          <Section
             title="Section 2"
             subtitle={"nada"}
             dark={false}
             id="section2"
           />
-          <Link path="/Programacao" component={Programacao} />
-            <Section
-            title="Section 3"
-            subtitle={"nada"}
-            dark={true}
-            id="section3"
-          />
-          <Link path="/Portfolio" component={Portfolio} />
-            <Section
-            title="Section 4"
-            subtitle={"nada"}
-            dark={false}
-            id="section4"
-          />
-          <Link path="/Grafico" component={TextoEGrafico} />
+          <Link to="/Portfolio" component={Portfolio} />
+            
+          <Link to="/Grafico" component={TextoEGrafico} />
           <Redirect from='*' to='/' />
-    </div>
+    
     <Footer />
   </BrowserRouter>
  
