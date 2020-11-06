@@ -11,8 +11,8 @@ export default class Header extends Component {
   render() {
     return (
       <header>
-        <div className="container_menu">
-          <nav className="Menu">
+        <div className="container_header">
+          <nav className="header">
 
           <Link
               activeClass="active"

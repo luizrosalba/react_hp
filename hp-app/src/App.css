@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*100 % da viewing area */ 
-.container_menu nav{
+.container_header nav{
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -35,7 +35,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.Menu a{
+.header {
+  background-color: #0C243C;
+  display: block;
+  /* font-size: 1.5em; */
+  position: fixed;
+  font-weight: bold;
+  z-index: 100;
+}
+
+.header a{
   text-decoration: none;
   columns: #000000;
   color: #000000;
@@ -85,14 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.Menu {
-  background-color: #0C243C;
-  display: block;
-  /* font-size: 1.5em; */
-  position: fixed;
-  font-weight: bold;
-  z-index: 100;
-}
+
 
 p {
   display: block;
@@ -131,10 +133,6 @@ p a{
   text-align: left;
 }
 
-.w3-container {
-  background-color:rgb(219, 236, 237); /*fundo*/
-}
-
 .container{
   display:flex;
   /* font-size: calc(10px + 2vmin); */
@@ -147,7 +145,9 @@ p a{
   padding: 3%; 
   border-radius: 10px;
 }
-
+.margin-top-10px{
+  margin-top: 10px;
+}
 .textocontainer{
   display: flex;
   justify-content: center;
@@ -299,16 +299,24 @@ ul{
   
 }
 
-.App-footer div{
+.container-footer div{
   text-align: center;
   /* font-size: x-large; */
   font-family: 'Roboto Condensed', sans-serif;
   background-color:rgb(219, 236, 237); /*fundo*/
-
 }
 
 
-
+.container_header nav{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 10vw;
+  border-bottom: 1px solid #e1e1e1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 
 /*

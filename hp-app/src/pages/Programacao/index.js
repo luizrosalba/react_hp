@@ -5,12 +5,11 @@ import git from '../../img/github.PNG';
 const Programacao = () => {
   
   return (
-    <div className="w3-container w3-center w3-animate-opacity">
-        <header className="App-body">
+    <div className="App-body">
       <div className="container-corpo">
        <div className="container-foto">
           <a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" >
-          <img  src={git}  heigth= "140px" width = "140px" alt='logo' className = "photo-git" /> 
+          <img  src={git}  heigth= "50px" width = "50px" alt='logo' className = "photo-git" /> 
           </a>
       </div>
       <div className="texto_secao">
@@ -70,17 +69,7 @@ const Programacao = () => {
               <a href = "https://github.com/luizrosalba/jogo-da-memoria-dio-master" target= "_blank"  rel="noopener noreferrer" > Jogo Da memória usando React   </a>  
             </p>
 
-
-       
-
-            
-
            </div>
-
-           
-
-
-    </header>
     </div>
   )
 }
