@@ -20,7 +20,7 @@ const Portfolio = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 1
+      items: 3
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -55,16 +55,14 @@ const Portfolio = () => {
       <div className="container-corpo">
         <div className="texto_secao">
           Portfólio
-      </div>
-        <div></div>
+        </div>
+      
         <div>
-
-          <a href="https://codepen.io/luizrosalba/full/jOrbzpe" target="_blank" rel="noopener noreferrer" >      Conheça meus Portfólio no CodePen </a>
-
+          <a href="https://codepen.io/luizrosalba/full/jOrbzpe" target="_blank" rel="noopener noreferrer" >   <center>   Conheça meus Portfólio no CodePen </center></a>
           <br></br>
         </div>
-        <div className="title_page"> Meus Certificados  </div>
-
+        <div className="title_page"> <center>Meus Certificados</center>  </div>
+        <br></br>
         <Carousel
           responsive={responsive}
           showDots={true}
