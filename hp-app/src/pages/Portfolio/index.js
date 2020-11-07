@@ -42,15 +42,17 @@ const Portfolio = () => {
   let W = mult * getW();
   let H = mult * getH();
 
+//   <div className="container-foto">
+//   <a href="https://github.com/luizrosalba?tab=repositories" target="_blank" rel="noopener noreferrer" >
+//     <img src={codepen} heigth="140px" width="140px" alt='logo' className="photo-git" />
+//   </a>
+// </div>
+
+
   return (
 
     <div className="App-body">
       <div className="container-corpo">
-        <div className="container-foto">
-          <a href="https://github.com/luizrosalba?tab=repositories" target="_blank" rel="noopener noreferrer" >
-            <img src={codepen} heigth="140px" width="140px" alt='logo' className="photo-git" />
-          </a>
-        </div>
         <div className="texto_secao">
           Portfólio
       </div>

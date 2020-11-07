@@ -1,10 +1,18 @@
 
-/*
+
 body {
-  --fontColor: red;
-  color: var(--fontColor);
+  /* --fontColor: red; */
+  /* color: var(--fontColor); */
+  --headerSize: 100%;
+  --normalSize: 24px;
+  --normalWeight: 800;
+  --tituloFisica: 32px;
+  --normalFisica: 20px;
+
+  font-size: var(--normalSize);
+  font-weight: var(--normalWeight);
 }
-*/
+
 
 .App-body{
   align-items: center;
@@ -14,11 +22,9 @@ body {
   /* background-color:rgba(219, 236, 237, 0.604); fundo */
   background-color: #e1e1e1; /*fundo*/
   /* z-index:3; */
-  --normalSize: 24px;
-  font-size: var(--normalSize);
-  --normalWeight: 800;
-  font-weight: var(--normalWeight);
+ 
   
+ 
 }
 
 
@@ -57,6 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-family: 'Roboto Condensed', sans-serif;
   color: #FFFFFF;
+  font-size: var(--headerSize);
 }
 
 .container-corpo{
@@ -81,10 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-
-
-
-.colunas-fisica {
+.colunas-sobre {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
@@ -93,7 +97,8 @@ h1, h2, h3, h4, h5, h6 {
   border: 3px solid rgba(5, 7, 7, 0.227);
   padding: 20px;
 }
-.colunas-fisica li{
+
+.colunas-sobre li{
   margin-left: 20px;
   padding: 10px;
   list-style-type: none;
@@ -105,6 +110,29 @@ h1, h2, h3, h4, h5, h6 {
   text-align: justify;
   word-wrap: break-word;
 }
+
+.colunas-fisica {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 0px;
+  border: 3px solid rgba(5, 7, 7, 0.227);
+  padding: 20px;
+}
+
+
+.colunas-fisica a{
+  display: block;
+  padding: 10px;
+  font-size: var(--normalFisica); 
+}
+
+.colunas-fisica a:hover{
+  color: chocolate;
+  text-decoration: underline;
+}
+
 
 .cell{
   padding: 30px 15px 30px 20px;
@@ -148,7 +176,7 @@ p a{
   /* font-size: calc(10px + 3vmin); */
   display: grid;
   align-items: center;
-  text-align: left;
+  font-size: var(--tituloFisica);
 }
 
 .container{
@@ -220,8 +248,12 @@ div.texto_secao{
   letter-spacing: 0.2ch;
   background: #ac4c4c;
   position: relative;
+  padding-left: 10px;
  }
 
+ .display-block{
+   display: block;
+ }
 .texto_secao h2{
   margin-top: 0;
   
@@ -231,9 +263,10 @@ div.texto_secao{
   /* font-size: 18px;   */
   margin-top: 2px;
   color: rgb(29, 146, 192);
-  
+
 }
 .texto_secao a:hover {
+  color: chocolate;
   text-decoration: underline;
 }
 
@@ -297,6 +330,7 @@ font-weight: 800;
 }
 
 .links a:hover {
+  color: chocolate;
   text-decoration: underline;
 }
 
@@ -365,22 +399,21 @@ grid-template-columns: 1fr;
     padding-top: 6px;
     padding-bottom: 6px;
   }
+
   .texto_secao {
     text-decoration: none;
     /* font-size: 20px;   */
     line-height: 1.2;
     text-align: justify;
     padding-bottom: 10px;
-
+    
   }
+  
   .texto_secao a{
     text-decoration: none;
     /* font-size: 16px;   */
   }
-  .texto_secao h2{
-    text-decoration: none;
-    /* font-size: 30px;   */
-  }
+
   .Botao-Contato a{
     padding: 10px;
     /* font-size: 24px; */
@@ -388,12 +421,7 @@ grid-template-columns: 1fr;
     width: 60vw;
 
   }
-  .Menu a{
-    /* font-size: 20px; */
-    
-  }
-
-
+ 
 }
 
 

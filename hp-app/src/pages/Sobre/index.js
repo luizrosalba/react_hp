@@ -8,7 +8,7 @@ const Home = () => {
       <div className="App-body ">
         <div className="container-corpo ">
           <div className="texto-sobre ">
-              <div className="colunas-fisica">
+              <div className="colunas-sobre">
                 <div className="Botao-Contato">
                       <a href="mailto:luizrosalba@gmail.com" target="_blank" rel="noopener noreferrer"> E-mail </a>
                 <br></br>
