@@ -8,6 +8,7 @@ body {
   --normalWeight: 800;
   --tituloFisica: 32px;
   --normalFisica: 20px;
+  --lightWeight: 300;
 
   font-size: var(--normalSize);
   font-weight: var(--normalWeight);
@@ -22,8 +23,6 @@ body {
   /* background-color:rgba(219, 236, 237, 0.604); fundo */
   background-color: #e1e1e1; /*fundo*/
   /* z-index:3; */
- 
-  
  
 }
 
@@ -84,8 +83,6 @@ h1, h2, h3, h4, h5, h6 {
   color:#FFFFFF;
   /* z-index: 1; */
   text-align: left;
-  
-
 }
 
 .colunas-sobre {
@@ -110,7 +107,9 @@ h1, h2, h3, h4, h5, h6 {
   text-align: justify;
   word-wrap: break-word;
 }
-
+.reduce-container-height{
+  height: 85vh;
+}
 .colunas-fisica {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -354,11 +353,17 @@ ul{
   
 }
 
-.container-footer div{
+.container-footer {
+  text-align: start;
+  width: 90vw;
+  margin-left: 10vw;
+  height: fit-content;
+  background-color: #201D35 ;  /*corpo*/
+  color:#FFFFFF;
+  /* z-index: 1; */
   text-align: center;
-  /* font-size: x-large; */
-  font-family: 'Roboto Condensed', sans-serif;
-  background-color:rgb(219, 236, 237); /*fundo*/
+  font-size: var(--normalSize);
+  font-weight: var(--lightWeight);
 }
 
 

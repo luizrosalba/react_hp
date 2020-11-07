@@ -52,7 +52,7 @@ const Portfolio = () => {
   return (
 
     <div className="App-body">
-      <div className="container-corpo">
+      <div className="container-corpo reduce-container-height ">
         <div className="texto_secao">
           Portfólio
         </div>
