@@ -28,45 +28,49 @@ function Routes() {
 
         <Switch>
            <Route path="/Grafico" component={TextoEGrafico} />
+           <Route path="/" component={Sobre} >
+                <Header />
+                  <Section
+                    title=""
+                    subtitle={""}
+                    dark={true}
+                    id="sobre"
+                  />
+                  {/* <Link to="/" exact={true} component={Sobre} /> */}
+                  <Sobre></Sobre>
+                  <Section
+                    title="Section 1"
+                    subtitle={"nada"}
+                    dark={true}
+                    id="fisica"
+                  />
+
+                  {/* <Link to="/Fisica" component={Fisica} /> */}
+                  <Fisica></Fisica>
+                  <Section
+                    title="Section 1"
+                    subtitle={"nada"}
+                    dark={true}
+                    id="programacao"
+                  />
+
+                  {/* <Link to="/Programacao" component={Programacao} /> */}
+                  <Programacao></Programacao>
+                  <Section
+                    title="Section 2"
+                    subtitle={"nada"}
+                    dark={false}
+                    id="portfolio"
+                  />
+                  {/* <Link to="/Portfolio" component={Portfolio} /> */}
+                
+                  <Portfolio></Portfolio>
+                <Redirect from='*' to='/' />
+                <Footer />  
+           </Route>
+
         </Switch>
-      <Header />
-        <Section
-          title=""
-          subtitle={""}
-          dark={true}
-          id="sobre"
-        />
-        {/* <Link to="/" exact={true} component={Sobre} /> */}
-        <Sobre></Sobre>
-        <Section
-          title="Section 1"
-          subtitle={"nada"}
-          dark={true}
-          id="fisica"
-        />
-
-        {/* <Link to="/Fisica" component={Fisica} /> */}
-        <Fisica></Fisica>
-        <Section
-          title="Section 1"
-          subtitle={"nada"}
-          dark={true}
-          id="programacao"
-        />
-
-        {/* <Link to="/Programacao" component={Programacao} /> */}
-        <Programacao></Programacao>
-        <Section
-          title="Section 2"
-          subtitle={"nada"}
-          dark={false}
-          id="portfolio"
-        />
-        {/* <Link to="/Portfolio" component={Portfolio} /> */}
-      
-        <Portfolio></Portfolio>
-      <Redirect from='*' to='/' />
-      <Footer />
+     
     </BrowserRouter>
 
   )
