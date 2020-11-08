@@ -1,5 +1,8 @@
 import React from 'react'
 import git from '../../img/github.PNG';
+import { BrowserRouter,  Redirect,Link ,Route, NavLink } from 'react-router-dom'
+import TextoEGrafico from '../Grafico'
+import { Button } from 'react-scroll';
 
 {/* <div className="container-foto">
 <a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" >
@@ -8,6 +11,10 @@ import git from '../../img/github.PNG';
 </div> */}
 
 const Programacao  = () => {
+  function nada(){
+    
+
+  }
   return (
     <div className="App-body">
       <div className="container-corpo">
@@ -16,15 +23,17 @@ const Programacao  = () => {
         Repositórios      
       </div>
         <div className="links ">
-          <a href="https://www.youtube.com/user/luizorosalba" target="_blank" rel="noopener noreferrer" > Conheça meu canal no YouTube criado para ajudar estudantes a resolver exercícios de física.   </a>
+          <a href="https://www.youtube.com/user/luizorosalba" rel="noopener noreferrer" > Conheça meu canal no YouTube criado para ajudar estudantes a resolver exercícios de física.   </a>
           <br></br>
           <div className="colunas-fisica">
             
             <div>
             <div className="title_page">  Projetos Interessantes <hr></hr></div>
-                  <p className="links"> <a href = "../Grafico"                                                                    rel="noopener noreferrer" > Google Charts and React - Ferramenta gráfica para meus alunos     </a>  
-              <a href = "https://github.com/luizrosalba/DadosApiCriptomoedas"                               target= "_blank"  rel="noopener noreferrer" > Requisitando dados de uma API de criptomoedas    </a>  
-              <a href = "https://github.com/luizrosalba/ChatbotFitTelegramJavaScript-NodeJS"                target= "_blank"  rel="noopener noreferrer" > ChatbotFit no Telegram com JavaScript e Node.js    </a>  
+               <p className="links"> 
+              
+              <a href = "../Grafico"       target="_blank"         rel="noopener noreferrer" > Google Charts and React - Ferramenta gráfica para meus alunos     </a>     
+              <a href = "https://github.com/luizrosalba/DadosApiCrptomoedas"                                target= "_blank" rel="noopener noreferrer" > Requisitando dados de uma API de criptomoedas    </a>  
+              <a href = "https://github.com/luizrosalba/ChatbotFitTelegramJavaScript-NodeJS"                target= "_blank" rel="noopener noreferrer" > ChatbotFit no Telegram com JavaScript e Node.js    </a>  
               <a href = "https://github.com/luizrosalba/FilasNoNodejs"                                      target= "_blank" rel="noopener noreferrer" > Tratamento de Filas no Node.js   </a>  
               <a href = "https://github.com/luizrosalba/RecriandopaginaInstagram"                           target= "_blank" rel="noopener noreferrer" > Recriando a página do Instagram usando CSS   </a> 
               <a href = "https://github.com/luizrosalba/netflix-clone-master"                               target= "_blank" rel="noopener noreferrer" > Recriando a página do Netflix.   </a> 
@@ -32,7 +41,8 @@ const Programacao  = () => {
               <a href = "https://github.com/luizrosalba/Arduino"                                            target= "_blank" rel="noopener noreferrer" > Alguns projetos interessantes para Arduino   </a> 
               <a href = "https://github.com/luizrosalba/Tarefasem-background-utilizando-Nodejs-e-Redis"     target= "_blank" rel="noopener noreferrer" > Tarefas em Background usando Node.js   </a> 
               <a href = "https://github.com/luizrosalba/Matematica_Basica_Android_Visual_Studio"            target= "_blank" rel="noopener noreferrer" > Matemática Básica Com Oxyplot e Android Studio   </a> 
-              <a href = "https://github.com/luizrosalba/MetodosNumericosCpp"                                target= "_blank" rel="noopener noreferrer" > Uma biblioteca em C++ para Métodos Numéricos   </a>                  </p>
+              <a href = "https://github.com/luizrosalba/MetodosNumericosCpp"                                target= "_blank" rel="noopener noreferrer" > Uma biblioteca em C++ para Métodos Numéricos   </a>                  
+              </p>
             </div>
             <div>
             <div className="title_page"> Meus Estudos <hr></hr></div>

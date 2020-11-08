@@ -1,6 +1,6 @@
 import React from 'react'
 import estatistica from '../../img/estatistica.jpg';
-import  Texto  from './Text'
+import Texto from './Text'
 
 import './styles.css';
 
@@ -11,28 +11,27 @@ import './styles.css';
 /// cara... o gráfico tem que ser filho do textarea
 
 const TextoEGrafico = () => {
+  console.log("Entrei");
   return (
-    <div className="w3-container w3-center w3-animate-opacity">
-      <header className="App-body">
+    
+    <div className="App-body">
       <div className="container-corpo">
-        <div className="container-foto">
-            <a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" >
-            <img  src={estatistica}  heigth= "120px" width = "120px" alt='logo' className = "photo" /> 
-            </a>
+        {/* <div className="container-foto">
+          <a href="https://github.com/luizrosalba?tab=repositories" target="_blank" rel="noopener noreferrer" >
+            <img src={estatistica} heigth="120px" width="120px" alt='logo' className="photo" />
+          </a>
+        </div> */}
+        <div className="texto_secao">
+          Gráficos e Estatística
+
         </div>
-       <div className="texto_secao">
-       Gráficos e Estatística
-           
-        </div>
 
-       <div className="title_page"> Digite seus dados   </div>
-                  <Texto >
-                  </Texto>
-       </div>
-
-
-    </header>
+        <div className="title_page"> Digite seus dados   </div>
+        <Texto >
+        </Texto>
+      </div>
     </div>
+
   )
 }
 
@@ -42,7 +41,7 @@ export default TextoEGrafico
 
 
 /*
-  
+
 
 I would suggest you use a state manager like Redux (personal favorite), MobX reflux, etc to manage your state.
 
@@ -55,19 +54,19 @@ Take a look here: http://redux.js.org/
 EDIT: Redux is good but the boilerplate code is really a turn off... for those of you looking for a simpler, more magical (this can be good and bad) solution use mobx : https://mobx.js.org/
 
 
-<MyChart handleChange={this.handleClick.bind(this)} value={this.state.textAreaValue}/>    
-                  
+<MyChart handleChange={this.handleClick.bind(this)} value={this.state.textAreaValue}/>
+
 
   <button onClick={alteraTexto}>
-                valor 
+                valor
               </button>
 
 
 <MyChart data={dados} >
-              </MyChart>            
+              </MyChart>
 
 
-<a href = "https://github.com/luizrosalba/MetodosNumericosCpp"                                target= "_blank" rel="noopener noreferrer" > Uma biblioteca em C++ para Métodos Numéricos   </a> 
+<a href = "https://github.com/luizrosalba/MetodosNumericosCpp"                                target= "_blank" rel="noopener noreferrer" > Uma biblioteca em C++ para Métodos Numéricos   </a>
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -75,14 +74,14 @@ const Container = styled.div`
 `
 
 
-  <MyChart/>    
+  <MyChart/>
 
 
-  
+
 <Resizable>
-      
+
     </Resizable>
-  
+
     const data = React.useMemo(
     () => [
       {
@@ -96,36 +95,36 @@ const Container = styled.div`
     if ( ent.length>1)
     {
       //console.log(ent);
-      return true; 
+      return true;
     }
-    else 
-      return false; 
+    else
+      return false;
   }
-  /// recebe o texto de entrada 
-  // valida e retorna para o 
-  /// o gráfico 
+  /// recebe o texto de entrada
+  // valida e retorna para o
+  /// o gráfico
   formataValidaTexto(texto){
     if (texto.length>0)
     {
       /// formata entrada
       let pal = new Palavras(texto);
-      let formatada= pal.stringToFormatedData();       
+      let formatada= pal.stringToFormatedData();
       if (this.ValidaEntrada(formatada))
       {
-        //console.log(pal.imprimeVetorPalavra(formatada)); 
+        //console.log(pal.imprimeVetorPalavra(formatada));
         //console.log(formatada);
         return {valida:(true), dados:formatada};
       }
     }
     return {valida:(false)};
   }
-  
+
   // componentDidMount(){
-  //  console.log("did mount") ; 
+  //  console.log("did mount") ;
   // }
-  
+
   // componentWillUnmount(){
-  //   console.log("will unmount") ; 
+  //   console.log("will unmount") ;
   //  }
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter,  Redirect,Link  } from 'react-router-dom'
+import { BrowserRouter, Redirect, Link, Route,Switch } from 'react-router-dom'
 
 import Header from './common/template/header'
 import Footer from './common/template/footer'
@@ -22,49 +22,53 @@ valor passado no path.
 <Route path='*' component={ComponenteDePagina404} />
 */
 function Routes() {
+
   return (
     <BrowserRouter>
-    <Header />
-          
-          <Section
-                title=""
-                subtitle={""}
-                dark={true}
-                id="sobre"
-          />
-          <Link to="/" exact={true} component={Sobre} />
 
-          <Section
-            title="Section 1"
-            subtitle={"nada"}
-            dark={true}
-            id="fisica"
-          />
-          
-          <Link to="/Fisica" component={Fisica} />
-          <Section
-            title="Section 1"
-            subtitle={"nada"}
-            dark={true}
-            id="programacao"
-          />
-           
-          <Link to="/Programacao" component={Programacao} />
+        <Switch>
+           <Route path="/Grafico" component={TextoEGrafico} />
+        </Switch>
+      <Header />
+        <Section
+          title=""
+          subtitle={""}
+          dark={true}
+          id="sobre"
+        />
+        {/* <Link to="/" exact={true} component={Sobre} /> */}
+        <Sobre></Sobre>
+        <Section
+          title="Section 1"
+          subtitle={"nada"}
+          dark={true}
+          id="fisica"
+        />
 
-          <Section
-            title="Section 2"
-            subtitle={"nada"}
-            dark={false}
-            id="portfolio"
-          />
-          <Link to="/Portfolio" component={Portfolio} />
-            
-          {/* <Link to="/Grafico" component={TextoEGrafico} /> */}
-          <Redirect from='*' to='/' />
-    
-    <Footer />
-  </BrowserRouter>
- 
+        {/* <Link to="/Fisica" component={Fisica} /> */}
+        <Fisica></Fisica>
+        <Section
+          title="Section 1"
+          subtitle={"nada"}
+          dark={true}
+          id="programacao"
+        />
+
+        {/* <Link to="/Programacao" component={Programacao} /> */}
+        <Programacao></Programacao>
+        <Section
+          title="Section 2"
+          subtitle={"nada"}
+          dark={false}
+          id="portfolio"
+        />
+        {/* <Link to="/Portfolio" component={Portfolio} /> */}
+      
+        <Portfolio></Portfolio>
+      <Redirect from='*' to='/' />
+      <Footer />
+    </BrowserRouter>
+
   )
 }
 
