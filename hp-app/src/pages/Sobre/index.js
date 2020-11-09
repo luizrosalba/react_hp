@@ -9,18 +9,16 @@ const Home = () => {
         <div className="container-corpo ">
           <div className="texto-sobre ">
               <div className="colunas-sobre">
-                <div className="Botao-Contato">
-                      <a href="mailto:luizrosalba@gmail.com" target="_blank" rel="noopener noreferrer"> E-mail </a>
-                <br></br>
+                  
+                  <a className="Botao-Contato" href="mailto:luizrosalba@gmail.com" target="_blank" rel="noopener noreferrer"> E-mail </a>
+                  <a className="Botao-Contato" href="http://lattes.cnpq.br/6417401108821012"             target= "_blank" rel="noopener noreferrer">  Currículo  Lattes </a>
+                  <a className="Botao-Contato" href="https://www.linkedin.com/in/luiz-fernando-rosalba-92469817/" target="_blank" rel="noopener noreferrer">  LinkedIn </a>
+                
+                <div className="Botao-Contato-Linha">
+                      <a  href="mailto:luizrosalba@gmail.com" target="_blank" rel="noopener noreferrer"> E-mail </a>
+                      <a  href="http://lattes.cnpq.br/6417401108821012"             target= "_blank" rel="noopener noreferrer">  Currículo  Lattes </a>
+                      <a  href="https://www.linkedin.com/in/luiz-fernando-rosalba-92469817/" target="_blank" rel="noopener noreferrer">  LinkedIn </a>
                 </div>
-
-                <div className="Botao-Contato">
-                    <a href="http://lattes.cnpq.br/6417401108821012"             target= "_blank" rel="noopener noreferrer">  Currículo  Lattes </a>
-                  </div>
-                  <div className="Botao-Contato">
-                    <a href="https://www.linkedin.com/in/luiz-fernando-rosalba-92469817/" target="_blank" rel="noopener noreferrer">  LinkedIn </a>
-                  </div>
-
                 <div className="cell">
                    Olá ! Meu nome é Luiz Fernando, mas todo mundo me chama de Rosalba !
                   <p> <span>Sou :  </span></p>

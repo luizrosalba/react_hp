@@ -47,6 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+
+
 .header {
   background-color: #0C243C;
   display: block;
@@ -283,37 +285,27 @@ div.texto_secao{
 
 .Botao-Contato{
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  flex-direction: row;
   align-items: center;
-  color:black
+  flex-direction: column;
+  align-items: center;
+  color:black;
+  border: 2px solid #e1e1e1;
+  box-sizing: border-box;
+  text-transform:uppercase;
+  columns: #000000;
+  background-color:#FFFFFF;
+  text-align:center;
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position:relative;
+  font-weight: 800;
 }
 
-
-.Botao-Contato a{
-animation:bouncy 5s infinite linear;
-position:relative;
-border: 2px solid #e1e1e1;
-box-sizing: border-box;
-text-transform:uppercase;
-columns: #000000;
-background-color:#FFFFFF;
-text-align:center;
-width: 100%;
-height: 35px;
-border-radius: 10px;
- /* box-shadow: 7px 7px 7px 7px #e1e1e1;  */
-font-weight: 800;
-}
-
-@keyframes bouncy {
- 0%{top:0em}
- 40%{top:0em}
- 43%{top:-0.9em}
- 46%{top:0em}
- 48%{top:-0.4em}
- 50%{top:0em}
- 100%{top:0em;}
+.Botao-Contato-Linha{
+  display:none;
 }
 
 
@@ -434,13 +426,37 @@ grid-template-columns: 1fr;
     width: 100vw;
   }
   .colunas-sobre{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
-    grid-row-gap: 20px;;
+    grid-row-gap: 20px;; */
     padding: 5px;
   }
+
+  .cell{
+    margin-bottom: 20px;
+
+  }
+  
+  .Botao-Contato{
+    display: none;
+ 
+   } 
+
+   
+   .Botao-Contato-Linha{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    border: 3px solid #333333;
+    background: #ac4c4c;
+    height: 50px;
+    font-size: var(--tituloFisica);
+   } 
 
   .colunas-fisica {
     display: grid;
@@ -453,10 +469,9 @@ grid-template-columns: 1fr;
 
  
 
-  
- .Botao-Contato{
-   display: none;
- }
+   
+
+
 
  .colunas-sobre li{
   margin-left: 0px;
