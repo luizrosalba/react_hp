@@ -23,9 +23,7 @@ const Home = () => {
 
                 <div className="cell">
                    Olá ! Meu nome é Luiz Fernando, mas todo mundo me chama de Rosalba !
-                  <br></br>
-                  <br></br>
-                  Sou :
+                  <p> <span>Sou :  </span></p>
                   <ul>
                     <li>Licenciado em física <span role="img" aria-labelledby="universo">🌏🌌</span>
                     </li>
@@ -54,10 +52,10 @@ const Home = () => {
                   Conheça meu curriculo Lattes. <span role="img" aria-labelledby="piscada">👨‍🏫</span>
                   </div>
                   
-                 
                 </div>
                 <div className="cell">
-                  Estou especialmente interessando em: 
+                 <div>Estou especialmente interessando em:  </div>
+                 
                   <ul>
                     <li>
                       Desenvolvimento Web Front e Back End
@@ -72,9 +70,7 @@ const Home = () => {
                       TDD, BDD e Padrões de desenvolvimento.
                     </li>
                   </ul>
-                    Trabalho há mais de 10 anos com programação
-                    <br></br>
-                    <br></br>
+                  <p> <span>  Trabalho há mais de 10 anos com programação  </span></p>                           
                     Venha conhecer meu LinkedIn  <span role="img" aria-labelledby="piscada">&#128188;</span>
         
                   

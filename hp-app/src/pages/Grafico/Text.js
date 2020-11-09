@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import  Grafico  from './grafico'
+import Grafico from './grafico'
 
 import formataValidaTexto from './validacao'
 import funcEstatistica from './estatistica'
@@ -11,41 +11,42 @@ class Texto extends Component {
     super();
     this.titulo = "Seu titulo";
     this.legenda = "Sua legenda";
-    this.state =  {
+    this.state = {
       textAreaValue: "",
-      data : [
+      data: [
         ["Variável x", "Variável y"],
         ["1", 1],
         ["2", 2],
         ["3", 3],
         ["4", 4]
       ],
-      estatistica:{
-        medx:"0",
-        medy:"0"}
+      estatistica: {
+        medx: "0",
+        medy: "0"
+      }
 
     };
     this.handleChange = this.handleChange.bind(this);
   }
-  
-  
+
+
 
   handleChange(event) {
     let saida = (formataValidaTexto(this.state.textAreaValue));
-    if (saida.valida===true)  /// se valido atualiza os dados 
+    if (saida.valida === true)  /// se valido atualiza os dados 
     {
       this.setState({
         data: saida.dados,
-        estatistica: funcEstatistica(saida.dados),  
-       })
-    } /// sempre atualiza o texto 
-          this.setState({
-          textAreaValue: event.target.value,
+        estatistica: funcEstatistica(saida.dados),
       })
+    } /// sempre atualiza o texto 
+    this.setState({
+      textAreaValue: event.target.value,
+    })
   }
-  
+
   tituloHandler = (event) => {
-    this.setState({titulo: event.target.value});
+    this.setState({ titulo: event.target.value });
   }
 
 
@@ -55,15 +56,15 @@ class Texto extends Component {
   render() {
     const formStyle = {
       textArea: {
-        boxSizing:"border-box",
+        boxSizing: "border-box",
         border: "none",
         margin: "0px 0",
         overflow: 'hidden',
         resize: 'true',
-        width:"30vw",
-        height:"10vw",
-        padding:"5px",
-        textAlign:"left",
+        width: "30vw",
+        height: "10vw",
+        padding: "5px",
+        textAlign: "left",
       }
     }
     const options = {
@@ -72,63 +73,64 @@ class Texto extends Component {
       legend: { position: "bottom" },
       hAxis: {
         gridlines: {
-          color: '#333', 
+          color: '#333',
           count: 2,
           minValue: 0,
           baseline: 1
         }
       },
-      height:"30vw",  /// excedendo o tamanho da menor pagina  concertei na mao 
-      width:"35vw",
+      height: "30vw",  /// excedendo o tamanho da menor pagina  concertei na mao 
+      width: "35vw",
       colors: ['#8e0152', '#276419'],
       pointSize: 5,
     };
     return (
-        <>
-            <div className="Insiratexto">
-              
-            <textarea
-                  id="areatextoid"
-                  name="areatexto"
-                  placeholder='Insira: x1 y1 x2 y2 ...'
-                  style={formStyle.textArea}
-                  value={this.state.textAreaValue}
-                  onChange={this.handleChange}
-            />
-             </div>
-            <div className="title_page"> 
-              Gráfico dos seus dados: 
+      <>
+        <div className="Insiratexto">
+
+          <textarea
+            id="areatextoid"
+            name="areatexto"
+            placeholder='Insira: x1 y1 x2 y2 ...'
+            style={formStyle.textArea}
+            value={this.state.textAreaValue}
+            onChange={this.handleChange}
+          />
+        </div>
+        <div className="title_page">
+          Gráfico dos seus dados:
             </div>
 
-            <div className="graph">
-                <div> Escolha o título do seu gráfico : 
-                  <input 
-                  defaultValue="Titulo"
-                  type="text" 
-                  value={this.state.value}
-                  onChange={this.tituloHandler} /> 
-                </div>
-            
-                 <Grafico data={this.state.data} options={options}/>
-              </div>
+        <div className="graph">
+          <div> Escolha o título do seu gráfico :
+                  <input
+              defaultValue="Titulo"
+              type="text"
+              value={this.state.value}
+              onChange={this.tituloHandler} />
+          </div>
 
-              <div className="title_page"> Estatística     </div>
-              <div> 
-              <div className="PedidoDados">
-                  <label> 
-                      Médiax : {this.state.estatistica.medx}
-                      <br></br>
+          <Grafico data={this.state.data} options={options} />
+        </div>
+
+        <div className="title_page"> Estatística     </div>
+        <div>
+          <div className="PedidoDados">
+            <label>
+              Médiax : {this.state.estatistica.medx}
+              <br></br>
                       Médiay : {this.state.estatistica.medy}
-                      <br></br>
+              <br></br>
                       Desvio x : {this.state.estatistica.devx}
-                      <br></br>
+              <br></br>
                       Desvio y : {this.state.estatistica.devy}
-                      <br></br>
+              <br></br>
 
-                 </label>
-               </div>  
-              </div>
-         </>
+            </label>
+          </div>
+        </div>
+        
+      </>
     );
   }
 }
@@ -150,7 +152,7 @@ style="margin:0px; width:439px; height:41px;"
 
     /// aplicar mudancas no textarea
     let saida = (this.formataValidaTexto(this.state.textAreaValue))
-    if (saida.valida===true) 
+    if (saida.valida===true)
     {
       //console.log(saida.dados);
     }
@@ -178,7 +180,7 @@ style="margin:0px; width:439px; height:41px;"
         dadosTemp.push(strucDados);
       }
       console.log(dadosTemp);
-      
+
       this.setState({
         label: 'Series 1',
         data: dadosTemp,
@@ -229,7 +231,7 @@ var dados = [{ primary: 200, secondary: 10 },{ primary: 300, secondary: 20 },   
 
   }
 
- 
+
 
 
 

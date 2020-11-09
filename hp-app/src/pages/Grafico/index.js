@@ -11,11 +11,10 @@ import './styles.css';
 /// cara... o gráfico tem que ser filho do textarea
 
 const TextoEGrafico = () => {
-  console.log("Entrei");
   return (
     
     <div className="App-body">
-      <div className="container-corpo">
+       <div className="container-pagina-toda"> 
         {/* <div className="container-foto">
           <a href="https://github.com/luizrosalba?tab=repositories" target="_blank" rel="noopener noreferrer" >
             <img src={estatistica} heigth="120px" width="120px" alt='logo' className="photo" />
@@ -23,14 +22,13 @@ const TextoEGrafico = () => {
         </div> */}
         <div className="texto_secao">
           Gráficos e Estatística
-
         </div>
 
         <div className="title_page"> Digite seus dados   </div>
         <Texto >
         </Texto>
       </div>
-    </div>
+     </div>
 
   )
 }

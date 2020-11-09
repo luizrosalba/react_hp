@@ -16,7 +16,7 @@ const Portfolio = () => {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 1
+      items: 3
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -24,7 +24,7 @@ const Portfolio = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 1
+      items: 2
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -38,10 +38,14 @@ const Portfolio = () => {
   const getH = () => {
     return (parseInt(height));
   }
-  let mult = 0.25;
-  let W = mult * getW();
+  let mult=1.0;
+  let W = getW();
+  if (1024<=W) mult = 0.25; 
+  if (464<W && W<1024) mult = 0.42; 
+  W = mult * W;
   let H = mult * getH();
-
+  
+ // console.log( "reposnive ", W,mult);
 //   <div className="container-foto">
 //   <a href="https://github.com/luizrosalba?tab=repositories" target="_blank" rel="noopener noreferrer" >
 //     <img src={codepen} heigth="140px" width="140px" alt='logo' className="photo-git" />

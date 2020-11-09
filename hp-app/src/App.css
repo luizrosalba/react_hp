@@ -39,10 +39,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   width: 10vw;
   border-bottom: 1px solid #e1e1e1;
-  display: flex;
   justify-content: space-evenly;
   align-items: center;
+  
+  
 }
+
 
 
 .header {
@@ -52,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   font-weight: bold;
   z-index: 100;
+  
 }
 
 .header a{
@@ -62,7 +65,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-family: 'Roboto Condensed', sans-serif;
   color: #FFFFFF;
-  font-size: var(--headerSize);
+  font-size: 1.2vmax;
+
 }
 
 .container-corpo{
@@ -107,6 +111,10 @@ h1, h2, h3, h4, h5, h6 {
   text-align: justify;
   word-wrap: break-word;
 }
+p span {
+  display: block;
+}
+
 .reduce-container-height{
   height: 85vh;
 }
@@ -385,48 +393,89 @@ grid-template-columns: 1fr;
     
 */
 @media (max-width: 800px) {
-  .container-corpo {
-    display: block;
-    width: 100%;
-  }
-  .container-corpo div{
-        
-    align-items: center;
-  }
 
-  .container-foto div{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-  }
-  .links a{
-    /* font-size: 16px; */
-    padding-top: 6px;
-    padding-bottom: 6px;
-  }
+  body{
+    line-height: 1.0;
+    --headerSize: 100%;
+    --normalSize: 16px;
+    --normalWeight: 800;
+    --tituloFisica: 24px;
+    --normalFisica: 16px;
+    --lightWeight: 300;
+  
+    font-size: var(--normalSize);
+    font-weight: var(--normalWeight);
 
-  .texto_secao {
-    text-decoration: none;
-    /* font-size: 20px;   */
-    line-height: 1.2;
-    text-align: justify;
-    padding-bottom: 10px;
-    
   }
   
-  .texto_secao a{
-    text-decoration: none;
-    /* font-size: 16px;   */
+  .container_header nav {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0;
+    background-color: #ac4c4c;
+    
   }
 
-  .Botao-Contato a{
-    padding: 10px;
-    /* font-size: 24px; */
-    text-decoration: none;
-    width: 60vw;
-
+  
+  .header {
+    display: flex;
+    position: fixed;
   }
+  
+  .header a{
+    font-size: 5.0vmin;
+  }
+  .container-corpo {
+    margin-left: 0;
+    width: 100vw;
+  }
+  .colunas-sobre{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;;
+    padding: 5px;
+  }
+
+  .colunas-fisica {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;;
+    padding: 5px;
+  }
+
  
+
+  
+ .Botao-Contato{
+   display: none;
+ }
+
+ .colunas-sobre li{
+  margin-left: 0px;
+  padding: 5px;
+  list-style-type: none;
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+p span {
+  display: flex;
+}
+
+
 }
 
 
