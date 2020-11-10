@@ -1,35 +1,17 @@
 ## TODO : 
-Adicionar o fazedor de gráficos e estastistica  https://www.npmjs.com/package/
+ok  Adicionar o fazedor de gráficos e estastistica  https://www.npmjs.com/package/ 
+    npm i react-google-charts
+    npm install mathjs
+ok  Adicionar sistema de teste automatico 
+    npm i request --save-dev mocha
+    para rodar todos os testes com o padrao *_test.js dentro da pasta src
+ok deixar o site mais interativo com um scroll e caroussel 
+    npm install react-scroll
+    npm i react-multi-caroussel
+    Colocar um form para receber sugestões
+    Integrar o site com a API do Youtube para buscar os vídeos com autocomplete
+    colocar o desempenho do DIO e as horas de estudo 
 
-npm i react-google-charts
-
-npm i react-native
-npm i request --save-dev mocha
-para rodar todos os testes com o padrao *_test.js dentro da pasta src
-
-npm install react-scroll
-npm i react-multi-caroussel
-
-
-dentro do terminal do vscode
-https://chocolatey.org/courses/installation/installing?method=installing-chocolatey?quiz=true#powershell
-
-https://chocolatey.org/packages/yarn#virus
-
-
-module.exports = Palavras;
-
-
-{
- "presets": [ "@babel/preset-env" ]
-}
-
-
-
-Colocar um carroussel em CSS com todos os certificados na área de programação 
-Adicionar as informações do canal no youtube usando a api do youtube 
-Animar o site 
-colocar o desempenho do DIO e as horas de estudo 
 
 ## Olhar : 
 - repositório : 
@@ -41,6 +23,7 @@ colocar o desempenho do DIO e as horas de estudo
 - gerenciamento de estados : redux, mobs , flux , recoil , xstate 
 - mobile : react native 
 
+## Informações sobre o projeto 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -70,6 +53,7 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
 - adicionei o arquivo _redirect em public para que o site consiga redirecionar páginas que não passam pelo root 
 - npm install netlify-cli -g
 - Set-ExecutionPolicy
@@ -78,7 +62,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - netlify deploy --prod
 - npm run build 
 
-npm install mathjs
+
 
 
 ### `npm run eject`
@@ -122,18 +106,14 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 # React HP 
-- Single page App (SPA) 
 
+- Single page App (SPA) 
 - https://pt-br.reactjs.org/docs/create-a-new-react-app.html#create-react-app
 - npm uninstall -g create-react-ap
 - npm cache clean --force
 - npm config edit 
-- mudar ; cache=C:\Users\Luiz do Brasil\AppData\Roaming\npm-cache
-- ; cache=C:\Users\LUIZDO~1\AppData\Roaming\npm-cache
-- npm config set cache "C:\Users\LUIZDO~1\AppData\Roaming\npm-cache" --global
 - npx create-react-app hp-app
 - Then open http://localhost:3000/ to see your app.
-
 - When you’re ready to deploy to production, create a minified bundle with npm run build.
 
 Selecting a template

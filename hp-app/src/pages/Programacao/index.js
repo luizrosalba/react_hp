@@ -23,7 +23,7 @@ const Programacao  = () => {
         Repositórios      
       </div>
         <div className="links ">
-          <a href="https://www.youtube.com/user/luizorosalba" rel="noopener noreferrer" > Conheça meu canal no YouTube criado para ajudar estudantes a resolver exercícios de física.   </a>
+         <a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" >   Conheça meu Github.   </a>
           <br></br>
           <div className="colunas-fisica">
             

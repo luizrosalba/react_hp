@@ -4,7 +4,11 @@ import codepen from '../../img/codepen.png';
 import cert1 from '../../img/Nodejs.PNG';
 import cert2 from '../../img/HtmlDEv.PNG';
 import cert3 from '../../img/ReactNative.PNG';
-import cert4 from '../../img/SPTechFrontEnd.PNG';
+import cert4 from '../../img/avanadeglobal.PNG';
+import cert5 from '../../img/freedatajs.PNG';
+import cert6 from '../../img/reactweb.PNG';
+
+
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import useWindowDimensions from "./window"
@@ -80,7 +84,8 @@ const Portfolio = () => {
           <div><img src={cert2} heigth={H} width={W} alt='logo' /> </div>
           <div><img src={cert3} heigth={H} width={W} alt='logo' /> </div>
           <div><img src={cert4} heigth={H} width={W} alt='logo' /> </div>
-
+          <div><img src={cert5} heigth={H} width={W} alt='logo' /> </div>
+          <div><img src={cert6} heigth={H} width={W} alt='logo' /> </div>
         </Carousel>
 
 
