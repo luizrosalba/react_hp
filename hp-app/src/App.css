@@ -284,6 +284,7 @@ div.texto_secao{
 }
 
 .Botao-Contato{
+  
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -302,8 +303,12 @@ div.texto_secao{
   margin-bottom: 20px;
   position:relative;
   font-weight: 800;
+  background-color: lightcoral;
+  
 }
-
+.color-blue:hover{
+  color: blue;
+}
 .Botao-Contato-Linha{
   display:none;
 }

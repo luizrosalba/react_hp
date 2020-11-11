@@ -10,9 +10,9 @@ const Home = () => {
           <div className="texto-sobre ">
               <div className="colunas-sobre">
                   
-                  <a className="Botao-Contato" href="mailto:luizrosalba@gmail.com" target="_blank" rel="noopener noreferrer"> E-mail </a>
-                  <a className="Botao-Contato" href="http://lattes.cnpq.br/6417401108821012"             target= "_blank" rel="noopener noreferrer">  Currículo  Lattes </a>
-                  <a className="Botao-Contato" href="https://www.linkedin.com/in/luiz-fernando-rosalba-92469817/" target="_blank" rel="noopener noreferrer">  LinkedIn </a>
+                  <a className="Botao-Contato color-blue" href="mailto:luizrosalba@gmail.com" target="_blank" rel="noopener noreferrer"> E-mail </a>
+                  <a className="Botao-Contato color-blue" href="http://lattes.cnpq.br/6417401108821012"             target= "_blank" rel="noopener noreferrer">  Currículo  Lattes </a>
+                  <a className="Botao-Contato color-blue" href="https://www.linkedin.com/in/luiz-fernando-rosalba-92469817/" target="_blank" rel="noopener noreferrer">  LinkedIn </a>
                 
                 <div className="Botao-Contato-Linha">
                       <a  href="mailto:luizrosalba@gmail.com" target="_blank" rel="noopener noreferrer"> E-mail </a>
