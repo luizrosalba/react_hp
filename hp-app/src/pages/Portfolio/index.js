@@ -3,10 +3,12 @@ import React from 'react'
 import codepen from '../../img/codepen.png';
 import cert1 from '../../img/Nodejs.PNG';
 import cert2 from '../../img/HtmlDEv.PNG';
-import cert3 from '../../img/ReactNative.PNG';
-import cert4 from '../../img/avanadeglobal.PNG';
+import cert3 from '../../img/reactweb.PNG';
+import cert4 from '../../img/ReactNative.PNG';
 import cert5 from '../../img/freedatajs.PNG';
-import cert6 from '../../img/reactweb.PNG';
+import cert6 from '../../img/freeresponsive.PNG';
+import cert7 from '../../img/avanadeglobal.PNG';
+import cert8 from '../../img/avanade2.PNG';
 
 
 import Carousel from "react-multi-carousel";
@@ -76,7 +78,7 @@ const Portfolio = () => {
           showDots={true}
           infinite={true}
           autoPlay={responsive !== "mobile" ? true : false}
-          autoPlaySpeed={5000}
+          autoPlaySpeed={3000}
           removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
         >
 
@@ -86,8 +88,12 @@ const Portfolio = () => {
           <div><img src={cert4} heigth={H} width={W} alt='logo' /> </div>
           <div><img src={cert5} heigth={H} width={W} alt='logo' /> </div>
           <div><img src={cert6} heigth={H} width={W} alt='logo' /> </div>
+          <div><img src={cert7} heigth={H} width={W} alt='logo' /> </div>
+          <div><img src={cert8} heigth={H} width={W} alt='logo' /> </div>
         </Carousel>
-
+        <br>
+        </br>
+        <div className="title_page"> <center>Tempo Total : 1064 h </center>  </div>
 
 
       </div>

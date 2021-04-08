@@ -14,12 +14,12 @@ import Section from "./common/Components/Section";
 
 
 /* 
-Vale ressaltar que o path="/" pode ser combinado 
-com um atributo extra chamado exact para garantir 
-que se a rota tiver somente "/" ele vai ser renderizado 
-e evitar conflito com as outras rotas que possuam o 
-valor passado no path.
-<Route path='*' component={ComponenteDePagina404} />
+  Vale ressaltar que o path="/" pode ser combinado 
+  com um atributo extra chamado exact para garantir 
+  que se a rota tiver somente "/" ele vai ser renderizado 
+  e evitar conflito com as outras rotas que possuam o 
+  valor passado no path.
+  <Route path='*' component={ComponenteDePagina404} />
 */
 function Routes() {
 

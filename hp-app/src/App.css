@@ -450,6 +450,10 @@ grid-template-columns: 1fr;
  
    } 
 
+   .fundo-verde-escuro{
+    background-color: white;
+    font-size: 10px;
+   }
    
    .Botao-Contato-Linha{
     display: flex;

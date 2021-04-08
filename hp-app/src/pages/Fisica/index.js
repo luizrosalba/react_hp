@@ -3,7 +3,7 @@ import logo from '../../img/canal.jpg';
 
 const Fisica = () => {
   return (
-    <div className="App-body">
+    <div className="App-body ">
       <div className="container-corpo">
 
         {/* <div className="container-foto">
@@ -18,7 +18,7 @@ const Fisica = () => {
         <div className="links ">
           <a href="https://www.youtube.com/user/luizorosalba" target="_blank" rel="noopener noreferrer" > Conheça meu canal no YouTube criado para ajudar estudantes a resolver exercícios de física.   </a>
           <br></br>
-          <div className="colunas-fisica">
+          <div className="colunas-fisica ">
             
             <div>
               <div className="title_page"> <center>  Física 1 </center> <hr></hr> </div>
@@ -66,6 +66,8 @@ const Fisica = () => {
               <a href="https://www.youtube.com/playlist?list=PLa9GqOuhTSD-UqD1zQhY9_C7hVoIL_rrS" target="_blank" rel="noopener noreferrer" > Capacitores  </a>
               <a href="https://www.youtube.com/playlist?list=PLa9GqOuhTSD8dEUh_swOSsvCsMnV5OawO" target="_blank" rel="noopener noreferrer" > Campos Magnéticos   </a>
               <a href="https://www.youtube.com/playlist?list=PLa9GqOuhTSD8Tl11MkXCDiR4BbGAgAkeh" target="_blank" rel="noopener noreferrer" > Origem do Campo magnético   </a>
+              <a href="https://www.youtube.com/playlist?list=PLa9GqOuhTSD850GyyESKcxjS64r13ldsK" target="_blank" rel="noopener noreferrer" > Força magnética   </a>
+              <a href="https://www.youtube.com/playlist?list=PLa9GqOuhTSD_7Sbgg3cJ11GDIcf7yH4wE" target="_blank" rel="noopener noreferrer" > Indução Eletromagnética   </a>
             </div>
           </div>
         </div>
