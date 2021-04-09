@@ -3,16 +3,8 @@ import logo from '../../img/canal.jpg';
 
 const Fisica = () => {
   return (
-    <div className="App-body ">
+    <div className="App-body">
       <div className="container-corpo">
-
-        {/* <div className="container-foto">
-          <a href = "https://www.youtube.com/user/luizorosalba" 
-          target= "_blank" rel="noopener noreferrer" >
-          <img  src={logo}  alt='logo' className = "photo" /> 
-          </a>
-      </div> */}
-
         <div className="texto_secao"> Materiais de Física
         </div>
         <div className="links ">
