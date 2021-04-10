@@ -10,7 +10,6 @@ export default class Footer extends Component {
 
   getDate() {
     var date = "09/04/2021"
-
     this.setState({
       date: date
     });

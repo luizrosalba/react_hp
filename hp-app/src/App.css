@@ -321,14 +321,15 @@ ul{
 @media (max-width: 800px) {
 
   body{
-    line-height: 1.0;
+      line-height: 1.0;
     --headerSize: 100%;
     --normalSize: 16px;
     --normalWeight: 800;
-    --tituloFisica: 24px;
+    --tituloFisica: 22px;
     --normalFisica: 16px;
     --lightWeight: 300;
-  
+    --normalfooter: 12px;
+    
     font-size: var(--normalSize);
     font-weight: var(--normalWeight);
 
@@ -341,8 +342,8 @@ ul{
     width: 100vw;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #ac4c4c;
-    
+    background-color: black;
+    font-weight: bold;
   }
 
   .header {
@@ -407,12 +408,6 @@ ul{
     padding: 5px;
   }
 
- 
-
-   
-
-
-
  .colunas-sobre li{
   margin-left: 0px;
   padding: 5px;
@@ -430,6 +425,10 @@ p span {
   display: flex;
 }
 
+.container-footer {
+  font-size: var(--normalfooter);
+  font-weight: var(--lightWeight);
+}
 
 }
 
