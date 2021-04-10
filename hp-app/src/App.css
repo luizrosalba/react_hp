@@ -46,6 +46,17 @@ a:active {
   margin-right: vw;
 }
 
+.colunas-sobre-saudacao {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 0px;
+  margin-top: 2vh;
+  margin-left: 1vw;
+  margin-right: vw;
+}
+
 .colunas-sobre a {
   width: 50%;
   margin-bottom: 0;
@@ -322,20 +333,18 @@ ul{
     font-weight: var(--normalWeight);
 
   }
-  
+
   .container_header nav {
     display: flex;
     flex-direction: row;
-    height: 10vh;
+    height: 5vh;
     width: 100vw;
     justify-content: space-evenly;
     align-items: center;
-    bottom: 0;
     background-color: #ac4c4c;
     
   }
 
-  
   .header {
     display: flex;
     position: fixed;
@@ -355,7 +364,11 @@ ul{
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 20px;; */
-    padding: 5px;
+    padding: 0px 5px 5px 5px;
+  }
+
+  .colunas-sobre-saudacao {
+    display: none;
   }
 
   .cell{

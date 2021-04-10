@@ -11,7 +11,7 @@ const Barra= () =>{
 
 const ColunasSaudacao = () => {
   return (
-    <div className="colunas-sobre">
+    <div className="colunas-sobre-saudacao">
     <div style={{textAlign: "center"}}>
       Seja Bem-Vindo(a)! 
     </div>
