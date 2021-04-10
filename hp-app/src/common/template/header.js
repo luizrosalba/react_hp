@@ -1,27 +1,18 @@
 import React, { Component } from "react";
-// import { Link } from 'react-router-dom'
-
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from 'react-router-dom'
 import './header.css';
 
 export default class Header extends Component {
-  scrollToTop = () => {
-    scroll.scrollToTop();
-  };
   render() {
     return (
       <header>
         <div className="container_header">
           <nav className="header">
-
+          
           <Link
               activeClass="active"
               style={{cursor: "pointer"}}
-              to="sobre"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
+              to="/"
             >
               Sobre 
             </Link>
@@ -29,11 +20,7 @@ export default class Header extends Component {
           <Link
               activeClass="active"
               style={{cursor: "pointer"}}
-              to="fisica"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
+              to="/fisica"
             >
               Física 
             </Link>
@@ -41,11 +28,7 @@ export default class Header extends Component {
             <Link
               activeClass="active"
               style={{cursor: "pointer"}}
-              to="programacao"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
+              to="/programacao"
             >
               Programação
             </Link>
@@ -53,11 +36,7 @@ export default class Header extends Component {
             <Link
               activeClass="active"
               style={{cursor: "pointer"}}
-              to="portfolio"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
+              to="/portfolio"
             >
               Portfolio
             </Link>
