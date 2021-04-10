@@ -101,11 +101,9 @@ const ColunasBotoes = () => {
   )
 }
 
-
-
 const Home = () => {
   return (
-      <div className="App-body ">
+      <div className="App-body">
         <div className="container-corpo">
           <div className="texto-sobre">
               <Barra />
