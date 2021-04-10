@@ -1,5 +1,4 @@
 import React from 'react'
-import estatistica from '../../img/estatistica.jpg';
 import Texto from './Text'
 
 import './styles.css';

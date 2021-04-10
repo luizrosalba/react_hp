@@ -1,20 +1,6 @@
 import React from 'react'
-import git from '../../img/github.PNG';
-import { BrowserRouter,  Redirect,Link ,Route, NavLink } from 'react-router-dom'
-import TextoEGrafico from '../Grafico'
-import { Button } from 'react-scroll';
-
-{/* <div className="container-foto">
-<a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" >
-<img  src={git}  heigth= "50px" width = "50px" alt='logo' className = "photo-git" /> 
-</a>
-</div> */}
 
 const Programacao  = () => {
-  function nada(){
-    
-
-  }
   return (
     <div className="App-body">
       <div className="container-corpo">
@@ -82,25 +68,5 @@ const Programacao  = () => {
 
   )
 }
-
-
-{/* <div className="title_page">  Simulações em Física</div>
-<div className="links">
-  <a href = "https://www.vascak.cz/physicsanimations.php?l=pt" target= "_blank" rel="noopener noreferrer">  Vascak Html5    </a>  
-  <a href = "http://physics.bu.edu/~duffy/HTML5/"              target= "_blank" rel="noopener noreferrer">  Duffy HTML5    </a>   
-</div>                 */}
-
-
-/*
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-
-`
-
-<img align="left" src="img/Capturar.PNG" alt= "Foto de Luiz Fernando Rosalba" class = "photo" height="10%" width="10%" > </img>
-
-
-*/
 
 export default Programacao 

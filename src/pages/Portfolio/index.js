@@ -1,6 +1,5 @@
 import React from 'react'
 
-import codepen from '../../img/codepen.png';
 import cert1 from '../../img/Nodejs.PNG';
 import cert2 from '../../img/HtmlDEv.PNG';
 import cert3 from '../../img/reactweb.PNG';

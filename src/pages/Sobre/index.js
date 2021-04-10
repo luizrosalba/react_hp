@@ -1,6 +1,4 @@
 import React from 'react'
-import minha from '../../img/minha.jpg';
-
 
 const Barra= () =>{
   return (

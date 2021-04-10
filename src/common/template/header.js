@@ -1,24 +1,21 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom'
-import './header.css';
+
+import * as S from "./styled";
 
 export default class Header extends Component {
   render() {
     return (
-      <header>
-        <div className="container_header">
-          <nav className="header">
-          
+        <S.container_header>
+          <S.header>    
           <Link
-              activeClass="active"
               style={{cursor: "pointer"}}
               to="/"
             >
-              Sobre 
+              <S.Button>Sobre</S.Button> 
             </Link>
 
           <Link
-              activeClass="active"
               style={{cursor: "pointer"}}
               to="/fisica"
             >
@@ -26,7 +23,6 @@ export default class Header extends Component {
             </Link>
 
             <Link
-              activeClass="active"
               style={{cursor: "pointer"}}
               to="/programacao"
             >
@@ -34,15 +30,13 @@ export default class Header extends Component {
             </Link>
             
             <Link
-              activeClass="active"
               style={{cursor: "pointer"}}
               to="/portfolio"
             >
               Portfolio
             </Link>
-          </nav>
-        </div>
-      </header>
+          </S.header>
+        </S.container_header>
     );
   }
 }

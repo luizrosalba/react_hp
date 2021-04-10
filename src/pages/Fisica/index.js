@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../../img/canal.jpg';
 
 const Fisica = () => {
   return (
@@ -69,25 +68,5 @@ const Fisica = () => {
 
   )
 }
-
-
-{/* <div className="title_page">  Simulações em Física</div>
-<div className="links">
-  <a href = "https://www.vascak.cz/physicsanimations.php?l=pt" target= "_blank" rel="noopener noreferrer">  Vascak Html5    </a>  
-  <a href = "http://physics.bu.edu/~duffy/HTML5/"              target= "_blank" rel="noopener noreferrer">  Duffy HTML5    </a>   
-</div>                 */}
-
-
-/*
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-
-`
-
-<img align="left" src="img/Capturar.PNG" alt= "Foto de Luiz Fernando Rosalba" class = "photo" height="10%" width="10%" > </img>
-
-
-*/
 
 export default Fisica
