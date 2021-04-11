@@ -30,7 +30,6 @@ function Routes() {
         </Switch>
         <Footer />
     </Router>
-
   )
 }
 

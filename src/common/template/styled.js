@@ -1,31 +1,34 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
+export const wrapper_header = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+    width: 100vw;
+    border-top: 0.05em solid white;
+    border-bottom: 0.05em solid white;
+    justify-content: space-evenly;
+    padding 5px 0 5px 0px; 
+`
 export const Button = styled.button`
   background: transparent;
   border-radius: 3px;
-  border: 2px solid palevioletred;
-  color: palevioletred;
+  border: 3px none #ac4c4c;
+  outline: 0; 
+  color: white;
   margin: 0 1em;
   padding: 0.25em 1em;
   font-weight: 500;
   cursor: pointer;
-`
+  letter-spacing: 0.3ch;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  ${props => props.selected && css`
+    background: #ac4c4c;
+    color: white;
+  `}
 
-export const header = styled.div`
-    background-color: #0C243C;
-    display: block;
-    /* font-size: 1.5em; */
-    position: fixed;
-    font-weight: bold;
-    z-index: 100;
-`
-export const container_header = styled.div`
-    display: flex;
-    flex-direction: row;
-    height: 5vh;
-    width: 100vw;
-    border-bottom: 1px solid #e1e1e1;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: -5vh;
-`
+`;
+

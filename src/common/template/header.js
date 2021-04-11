@@ -4,39 +4,55 @@ import { Link } from 'react-router-dom'
 import * as S from "./styled";
 
 export default class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selected: 0
+    };
+  }
+
+  RenderButtonSelected(text, index){
+  return (
+    this.state.selected===index?
+      <S.Button selected>
+        {text}
+      </S.Button>
+    :
+      <S.Button
+        onClick={ ()=>
+          this.setState({ 
+            selected: index
+      })}>      
+        {text}
+      </S.Button>
+  ) 
+}
+
   render() {
     return (
-        <S.container_header>
-          <S.header>    
+        <S.wrapper_header>  
           <Link
-              style={{cursor: "pointer"}}
-              to="/"
-            >
-              <S.Button>Sobre</S.Button> 
-            </Link>
-
+            to="/"
+          >
+          {this.RenderButtonSelected("Sobre",0)}
+          </Link>
           <Link
-              style={{cursor: "pointer"}}
-              to="/fisica"
-            >
-              Física 
-            </Link>
-
-            <Link
-              style={{cursor: "pointer"}}
-              to="/programacao"
-            >
-              Programação
-            </Link>
+            to="/fisica"
+          >
+          {this.RenderButtonSelected("Física",1)}
+          </Link>
+          <Link
+            to="/programacao"
+          >
+            {this.RenderButtonSelected("Programação", 2)} 
+          </Link>
             
-            <Link
-              style={{cursor: "pointer"}}
-              to="/portfolio"
-            >
-              Portfolio
-            </Link>
-          </S.header>
-        </S.container_header>
+          <Link
+            to="/portfolio"
+          >
+          {this.RenderButtonSelected("Portfólio", 3)}  
+          </Link>
+        </S.wrapper_header>
     );
   }
 }

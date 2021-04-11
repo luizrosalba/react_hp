@@ -4,7 +4,7 @@ export default class Footer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: new Date().toLocaleString()
+      date: "10/04/2021"
     };
   }
 
