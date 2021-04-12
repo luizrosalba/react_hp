@@ -23,31 +23,16 @@ export const WrapperColunasSobre = styled.div`
     margin-top: 2vh;
 }
 `
-
-export const CardWrapperSobre = styled.div`
-  overflow: hidden;
-  padding: 20px;
-  width: 30vw;
-  margin 10px 0px 0px 10px ; 
+export const ButtonSobre = styled.button`
+  background: white;
   border-radius: 15px;
-  background-color: white;
-  color: black; 
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-`;
-
-export const Button = styled.button`
-  background: transparent;
-  border-radius: 3px;
   border: 3px none #ac4c4c;
-  outline: 0; 
-  color: white;
+  color: black;
   margin: 0 1em;
   padding: 0.25em 1em;
   font-weight: 500;
   cursor: pointer;
-  letter-spacing: 0.3ch;
+  letter-spacing: 0.0ch;
   font-weight: bold;
   text-transform: uppercase;
   
@@ -55,7 +40,24 @@ export const Button = styled.button`
     background: #ac4c4c;
     color: white;
   `}
-
 `;
 
-
+export const CardWrapperSobre = styled.div`
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+  width: 30vw;
+  margin 10px 0px 0px 10px ; 
+  background-color: white;
+  color: black; 
+  background: rgba( 177, 184, 247, 0.40 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7.0px );
+  -webkit-backdrop-filter: blur( 7.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  button { margin-top: auto; } /* Push it and following elements to the bottom */
+`;

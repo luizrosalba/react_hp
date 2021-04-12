@@ -14,59 +14,80 @@ const ColunasBrancas = () => {
   return (
   <S.WrapperColunasSobre>
     <S.CardWrapperSobre>
-      <section>
         <h1>Seja Bem-Vindo(a)!</h1> 
         <p>
           Meu nome é Luiz Fernando, mas todo mundo me chama de Rosalba!
         </p>
         <p>
-          Licenciado em física <span role="img" aria-labelledby="universo">🌏🌌</span>
+          Licenciado em física.
         </p>
         <p>
-          Mestre e Doutor na área de Modelagem Computacional. <span role="img" aria-labelledby="prog">&#128187;</span>   
+          Mestre e Doutor na área de Modelagem Computacional.   
         </p>
         <p>
-          Estudante de Ciências da Computação e Desenvolvimento Web <span role="img" aria-labelledby="prog">👨‍💻</span>
+          Estudante de Ciências da Computação e Desenvolvimento Web.
         </p>
         <p>
-          Apaixonado por programação <span role="img" aria-labelledby="prog">💻</span> ciência<span role="img" aria-labelledby="prog">🧪</span>  e tecnologia.<span role="img" aria-labelledby="prog">📡</span> 
+          Apaixonado por programação, ciência e tecnologia. 
         </p>
-      </section>
+        <S.ButtonSobre 
+        href="mailto:luizrosalba@gmail.com" 
+        target= "_blank" 
+        rel="noopener noreferrer"
+      >  
+         E-mail 
+      </S.ButtonSobre>
     </S.CardWrapperSobre>
     <S.CardWrapperSobre>
-      Atuação Profissional:
-      Sou docente de física há mais de 7 anos nas Universidades Estácio de Sá e Candido Mendes.
-      Já desenvolvi diversos projetos na área de ensino. 
-      Conheça meu curriculo Lattes. <span role="img" aria-labelledby="piscada">👨‍🏫</span>
+      <h1>Atuação Profissional:</h1> 
+      <p>
+        Sou docente de física há mais de 7 anos nas Universidades Estácio de Sá e Candido Mendes.
+      </p>
+      <p>
+        Já desenvolvi diversos projetos na área de ensino. 
+      </p>
+      <p>
+        Conheça meu curriculo Lattes.
+      </p>
+      <S.ButtonSobre 
+        href="http://lattes.cnpq.br/6417401108821012" 
+        target= "_blank" 
+        rel="noopener noreferrer"
+      >  
+        Currículo  Lattes 
+      </S.ButtonSobre>
     </S.CardWrapperSobre>
     <S.CardWrapperSobre>
-      Meus Interesses:
-      Estou especialmente interessando em:
-      Desenvolvimento Web Front e Back End
-      Javascript com ES6, HTML5, CSS.
-      React, React Native, DB's relacionais e não relacionais. 
-      TDD, BDD e Padrões de desenvolvimento.
-      <p> <span>  Trabalho há mais de 10 anos com programação  </span></p>                           
-      Venha conhecer meu LinkedIn  <span role="img" aria-labelledby="piscada">&#128188;</span>
+      <h1>Meus Interesses:</h1> 
+      <p>
+        Estou especialmente interessando em:
+      </p>
+      <p>
+        Desenvolvimento Web Front e Back End
+      </p>
+      <p>
+        Javascript com ES6, HTML5, CSS.
+      </p>
+      <p>
+        React, React Native, DB's relacionais e não relacionais. 
+      </p>
+      <p>
+        TDD, BDD e Padrões de desenvolvimento.
+      </p>
+      <p> 
+        Trabalho há mais de 10 anos com programação 
+      </p>                           
+        Venha conhecer meu LinkedIn: 
+        <S.ButtonSobre 
+        href="https://www.linkedin.com/in/luiz-fernando-rosalba-92469817/" 
+        target= "_blank" 
+        rel="noopener noreferrer"
+      >  
+        LinkedIn 
+      </S.ButtonSobre>
     </S.CardWrapperSobre>
 </S.WrapperColunasSobre>
   
-  )
-}
-const ColunasBotoes = () => {
-  return (
-    <div className="colunas-sobre">
-    <div className="div-botao">
-      <a className="Botao-Contato color-blue" href="mailto:luizrosalba@gmail.com" target="_blank" rel="noopener noreferrer"> E-mail </a>
-    </div>
-    <div className="div-botao">
-      <a className="Botao-Contato color-blue" href="http://lattes.cnpq.br/6417401108821012"             target= "_blank" rel="noopener noreferrer">  Currículo  Lattes </a>
-    </div>
-    <div className="div-botao">
-      <a className="Botao-Contato color-blue" href="https://www.linkedin.com/in/luiz-fernando-rosalba-92469817/" target="_blank" rel="noopener noreferrer">  LinkedIn </a>
-    </div>
- </div>
-
   )
 }
 
@@ -77,7 +98,6 @@ const Home = () => {
           <div className="texto-sobre">
               <Barra />
               <ColunasBrancas />
-              <ColunasBotoes />
           </div>
         </div>
       </div>
