@@ -8,7 +8,7 @@ const Programacao  = () => {
       <div className="texto_secao">
         Repositórios      
       </div>
-        <div className="links ">
+        <div className="links">
          <a href = "https://github.com/luizrosalba?tab=repositories" target= "_blank" rel="noopener noreferrer" >   Conheça meu Github.   </a>
           <br></br>
           <div className="colunas-fisica">

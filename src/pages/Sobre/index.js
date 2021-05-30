@@ -1,5 +1,10 @@
 import React from 'react'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 import * as S from "./styled";
 
 const Barra= () =>{
@@ -12,11 +17,33 @@ const Barra= () =>{
 
 const ColunasBrancas = () => {
   return (
+  <>
   <S.WrapperColunasSobre>
-    <S.CardWrapperSobre>
-        <h1>Seja Bem-Vindo(a)!</h1> 
+    <S.ButtonSobre 
+            href="mailto:luizrosalba@gmail.com" 
+            target= "_blank" 
+            rel="noopener noreferrer"
+          >  
+            E-mail 
+        </S.ButtonSobre>
+    <S.ButtonSobre 
+        href="http://lattes.cnpq.br/6417401108821012" 
+        target= "_blank" 
+        rel="noopener noreferrer"
+    >  
+      Currículo  Lattes 
+    </S.ButtonSobre>
+    <S.ButtonSobre 
+  href="https://www.linkedin.com/in/luiz-fernando-rosalba-92469817/" 
+  target= "_blank" 
+  rel="noopener noreferrer"
+ >  
+  LinkedIn 
+  </S.ButtonSobre>
+  <S.CardWrapperSobre>
+        <center><h1>Seja Bem-Vindo(a)!</h1> </center>
         <p>
-          Meu nome é Luiz Fernando, mas todo mundo me chama de Rosalba!
+          Meu nome é Luiz Rosalba!
         </p>
         <p>
           Licenciado em física.
@@ -30,40 +57,27 @@ const ColunasBrancas = () => {
         <p>
           Apaixonado por programação, ciência e tecnologia. 
         </p>
-        <S.ButtonSobre 
-        href="mailto:luizrosalba@gmail.com" 
-        target= "_blank" 
-        rel="noopener noreferrer"
-      >  
-         E-mail 
-      </S.ButtonSobre>
+        
     </S.CardWrapperSobre>
     <S.CardWrapperSobre>
-      <h1>Atuação Profissional:</h1> 
+    <center><h1>Atuação Profissional:</h1> </center>
       <p>
-        Sou docente de física há mais de 7 anos nas Universidades Estácio de Sá e Candido Mendes.
+        Desenvolvedor de Software na <a href="https://deepseedsolutions.com/">Deep Seed Solutions</a>
       </p>
       <p>
-        Já desenvolvi diversos projetos na área de ensino. 
+        Professor de física.
       </p>
       <p>
-        Conheça meu curriculo Lattes.
+        Conheça meus projetos educacionais em meu Curriculo Lattes! 
       </p>
-      <S.ButtonSobre 
-        href="http://lattes.cnpq.br/6417401108821012" 
-        target= "_blank" 
-        rel="noopener noreferrer"
-      >  
-        Currículo  Lattes 
-      </S.ButtonSobre>
     </S.CardWrapperSobre>
     <S.CardWrapperSobre>
-      <h1>Meus Interesses:</h1> 
+    <center> <h1>Meus Interesses:</h1> </center>
       <p>
-        Estou especialmente interessando em:
+        Especialmente interessando em:
       </p>
       <p>
-        Desenvolvimento Web Front e Back End
+        Desenvolvimento Web 
       </p>
       <p>
         Javascript com ES6, HTML5, CSS.
@@ -75,19 +89,11 @@ const ColunasBrancas = () => {
         TDD, BDD e Padrões de desenvolvimento.
       </p>
       <p> 
-        Trabalho há mais de 10 anos com programação 
+        Conheça meus trabalho em meu LinkedIn
       </p>                           
-        Venha conhecer meu LinkedIn: 
-        <S.ButtonSobre 
-        href="https://www.linkedin.com/in/luiz-fernando-rosalba-92469817/" 
-        target= "_blank" 
-        rel="noopener noreferrer"
-      >  
-        LinkedIn 
-      </S.ButtonSobre>
     </S.CardWrapperSobre>
-</S.WrapperColunasSobre>
-  
+  </S.WrapperColunasSobre>
+</>
   )
 }
 

@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
 body {
   /* --fontColor: red; */
   /* color: var(--fontColor); */
@@ -89,6 +96,7 @@ p span {
   grid-row-gap: 0px;
   border: 3px solid rgba(5, 7, 7, 0.227);
   padding: 20px;
+  
 }
 
 
@@ -96,6 +104,7 @@ p span {
   display: block;
   padding: 10px;
   font-size: var(--normalFisica); 
+  color: white;
 }
 
 .colunas-fisica a:hover{
@@ -283,6 +292,11 @@ div.texto_secao{
   margin: 5px;
 }
 
+.links a {
+  color: white;
+  text-decoration: underline;
+}
+
 .links a:hover {
   color: chocolate;
   text-decoration: underline;
@@ -318,7 +332,6 @@ ul{
 }
 
 @media (max-width: 800px) {
-
   body{
       line-height: 1.0;
     --headerSize: 100%;
@@ -334,25 +347,6 @@ ul{
 
   }
 
-  .container_header nav {
-    display: flex;
-    flex-direction: row;
-    height: 5vh;
-    width: 100vw;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: black;
-    font-weight: bold;
-  }
-
-  .header {
-    display: flex;
-    position: fixed;
-  }
-  
-  .header a{
-    font-size: 5.0vmin;
-  }
   .container-corpo {
     margin-left: 0;
     width: 100vw;

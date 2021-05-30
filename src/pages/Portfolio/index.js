@@ -66,7 +66,7 @@ const Portfolio = () => {
           Portfólio
         </div>
       
-        <div>
+        <div  className="links">
           <a href="https://codepen.io/luizrosalba/full/jOrbzpe" target="_blank" rel="noopener noreferrer" >   <center>   Conheça meus Portfólio no CodePen </center></a>
           <br></br>
         </div>

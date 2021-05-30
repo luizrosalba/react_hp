@@ -11,7 +11,7 @@ export default class Header extends Component {
     };
   }
 
-  RenderButtonSelected(text, index){
+RenderButtonSelected(text, index){
   return (
     this.state.selected===index?
       <S.Button selected>
@@ -28,31 +28,37 @@ export default class Header extends Component {
   ) 
 }
 
+function RenderHeaderLarge (){
+    <S.wrapperHeader>  
+    <Link
+      to="/"
+    >
+    {this.RenderButtonSelected("Sobre",0)}
+    </Link>
+    <Link
+      to="/fisica"
+    >
+    {this.RenderButtonSelected("Física",1)}
+    </Link>
+    <Link
+      to="/programacao"
+    >
+      {this.RenderButtonSelected("Programação", 2)} 
+    </Link>
+      
+    <Link
+      to="/portfolio"
+    >
+    {this.RenderButtonSelected("Portfólio", 3)}  
+    </Link>
+  </S.wrapperHeader>
+}
+
   render() {
     return (
-        <S.wrapper_header>  
-          <Link
-            to="/"
-          >
-          {this.RenderButtonSelected("Sobre",0)}
-          </Link>
-          <Link
-            to="/fisica"
-          >
-          {this.RenderButtonSelected("Física",1)}
-          </Link>
-          <Link
-            to="/programacao"
-          >
-            {this.RenderButtonSelected("Programação", 2)} 
-          </Link>
-            
-          <Link
-            to="/portfolio"
-          >
-          {this.RenderButtonSelected("Portfólio", 3)}  
-          </Link>
-        </S.wrapper_header>
+       <RenderHeaderLarge>
+
+       </RenderHeaderLarge>
     );
   }
 }
