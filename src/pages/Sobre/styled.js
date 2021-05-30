@@ -20,6 +20,7 @@ export const WrapperColunasSobre = styled.div`
   grid-row-gap: 0px;
   @media only screen and (max-width: 800px) {
     display: block;
+    z-index: 1;
   }
 `
 
@@ -60,4 +61,5 @@ export const CardWrapperSobre = styled.div`
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   button { margin-top: auto; } /* Push it and following elements to the bottom */
+  z-index: 1;
 `;

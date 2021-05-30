@@ -18,6 +18,8 @@ export const wrapperHeader = styled.div`
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 100;
+    margin: 5px 0px 0px 0px;
   }
 }
 `
