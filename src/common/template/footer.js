@@ -4,16 +4,10 @@ export default class Footer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: "10/04/2021"
+      date: "30/05/2021"
     };
   }
-
-  getDate() {
-    var date = "09/04/2021"
-    this.setState({
-      date: date
-    });
-  }
+    
   render() {
     return (
       <div className="container-footer">

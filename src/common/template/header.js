@@ -1,64 +1,57 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom'
 
 import * as S from "./styled";
 
-export default class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selected: 0
-    };
+const Header = () => {
+
+  const [selected, setSelected] = useState(0);
+
+  function RenderButtonSelected (text, index) {
+    return (
+      selected===index?
+        <S.Button selected>
+          {text}
+        </S.Button>
+      :
+        <S.Button
+          onClick={() => setSelected(index) }>      
+          {text}
+        </S.Button>
+    ) 
   }
 
-RenderButtonSelected(text, index){
-  return (
-    this.state.selected===index?
-      <S.Button selected>
-        {text}
-      </S.Button>
-    :
-      <S.Button
-        onClick={ ()=>
-          this.setState({ 
-            selected: index
-      })}>      
-        {text}
-      </S.Button>
-  ) 
-}
-
-function RenderHeaderLarge (){
-    <S.wrapperHeader>  
-    <Link
-      to="/"
-    >
-    {this.RenderButtonSelected("Sobre",0)}
-    </Link>
-    <Link
-      to="/fisica"
-    >
-    {this.RenderButtonSelected("Física",1)}
-    </Link>
-    <Link
-      to="/programacao"
-    >
-      {this.RenderButtonSelected("Programação", 2)} 
-    </Link>
-      
-    <Link
-      to="/portfolio"
-    >
-    {this.RenderButtonSelected("Portfólio", 3)}  
-    </Link>
-  </S.wrapperHeader>
-}
-
-  render() {
+  function RenderHeaderLarge (){
     return (
-       <RenderHeaderLarge>
-
-       </RenderHeaderLarge>
+      <S.wrapperHeader>  
+      <Link
+        to="/"
+      >
+      {RenderButtonSelected("Sobre",0)}
+      </Link>
+      <Link
+        to="/fisica"
+      >
+      {RenderButtonSelected("Física",1)}
+      </Link>
+      <Link
+        to="/programacao"
+      >
+        {RenderButtonSelected("Programação", 2)} 
+      </Link>
+        
+      <Link
+        to="/portfolio"
+      >
+      {RenderButtonSelected("Portfólio", 3)}  
+      </Link>
+      </S.wrapperHeader>
     );
   }
+  return (
+    <RenderHeaderLarge>
+
+    </RenderHeaderLarge>
+  )
 }
+export default Header; 
