@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const wrapperHeader = styled.div`
+export const wrapperHeaderBig = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -12,17 +12,24 @@ export const wrapperHeader = styled.div`
   padding 5px 0 5px 0px; 
 
   @media(max-width: 800px) {
+    display: none;
+  }
+}
+`
+export const wrapperHeaderSmall = styled.div`
+  @media(max-width: 800px) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: gray;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 100;
     margin: 5px 0px 0px 0px;
   }
 }
 `
+
+
 export const Button = styled.button`
   background: transparent;
   border-radius: 3px;
@@ -30,6 +37,7 @@ export const Button = styled.button`
   outline: 0; 
   color: white;
   margin: 0 1em;
+  justify-content: center;
   padding: 0.25em 1em;
   font-weight: 500;
   cursor: pointer;

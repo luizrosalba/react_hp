@@ -25,15 +25,17 @@ export const WrapperColunasSobre = styled.div`
 `
 
 export const ButtonSobre = styled.button`
+  display:flex;
+  justify-content: center;
+  text-decoration: none;
   background: #ac4c4c;
   border-radius: 15px;
   border: 3px none #ac4c4c;
   color: white;
   margin: 10px 40px 10px 40px ; 
-  padding: 0.25em 1em;
   font-weight: 500;
   cursor: pointer;
-  letter-spacing: 1.0ch;
+  padding: 10px;
   font-weight: bold;
   text-transform: uppercase;  
   width: -webkit-fill-available;

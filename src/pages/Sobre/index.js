@@ -19,27 +19,27 @@ const ColunasBrancas = () => {
   return (
   <>
   <S.WrapperColunasSobre>
-    <S.ButtonSobre 
-            href="mailto:luizrosalba@gmail.com" 
-            target= "_blank" 
-            rel="noopener noreferrer"
-          >  
-            E-mail 
-        </S.ButtonSobre>
-    <S.ButtonSobre 
+    <S.ButtonSobre as="a"  
+      href="mailto:luizrosalba@gmail.com" 
+      target= "_blank" 
+      rel="noopener noreferrer"
+    >  
+      E-mail 
+    </S.ButtonSobre>
+    <S.ButtonSobre as="a"
         href="http://lattes.cnpq.br/6417401108821012" 
         target= "_blank" 
         rel="noopener noreferrer"
     >  
       Currículo  Lattes 
     </S.ButtonSobre>
-    <S.ButtonSobre 
-  href="https://www.linkedin.com/in/luiz-fernando-rosalba-92469817/" 
-  target= "_blank" 
-  rel="noopener noreferrer"
- >  
-  LinkedIn 
-  </S.ButtonSobre>
+    <S.ButtonSobre as="a"
+      href="https://www.linkedin.com/in/luiz-fernando-rosalba-92469817/" 
+      target= "_blank" 
+      rel="noopener noreferrer"
+    >  
+    LinkedIn 
+    </S.ButtonSobre>
   <S.CardWrapperSobre>
         <center><h1>Seja Bem-Vindo(a)!</h1> </center>
         <p>
