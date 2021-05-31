@@ -44,6 +44,12 @@ export const ButtonSobre = styled.button`
     background: #ac4c4c;
     color: white;
   `}
+  @media only screen and (max-width: 800px) {
+    justify-content: center;
+    align-items: center;
+    font-size:24px ; 
+    margin: 10px 5px 20px 5px;
+  }
 `;
 
 export const CardWrapperSobre = styled.div`
@@ -63,5 +69,9 @@ export const CardWrapperSobre = styled.div`
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   button { margin-top: auto; } /* Push it and following elements to the bottom */
-  z-index: 1;
+
+  @media only screen and (max-width: 800px) {
+    z-index: 1;
+    margin: 20px 10px 30px 10px;
+  }
 `;
