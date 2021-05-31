@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom'
 
 import * as S from "./styled";
-import * as Icon from 'bootstrap-icons';
 
 
 const Header = () => {
@@ -56,23 +55,23 @@ const Header = () => {
         <Link
           to="/"
         >
-        <i class="bi bi-file-person">Oerson</i>
+        <i class="bi bi-file-person"></i>
         </Link>
         <Link
           to="/fisica"
         >
-        {RenderButtonSelected("Física",1)}
+        <i class="bi bi-book"></i>
         </Link>
         <Link
           to="/programacao"
         >
-          {RenderButtonSelected("Programação", 2)} 
+          <i class="bi bi-code-slash"></i>
         </Link>
           
         <Link
           to="/portfolio"
         >
-        {RenderButtonSelected("Portfólio", 3)}  
+         <i class="bi bi-briefcase"></i>
         </Link>
       </S.wrapperHeaderSmall>
     );

@@ -17,19 +17,25 @@ export const wrapperHeaderBig = styled.div`
 }
 `
 export const wrapperHeaderSmall = styled.div`
+  display:none; 
   @media(max-width: 800px) {
-    display: grid;
-    background-color: gray;
+    font-size: 32px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
     position: fixed;
     bottom: 0;
     width: 100vw;
     z-index: 100;
     margin: 5px 0px 0px 0px;
+    i {
+     color: white; 
+    }
   }
+  
 }
 `
-
-
 export const Button = styled.button`
   background: transparent;
   border-radius: 3px;
