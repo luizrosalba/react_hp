@@ -10,7 +10,7 @@ import * as S from "./styled";
 const Barra= () =>{
   return (
     <S.textoSecao> 
-      Sobre Mim
+      Sobre
     </S.textoSecao>
   )
 }
@@ -42,6 +42,7 @@ const ColunasBrancas = () => {
     </S.ButtonSobre>
   <S.CardWrapperSobre>
         <center><h1>Seja Bem-Vindo(a)!</h1> </center>
+        <div style={{marginTop:"20px"}}></div>
         <p>
           Meu nome é Luiz Rosalba!
         </p>
@@ -61,6 +62,7 @@ const ColunasBrancas = () => {
     </S.CardWrapperSobre>
     <S.CardWrapperSobre>
     <center><h1>Atuação Profissional:</h1> </center>
+      <div style={{marginTop:"20px"}}></div>
       <p>
         Desenvolvedor de Software na <a href="https://deepseedsolutions.com/">Deep Seed Solutions</a>
       </p>
@@ -73,6 +75,7 @@ const ColunasBrancas = () => {
     </S.CardWrapperSobre>
     <S.CardWrapperSobre>
     <center> <h1>Meus Interesses:</h1> </center>
+      <div style={{marginTop:"20px"}}></div>
       <p>
         Especialmente interessando em:
       </p>

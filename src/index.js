@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Providers from "./providers";
 import * as serviceWorker from './serviceWorker';
 
 /* Procura o item root no index.html e renderiza a pagina  */
@@ -14,7 +14,7 @@ para os seus descendentes.*/
 ReactDOM.render(
   
 <React.StrictMode>
-  <App />
+  <Providers />
 </React.StrictMode>,
 
   document.getElementById("root")

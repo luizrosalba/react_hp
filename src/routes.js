@@ -13,7 +13,7 @@ import Sobre from './pages/Sobre'
 import Fisica from './pages/Fisica'
 import Programacao from './pages/Programacao'
 import TextoEGrafico from './pages/Grafico'
-import Portfolio from './pages/Portfolio'
+import Certificados from './pages/Certificados'
 
 function Routes() {
 
@@ -25,7 +25,7 @@ function Routes() {
           <Route path="/fisica" component={Fisica} />
           <Route path="/programacao" component={Programacao} />
           <Route path="/Grafico" component={TextoEGrafico} />
-          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/certificados" component={Certificados} />
           <Redirect from='*' to='/' />
         </Switch>
         <Footer />

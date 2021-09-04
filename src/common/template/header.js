@@ -42,9 +42,9 @@ const Header = () => {
       </Link>
         
       <Link
-        to="/portfolio"
+        to="/certificados"
       >
-      {RenderButtonSelected("Portfólio", 3)}  
+      {RenderButtonSelected("Certificados", 3)}  
       </Link>
       </S.wrapperHeaderBig>
     );
@@ -55,23 +55,23 @@ const Header = () => {
         <Link
           to="/"
         >
-        <i class="bi bi-file-person"></i>
+        <i className="bi bi-file-person"></i>
         </Link>
         <Link
           to="/fisica"
         >
-        <i class="bi bi-book"></i>
+        <i className="bi bi-book"></i>
         </Link>
         <Link
           to="/programacao"
         >
-          <i class="bi bi-code-slash"></i>
+          <i className="bi bi-code-slash"></i>
         </Link>
           
         <Link
           to="/portfolio"
         >
-         <i class="bi bi-briefcase"></i>
+         <i className="bi bi-briefcase"></i>
         </Link>
       </S.wrapperHeaderSmall>
     );

@@ -25,6 +25,7 @@ export const WrapperColunasSobre = styled.div`
 `
 
 export const ButtonSobre = styled.button`
+
   display:flex;
   justify-content: center;
   text-decoration: none;

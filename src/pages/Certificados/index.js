@@ -15,7 +15,7 @@ import "react-multi-carousel/lib/styles.css";
 import useWindowDimensions from "./window"
 
 
-const Portfolio = () => {
+const Certificados = () => {
 
   const responsive = {
     superLargeDesktop: {
@@ -63,7 +63,7 @@ const Portfolio = () => {
     <div className="App-body">
       <div className="container-corpo reduce-container-height ">
         <div className="texto_secao">
-          Portfólio
+          Certificados
         </div>
       
         <div  className="links">
@@ -113,4 +113,4 @@ const Container = styled.div`
 `
 */
 
-export default Portfolio
+export default Certificados
