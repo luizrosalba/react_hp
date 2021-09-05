@@ -17,12 +17,11 @@ body {
 
   font-size: var(--normalSize);
   font-weight: var(--normalWeight);
-  background-color:black; /*fundo*/
+  background-image:linear-gradient(30deg, black, darkred)
 }
 
 .App-body{
   font-family: 'Roboto Condensed', sans-serif;
-  background-color:black; /*fundo*/
   margin-right: 1px;
 }
 
@@ -207,11 +206,11 @@ p a{
 
 div.texto_secao{
   display: inline-block;
-  border: 3px solid #333333;
+  border-bottom: 3px solid darkred;
   border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
   text-transform: uppercase;
   letter-spacing: 0.2ch;
-  background: #ac4c4c;
+  background: transparent;
   position: relative;
   padding-left: 10px;
  }

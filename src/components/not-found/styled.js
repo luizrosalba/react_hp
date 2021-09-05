@@ -8,5 +8,6 @@ export const Wrapper = styled.div`
   h1 {
     font-weight: bold;
     font-size: 32px;
+    text-align: left;
   }
 `;

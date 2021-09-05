@@ -1,12 +1,14 @@
 import React from "react";
 import * as S from "./styled";
+const baseRepository = "https://github.com/";
 
 const RepositoryItem = ({ name, linkToRepo, fullName }) => {
   return (
     <S.Wrapper>
       <S.WrapperTitle>{name}</S.WrapperTitle>
       <S.WrapperFullName>Link do Repositório:</S.WrapperFullName>
-      <S.WrapperLink href={linkToRepo} target="_blank" rel="noreferrer">
+      {console.log(linkToRepo)}
+      <S.WrapperLink href={baseRepository+linkToRepo} target="_blank" rel="noreferrer">
         {fullName}
       </S.WrapperLink>
     </S.Wrapper>

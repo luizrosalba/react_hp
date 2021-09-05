@@ -18,6 +18,8 @@ export const WrapperColunasSobre = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  margin: 8% 2%;
+  
   @media only screen and (max-width: 800px) {
     display: block;
     z-index: 1;
@@ -29,7 +31,7 @@ export const ButtonSobre = styled.button`
   display:flex;
   justify-content: center;
   text-decoration: none;
-  background: #ac4c4c;
+  background: brown;  
   border-radius: 15px;
   border: 3px none #ac4c4c;
   color: white;
@@ -41,10 +43,18 @@ export const ButtonSobre = styled.button`
   text-transform: uppercase;  
   width: -webkit-fill-available;
   height: 50px; 
-  ${props => props.selected && css`
-    background: #ac4c4c;
-    color: white;
-  `}
+
+  &:hover{
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    border: 2px solid white;
+    color: yellow;
+  }
+
+  
   @media only screen and (max-width: 800px) {
     justify-content: center;
     align-items: center;
