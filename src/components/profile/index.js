@@ -18,7 +18,7 @@ const Profile = () => {
               target="_blank"
               rel="noreferrer"
             >
-              {githubState.user.login}
+             <u> {githubState.user.login} </u>
             </a>
           </S.WrapperUserGeneric>
           {/* <S.WrapperUserGeneric>
@@ -28,7 +28,7 @@ const Profile = () => {
           <S.WrapperUserGeneric>
             <h3>Link para o Repositório:</h3>
             <a href={"https://github.com/luizrosalba?tab=repositories"} target="_blank" rel="noreferrer">
-              Repositório do Github
+              <u>Repositório do Github</u>
             </a>
           </S.WrapperUserGeneric>
         </div>

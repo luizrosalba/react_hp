@@ -18,7 +18,7 @@ export const WrapperColunasSobre = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  margin: 8% 2%;
+  margin: 3vh 2vh;
   
   @media only screen and (max-width: 800px) {
     display: block;
@@ -35,7 +35,7 @@ export const ButtonSobre = styled.button`
   border-radius: 15px;
   border: 3px none #ac4c4c;
   color: white;
-  margin: 10px 40px 10px 40px ; 
+  margin: 10px 20px 10px 20px ; 
   font-weight: 500;
   cursor: pointer;
   padding: 10px;
@@ -51,7 +51,7 @@ export const ButtonSobre = styled.button`
     background-size: 200% 100%;
     background-position: 100%;
     border: 2px solid white;
-    color: yellow;
+    color: chocolate;
   }
 
   
@@ -68,7 +68,7 @@ export const CardWrapperSobre = styled.div`
   flex-direction: column;
   overflow: hidden;
   padding: 20px;
-  margin: 10px 40px 10px 40px ; 
+  margin: 10px 20px 10px 20px ; 
   background-color: white;
   color: black; 
   background: white;

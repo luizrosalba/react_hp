@@ -69,7 +69,7 @@ const Header = () => {
         </Link>
           
         <Link
-          to="/portfolio"
+          to="/certificados"
         >
          <i className="bi bi-briefcase"></i>
         </Link>

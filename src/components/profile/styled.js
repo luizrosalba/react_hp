@@ -51,6 +51,9 @@ export const WrapperUserGeneric = styled.div`
     font-size: 20px;
     color: white;
     font-weight: bold;
+    &:hover{
+      color:chocolate; 
+    }
   }
 `;
 

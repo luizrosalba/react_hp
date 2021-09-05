@@ -5,7 +5,7 @@ import NotFound from "../../components/not-found";
 import Profile from "../../components/profile";
 import Repositories from "../../components/repositories";
 import useGithub from "../../hooks/github-hooks";
-import loading from '../../img/loading.gif'
+import loading from '../../img/Spinner-1s-200px.svg'
 
 const Loading = () => {
   return (
@@ -46,14 +46,10 @@ const Programacao  = () => {
   return (
     <div className="App-body">
       <div className="container-corpo">
-
-      <div className="texto_secao">
-        PORTFÓLIO      
-      </div>
-        <div className="links">
-          <Github/>            
+        <div className="texto_secao">
+          PORTFÓLIO      
         </div>
-
+          <Github/>            
       </div>
     </div>
 

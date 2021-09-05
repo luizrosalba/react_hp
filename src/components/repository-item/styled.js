@@ -15,6 +15,9 @@ export const WrapperTitle = styled.h2`
   font-size: 18px;
   font-weight: bold;
   margin: 8px 0;
+  text-align: center;
+  color:white;
+  
 `;
 
 export const WrapperFullName = styled.h2`
@@ -25,9 +28,17 @@ export const WrapperFullName = styled.h2`
 `;
 
 export const WrapperLink = styled.a`
+  display: flex;
   font-size: 16px;
   font-weight: bold;
   margin: 8px 0;
-  color: #3182ce;
+  color: white;
   padding-top: 10px;
+  text-decoration: underline;
+  text-align: center;
+  justify-content: space-around;
+  
+  &:hover{
+    color: chocolate;
+  }
 `;

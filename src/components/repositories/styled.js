@@ -38,6 +38,10 @@ export const WrapperTab = styled(Tab)`
   z-index: 99999;
   background-color: "#fff";
   margin: 8px;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
   &:hover {
     color:chocolate;
   }

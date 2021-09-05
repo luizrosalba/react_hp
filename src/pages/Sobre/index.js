@@ -62,7 +62,7 @@ const ColunasBrancas = () => {
           <center><h1>Atuação Profissional:</h1> </center>
           <div style={{ marginTop: "20px" }}></div>
           <p>
-            Desenvolvedor de Software na <a href="https://deepseedsolutions.com/">Deep Seed Solutions</a>
+            Desenvolvedor de Software na <u><a href="https://deepseedsolutions.com/">Deep Seed Solutions</a></u>
           </p>
           <p>
             Professor de física.
@@ -104,7 +104,6 @@ const Home = () => {
       <div className="container-corpo">
         <div className="texto-sobre">
           <Barra />
-          <div style={{ marginTop: "20px" }}></div>
           <ColunasBrancas />
         </div>
       </div>
