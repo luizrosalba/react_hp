@@ -67,8 +67,6 @@ const Certificados = () => {
         </div>
       
         <div  className="links">
-          <a href="https://codepen.io/luizrosalba/full/jOrbzpe" target="_blank" rel="noopener noreferrer" >   <center>   Conheça meus Portfólio no CodePen </center></a>
-          <br></br>
         </div>
         <div className="title_page"> <center>Meus Certificados</center>  </div>
         <br></br>

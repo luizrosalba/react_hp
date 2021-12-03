@@ -62,7 +62,7 @@ const ColunasBrancas = () => {
           <center><h1>Atuação Profissional:</h1> </center>
           <div style={{ marginTop: "20px" }}></div>
           <p>
-            Desenvolvedor de Software na <u><a href="https://deepseedsolutions.com/">Deep Seed Solutions</a></u>
+            Desenvolvedor de Software na <u><a href="https://www.wipro.com/pt-BR/overview/">Wipro</a></u>
           </p>
           <p>
             Professor de física.
@@ -90,7 +90,7 @@ const ColunasBrancas = () => {
             TDD, BDD e Padrões de desenvolvimento.
           </p>
           <p>
-            Conheça meus trabalho em meu LinkedIn
+            Conheça meus trabalhos em meu LinkedIn
           </p>
         </S.CardWrapperSobre>
       </S.WrapperColunasSobre>

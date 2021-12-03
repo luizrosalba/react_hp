@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const textoSecao = styled.div`
     letter-spacing: 3px;
@@ -31,7 +31,7 @@ export const ButtonSobre = styled.button`
   display:flex;
   justify-content: center;
   text-decoration: none;
-  background: brown;  
+  background: rgb(255, 102, 102);  
   border-radius: 15px;
   border: 3px none #ac4c4c;
   color: white;
@@ -51,7 +51,6 @@ export const ButtonSobre = styled.button`
     background-size: 200% 100%;
     background-position: 100%;
     border: 2px solid white;
-    color: chocolate;
   }
 
   

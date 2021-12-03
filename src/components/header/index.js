@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import * as S from "./styled";
+import React, { useEffect } from "react";
 import useGithub from "../../hooks/github-hooks";
 
 const Header = () => {
