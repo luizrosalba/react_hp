@@ -8,6 +8,10 @@ import cert5 from '../../img/freedatajs.PNG';
 import cert6 from '../../img/freeresponsive.PNG';
 import cert7 from '../../img/avanadeglobal.PNG';
 import cert8 from '../../img/avanade2.PNG';
+import cert9 from '../../img/async.PNG';
+import cert10 from '../../img/git.PNG';
+import cert11 from '../../img/enzyme.PNG';
+import cert12 from '../../img/webpack.PNG';
 
 
 import Carousel from "react-multi-carousel";
@@ -87,10 +91,14 @@ const Certificados = () => {
           <div><img src={cert6} heigth={H} width={W} alt='logo' /> </div>
           <div><img src={cert7} heigth={H} width={W} alt='logo' /> </div>
           <div><img src={cert8} heigth={H} width={W} alt='logo' /> </div>
+          <div><img src={cert9} heigth={H} width={W} alt='logo' /> </div>
+          <div><img src={cert10} heigth={H} width={W} alt='logo' /> </div>
+          <div><img src={cert11} heigth={H} width={W} alt='logo' /> </div>
+          <div><img src={cert12} heigth={H} width={W} alt='logo' /> </div>
         </Carousel>
         <br>
         </br>
-        <div className="title_page"> <center>Tempo Total : 1064 h </center>  </div>
+        <div className="title_page"> <center>Tempo Total : {1064+15+5+3+17} h </center>  </div>
 
 
       </div>
